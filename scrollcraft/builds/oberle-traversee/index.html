@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Muriel Oberlé · Peindre pour se découvrir</title>
+<meta name="description" content="Ateliers de peinture et cours particuliers avec Muriel Oberlé, artiste peintre. Un vol au-dessus de la planète qui revient se poser sur une table d'atelier.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230B0F14'/><path d='M9 24c0-9 3-14 8-14s6 4 6 8' fill='none' stroke='%23E8412A' stroke-width='2.4' stroke-linecap='round'/></svg>">
+<link rel="stylesheet" href="scrollcraft.css">
+<style>
+/* ---------------------------------------------------------------- fontes -- */
+@font-face{font-family:Archivo;font-style:normal;font-weight:100 900;font-stretch:62% 125%;font-display:swap;
+  src:url(fonts/archivo-latin.woff2) format("woff2");
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:Archivo;font-style:normal;font-weight:100 900;font-stretch:62% 125%;font-display:swap;
+  src:url(fonts/archivo-latinext.woff2) format("woff2");
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+@font-face{font-family:Geist;font-style:normal;font-weight:300 700;font-display:swap;
+  src:url(fonts/geist-latin.woff2) format("woff2");
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:Geist;font-style:normal;font-weight:300 700;font-display:swap;
+  src:url(fonts/geist-latinext.woff2) format("woff2");
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+
+/* ---------------------------------------------------------------- jetons --
+   La palette est prise sur ses toiles : turquoise, vert acide, ocre, rouge,
+   cernés de trait noir. Le turquoise et l'ocre restent DANS le monde ; ils ne
+   deviennent pas des boutons. L'interface tient sur un seul accent. */
+:root{
+  --sc-canvas:#0B0F14; --sc-surface:#141A21;
+  --sc-ink:#F7F2E8;    --sc-ink-soft:#C2C8D2;
+  --sc-accent:#E8412A; --sc-accent-ink:#140D0B;
+  --sc-font-display:Archivo,ui-sans-serif,system-ui,sans-serif;
+  --sc-font-text:Geist,ui-sans-serif,system-ui,sans-serif;
+  --sc-shadow-color:210 45% 3%;
+  /* le trait */
+  --trait:#14100E;
+  --papier:#F4EFE4;
+}
+
+/* -------------------------------------------------------------- le socle -- */
+body{background:var(--sc-canvas)}
+h1,h2,h3{font-family:var(--sc-font-display);font-weight:800;font-stretch:102%;
+  letter-spacing:var(--sc-track-tight);line-height:var(--sc-leading-none);
+  text-wrap:balance;margin:0}
+p{text-wrap:pretty;margin:0}
+
+/* La copie du vol est claire sur toutes les jambes sauf l'atelier, ou le monde
+   est un mur blanc. Le token ET la propriete color sont redeclares ensemble :
+   color est herite en valeur calculee, redefinir le token seul ne re-encre
+   rien (taste.md). */
+.sur-papier{--sc-ink:#14100E;--sc-ink-soft:#5B534A;--sc-accent:#B32A15;color:var(--sc-ink)}
+
+/* ------------------------------------------------------------- la marque -- */
+.marque{position:fixed;z-index:70;top:clamp(1rem,2.4vw,1.9rem);left:clamp(1rem,4vw,3rem);
+  font-family:var(--sc-font-display);font-weight:760;font-stretch:96%;
+  font-size:var(--sc-t-sm);letter-spacing:.02em;line-height:1.25;
+  color:var(--sc-ink);text-decoration:none;
+  text-shadow:0 1px 14px hsl(var(--sc-shadow-color)/.85)}
+.marque b{display:block;font-weight:760}
+.marque span{display:block;font-family:var(--sc-font-text);font-weight:400;
+  font-size:var(--sc-t-xs);letter-spacing:.09em;text-transform:uppercase;
+  color:var(--sc-ink-soft)}
+.marque::before{content:"";position:absolute;z-index:-1;
+  inset:-1.1rem -2.6rem -1.4rem -2.4rem;
+  background:radial-gradient(60% 70% at 22% 45%,
+    hsl(var(--sc-shadow-color)/.72) 0%, hsl(var(--sc-shadow-color)/.42) 46%, transparent 76%)}
+.marque:focus-visible{outline:2px solid var(--sc-accent);outline-offset:6px;border-radius:4px}
+
+/* ---------------------------------------------------------- la carte ------
+   La navigation qu'exige la grammaire du monde continu. C'est le MEME trait
+   que celui tire au-dessus du monde, dessine petit : huit waypoints poses
+   dessus par getPointAtLength, cliquables, et un curseur qui glisse. */
+.carte{position:fixed;z-index:70;right:clamp(.85rem,2.6vw,2.4rem);top:50%;translate:0 -50%;
+  width:clamp(112px,13vw,178px);pointer-events:auto}
+.carte__svg{width:100%;height:auto;overflow:visible;filter:drop-shadow(0 2px 10px hsl(var(--sc-shadow-color)/.9))}
+.carte__fond{fill:none;stroke:color-mix(in oklab,var(--sc-ink) 26%,transparent);stroke-width:5;
+  stroke-linecap:round;stroke-linejoin:round}
+.carte__fait{fill:none;stroke:var(--sc-ink);stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+.carte__curseur{fill:var(--sc-accent)}
+.carte__pts{list-style:none;margin:0;padding:0}
+.carte__pt{position:absolute;translate:-50% -50%;margin:0;padding:0}
+.carte__btn{-webkit-appearance:none;appearance:none;background:none;border:0;padding:10px;margin:-10px;
+  cursor:pointer;display:block;line-height:0;border-radius:var(--sc-r-pill)}
+.carte__btn::before{content:"";display:block;width:9px;height:9px;border-radius:var(--sc-r-pill);
+  background:color-mix(in oklab,var(--sc-ink) 42%,transparent);
+  box-shadow:0 1px 4px hsl(var(--sc-shadow-color)/.9);
+  transition:background var(--sc-d-fast) var(--sc-ease-out),scale var(--sc-d-fast) var(--sc-ease-out)}
+.carte__btn:hover::before{background:var(--sc-ink);scale:1.25}
+.carte__btn:active::before{scale:.94}
+.carte__btn[aria-current=true]::before{background:var(--sc-accent);scale:1.45}
+.carte__btn:focus-visible{outline:2px solid var(--sc-accent);outline-offset:3px}
+.carte__nom{position:absolute;right:calc(100% + 12px);top:50%;translate:0 -50%;
+  white-space:nowrap;font-size:var(--sc-t-xs);letter-spacing:.085em;text-transform:uppercase;
+  color:var(--sc-ink-soft);opacity:0;transition:opacity var(--sc-d-fast) var(--sc-ease-out);
+  text-shadow:0 1px 10px hsl(var(--sc-shadow-color)/.95)}
+.carte__btn[aria-current=true] .carte__nom,
+.carte__btn:hover .carte__nom,
+.carte__btn:focus-visible .carte__nom{opacity:1}
+
+/* ------------------------------------------------------------- le trait ---
+   Le mouvement signature. Un seul chemin continu, tire par le scroll au-dessus
+   du monde. Ce n'est pas une route qui DEVIENT un dessin : c'est le dessin
+   depuis le debut, vu de trop pres pour etre lisible. */
+/* Sous la couche de copie du moteur (--sc-z-copy vaut 20) et au-dessus de la
+   scene : le trait appartient au monde, il ne doit pas passer sur les titres. */
+.trait{position:fixed;inset:0;z-index:12;pointer-events:none;overflow:hidden}
+/* Une toile plutot qu'un SVG : un enfant de SVG est toujours calcule
+   position:static par le navigateur, donc un trace agrandi au-dela du viewport
+   se lit comme un bloc reste dans le flux du document, ce que le mode interdit.
+   Un canvas est un element HTML, positionnable, et se repeint moins cher. */
+.trait__toile{position:absolute;inset:0;width:100%;height:100%}
+
+/* --------------------------------------------------------------- copie ---- */
+.bloc{max-width:min(30rem,72vw)}
+.bloc--large{max-width:min(38rem,78vw)}
+.bloc--plein{max-width:none;text-align:left}
+.titre{font-size:var(--sc-t-3xl)}
+.titre--hero{font-size:var(--sc-t-4xl)}
+.titre--md{font-size:var(--sc-t-2xl)}
+.texte{font-size:var(--sc-t-base);color:var(--sc-ink-soft);max-width:34ch;margin-top:var(--sc-5)}
+.lieu{font-family:var(--sc-font-text);font-size:var(--sc-t-xs);letter-spacing:.14em;
+  text-transform:uppercase;color:var(--sc-ink-soft);margin:0 0 var(--sc-3)}
+
+/* La bande de densite. Une seule forme pour tout le vol, dessinee la ou la
+   copie se pose, jamais un voile plein cadre. */
+/* La densite est posee dans les DEUX angles bas, ou la copie s'ancre
+   (lead et trail alternent), et laisse le centre et le haut du cadre intacts.
+   Une bande pleine largeur assez haute pour couvrir un titre de trois lignes
+   aurait noirci tout le ciel pour proteger un coin. */
+.densite{position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(122% 128% at 0% 100%,
+      hsl(var(--sc-shadow-color)/.90) 0%,
+      hsl(var(--sc-shadow-color)/.80) 22%,
+      hsl(var(--sc-shadow-color)/.60) 36%,
+      hsl(var(--sc-shadow-color)/.35) 50%,
+      hsl(var(--sc-shadow-color)/.13) 65%,
+      transparent 80%),
+    radial-gradient(122% 128% at 100% 100%,
+      hsl(var(--sc-shadow-color)/.90) 0%,
+      hsl(var(--sc-shadow-color)/.80) 22%,
+      hsl(var(--sc-shadow-color)/.60) 36%,
+      hsl(var(--sc-shadow-color)/.35) 50%,
+      hsl(var(--sc-shadow-color)/.13) 65%,
+      transparent 80%),
+    linear-gradient(to top,
+      hsl(var(--sc-shadow-color)/.62) 0%,
+      hsl(var(--sc-shadow-color)/.24) 20%,
+      transparent 42%)}
+
+/* Le hero porte trois lignes en 7rem sur la seule image claire du vol. Plutot
+   que de noircir tout le voyage pour lui, un second voile ne sert que lui, et
+   son opacite est asservie a celle du bloc de titre : il vit exactement aussi
+   longtemps que le texte qu'il protege, pas une image de plus. */
+.densite--hero{opacity:0;
+  background:radial-gradient(126% 132% at 0% 100%,
+    hsl(var(--sc-shadow-color)/.72) 0%,
+    hsl(var(--sc-shadow-color)/.60) 24%,
+    hsl(var(--sc-shadow-color)/.40) 40%,
+    hsl(var(--sc-shadow-color)/.20) 56%,
+    transparent 74%)}
+
+/* ------------------------------------------------------- les ateliers ----- */
+.ateliers{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(.9rem,2vw,1.6rem);
+  margin-top:var(--sc-6);max-width:min(64rem,86vw)}
+.atelier{border-top:1px solid var(--sc-hairline-strong);padding-top:var(--sc-4)}
+.atelier__age{font-family:var(--sc-font-display);font-weight:800;font-stretch:96%;
+  font-size:var(--sc-t-lg);letter-spacing:var(--sc-track-snug);display:block}
+.atelier__nom{font-size:var(--sc-t-sm);color:var(--sc-ink);margin-top:var(--sc-1)}
+.atelier__quoi{font-size:var(--sc-t-sm);color:var(--sc-ink-soft);margin-top:var(--sc-2)}
+
+/* ------------------------------------------------------- l'inscription ---- */
+.feuille{background:var(--papier);color:#14100E;padding:clamp(1.35rem,3vw,2.4rem);
+  border-radius:2px;box-shadow:var(--sc-e3);max-width:min(30rem,84vw);
+  rotate:-.5deg;
+  --sc-ink:#14100E;--sc-ink-soft:#5B534A;--sc-accent:#B32A15}
+.feuille h2{font-size:var(--sc-t-lg);color:#14100E}
+.feuille p{color:#5B534A;font-size:var(--sc-t-sm);margin-top:var(--sc-2)}
+.feuille{padding:clamp(1.1rem,2.4vw,1.7rem)}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:var(--sc-3)}
+.champ{display:block;margin-top:var(--sc-3)}
+.champ span{display:block;font-size:var(--sc-t-xs);letter-spacing:.09em;text-transform:uppercase;
+  color:#5B534A;margin-bottom:var(--sc-2)}
+.champ input,.champ select,.champ textarea{width:100%;background:#FBF8F1;color:#14100E;
+  border:1px solid #CFC6B4;border-radius:3px;padding:.6rem .7rem;font-size:var(--sc-t-sm)}
+.champ textarea{min-height:4.5rem;resize:vertical}
+.champ input:focus-visible,.champ select:focus-visible,.champ textarea:focus-visible{
+  outline:2px solid #B32A15;outline-offset:1px;border-color:#B32A15}
+.envoyer{margin-top:var(--sc-4);width:100%;background:#B32A15;color:#FBF8F1;border:0;
+  border-radius:3px;padding:.8rem 1rem;font-family:var(--sc-font-display);font-weight:760;
+  font-size:var(--sc-t-sm);letter-spacing:.01em;cursor:pointer;
+  transition:background var(--sc-d-fast) var(--sc-ease-out),scale 120ms var(--sc-ease-out)}
+.envoyer:hover{background:#8E210F}
+.envoyer:active{scale:.985}
+.envoyer:focus-visible{outline:2px solid #14100E;outline-offset:2px}
+.dit{margin-top:var(--sc-3);font-size:var(--sc-t-sm);min-height:1.2em}
+.dit[data-etat=erreur]{color:#8E210F}
+
+/* ------------------------------------------------------------ le pratique - */
+.pratique{margin-top:var(--sc-4);display:flex;flex-wrap:wrap;gap:var(--sc-2) var(--sc-4);
+  font-size:var(--sc-t-xs);color:var(--sc-ink-soft)}
+.pratique a{color:var(--sc-ink);text-underline-offset:3px;text-decoration-thickness:1px}
+.pratique a:focus-visible{outline:2px solid var(--sc-accent);outline-offset:3px}
+.acompleter{border-bottom:1px dashed color-mix(in oklab,currentColor 55%,transparent);
+  color:var(--sc-ink-soft);font-style:italic}
+
+/* ------------------------------------------------------------- mobile ----- */
+@media (max-width:860px){
+  /* Composition mobile distincte, pas un retrecissement : le trace 1:1 ferait
+     300 px de haut en bas d'un ecran de 844, par-dessus la copie, avec des
+     cibles tactiles de 29 px. Ici une rangee de huit points, 44 px chacun. */
+  .carte{top:auto;bottom:calc(env(safe-area-inset-bottom,0px) + .3rem);
+    right:0;left:0;translate:none;width:auto}
+  .carte__svg{display:none}
+  .carte__pts{display:flex;justify-content:center;align-items:center;gap:0}
+  .carte__pt{position:static;translate:none}
+  .carte__btn{padding:15px 11px;margin:0}
+  .carte__nom{display:none}
+  .bloc,.bloc--large{max-width:none}
+  .titre--hero{font-size:var(--sc-t-2xl)}
+  .titre{font-size:var(--sc-t-2xl)}
+  .ateliers{grid-template-columns:repeat(2,1fr);max-width:none}
+  .feuille{max-width:none;rotate:0deg}
+  /* Sur telephone la copie occupe toute la largeur : la bande redevient la
+     bonne forme, et elle monte plus haut parce que le texte y monte plus haut. */
+  .densite{background:linear-gradient(to top,
+    hsl(var(--sc-shadow-color)/.88) 0%,
+    hsl(var(--sc-shadow-color)/.70) 26%,
+    hsl(var(--sc-shadow-color)/.42) 46%,
+    hsl(var(--sc-shadow-color)/.15) 64%,
+    hsl(var(--sc-shadow-color)/.03) 78%,
+    transparent 88%)}
+  /* Le voile du hero s'ajoute a la bande : sur telephone les deux cumules
+     eteignaient completement l'atelier. */
+  .densite--hero{background:linear-gradient(to top,
+    hsl(var(--sc-shadow-color)/.34) 0%,
+    hsl(var(--sc-shadow-color)/.20) 34%,
+    hsl(var(--sc-shadow-color)/.06) 56%,
+    transparent 72%)}
+}
+@media (max-width:520px){
+  .ateliers{gap:var(--sc-3)}
+  .atelier__quoi{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  .trait__ligne{transition:none}
+}
+</style>
+</head>
+<body>
+
+<a class="marque" href="#haut"><b>Muriel Oberlé</b><span>Artiste peintre</span></a>
+
+<div data-sc-mode="worldflight" data-sc-seam="0.16" data-sc-lerp="0.12" id="haut">
+
+  <div data-sc-world>
+
+    <div data-sc-segment data-sc-w="1.1" data-sc-waypoint="L'établi">
+      <img class="sc-world__poster" src="assets/p1.webp" alt="" width="1600" height="900" decoding="async">
+      <video data-sc-src="assets/leg1.mp4" data-sc-src-mobile="assets/leg1-m.mp4" muted playsinline></video>
+    </div>
+
+    <div data-sc-segment data-sc-w="1.1" data-sc-waypoint="Le seuil">
+      <img class="sc-world__poster" src="assets/p2.webp" alt="" width="1600" height="900" decoding="async">
+      <video data-sc-src="assets/leg2.mp4" data-sc-src-mobile="assets/leg2-m.mp4" muted playsinline></video>
+    </div>
+
+    <div data-sc-segment data-sc-w="1.1" data-sc-waypoint="L'altitude">
+      <img class="sc-world__poster" src="assets/p3.webp" alt="" width="1600" height="900" decoding="async">
+      <video data-sc-src="assets/leg3.mp4" data-sc-src-mobile="assets/leg3-m.mp4" muted playsinline></video>
+    </div>
+
+    <div data-sc-segment data-sc-w="2.2" data-sc-waypoint="La planète">
+      <img class="sc-world__poster" src="assets/p4.webp" alt="" width="1600" height="900" decoding="async">
+      <video data-sc-src="assets/leg4.mp4" data-sc-src-mobile="assets/leg4-m.mp4" muted playsinline></video>
+    </div>
+
+    <div data-sc-segment data-sc-w="1.1" data-sc-waypoint="L'Afrique">
+      <img class="sc-world__poster" src="assets/p5.webp" alt="" width="1600" height="900" decoding="async">
+      <video data-sc-src="assets/leg5.mp4" data-sc-src-mobile="assets/leg5-m.mp4" muted playsinline></video>
+    </div>
+
+    <div data-sc-segment data-sc-w="1.1" data-sc-waypoint="Les Caraïbes">
+      <img class="sc-world__poster" src="assets/p6.webp" alt="" width="1600" height="900" decoding="async">
+      <video data-sc-src="assets/leg6.mp4" data-sc-src-mobile="assets/leg6-m.mp4" muted playsinline></video>
+    </div>
+
+    <div data-sc-segment data-sc-w="1.1" data-sc-waypoint="Le retour">
+      <img class="sc-world__poster" src="assets/p7.webp" alt="" width="1600" height="900" decoding="async">
+      <video data-sc-src="assets/leg7.mp4" data-sc-src-mobile="assets/leg7-m.mp4" muted playsinline></video>
+    </div>
+
+    <div data-sc-segment data-sc-w="1.1" data-sc-waypoint="L'atelier">
+      <img class="sc-world__poster" src="assets/p8.webp" alt="" width="1600" height="900" decoding="async">
+      <video data-sc-src="assets/leg8.mp4" data-sc-src-mobile="assets/leg8-m.mp4" muted playsinline></video>
+    </div>
+
+  </div>
+
+  <div data-sc-world-copy>
+    <div class="sc-world__scrim densite" aria-hidden="true"></div>
+    <div class="sc-world__scrim densite densite--hero" id="voileHero" aria-hidden="true"></div>
+
+    <!-- 1 · L'ÉTABLI — intimité -->
+    <div class="sc-copy sc-copy--lead" data-sc-copy data-sc-window="hero">
+      <div class="bloc">
+        <h1 class="titre titre--hero">Peindre pour se&nbsp;découvrir</h1>
+        <p class="texte">Ateliers de peinture à partir de 8 ans, et cours particuliers pour adultes, avec Muriel Oberlé.</p>
+      </div>
+    </div>
+
+    <!-- 2 · LE SEUIL — élan -->
+    <div class="sc-copy sc-copy--trail" data-sc-copy data-sc-window="0.120 0.218 0.22 0.24">
+      <div class="bloc">
+        <h2 class="titre">On ne commence pas par apprendre à dessiner.</h2>
+        <p class="texte">On commence par partir.</p>
+      </div>
+    </div>
+
+    <!-- 3 · L'ALTITUDE — silence voulu. Aucune fenêtre de copie ici, et c'est
+         écrit dans BRIEF.md pour que la vérification ne le prenne pas pour du
+         scroll mort. Le pic a besoin de quelque chose d'où surgir. -->
+
+    <!-- 4 · LA PLANÈTE — le pic -->
+    <div class="sc-copy sc-copy--lead" data-sc-copy data-sc-window="0.345 0.548 0.24 0.28">
+      <div class="bloc bloc--large">
+        <h2 class="titre">La couleur est un moyen de transport.</h2>
+        <p class="texte">Muriel Oberlé a passé son enfance en Afrique du Nord et en Afrique noire. Ses toiles s'en souviennent : des figures qui dansent, des jarres, des cactus, du turquoise et de l'ocre.</p>
+      </div>
+    </div>
+
+    <!-- 5 · L'AFRIQUE — chaleur -->
+    <div class="sc-copy sc-copy--trail" data-sc-copy data-sc-window="0.563 0.662 0.22 0.24">
+      <div class="bloc">
+        <h2 class="titre titre--md">Une couleur se choisit comme on choisit une direction.</h2>
+      </div>
+    </div>
+
+    <!-- 6 · LES CARAÏBES — liberté -->
+    <div class="sc-copy sc-copy--lead" data-sc-copy data-sc-window="0.674 0.773 0.22 0.24">
+      <div class="bloc">
+        <h2 class="titre titre--md">Personne ne copie un modèle, ici.</h2>
+        <p class="texte">Encre, collage, cire, empreinte, écriture. On essaie, on rate, on recommence, et c'est le sujet.</p>
+      </div>
+    </div>
+
+    <!-- 7 · LE RETOUR — retour, et ce qui attend en bas -->
+    <div class="sc-copy sc-copy--lead" data-sc-copy data-sc-window="0.786 0.884 0.20 0.18">
+      <div class="bloc bloc--plein">
+        <h2 class="titre titre--md">Et on rentre avec quelque chose.</h2>
+        <div class="ateliers">
+          <div class="atelier">
+            <span class="atelier__age">8 à 11 ans</span>
+            <p class="atelier__nom">Atelier enfants</p>
+            <p class="atelier__quoi">Le geste, la couleur, le carnet. On sort de la feuille.</p>
+          </div>
+          <div class="atelier">
+            <span class="atelier__age">12 à 15 ans</span>
+            <p class="atelier__nom">Atelier ados</p>
+            <p class="atelier__quoi">Le trait, le cadrage, les matières. Un carnet qu'on tient.</p>
+          </div>
+          <div class="atelier">
+            <span class="atelier__age">Adultes</span>
+            <p class="atelier__nom">Atelier collectif</p>
+            <p class="atelier__quoi">Huile, acrylique, techniques mixtes, en petit groupe.</p>
+          </div>
+          <div class="atelier">
+            <span class="atelier__age">Adultes</span>
+            <p class="atelier__nom">Cours particulier</p>
+            <p class="atelier__quoi">Un projet, votre rythme, en tête à tête.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8 · L'ATELIER — l'arrivée. L'action est un objet posé sur la table. -->
+    <div class="sc-copy sc-copy--lead" data-sc-copy data-sc-window="finale">
+      <div class="feuille">
+        <h2>Réserver un atelier</h2>
+        <p>Dites-moi qui vient et ce qui vous attire. Je réponds à la main.</p>
+        <form id="inscription" novalidate>
+          <div class="duo">
+            <label class="champ"><span>Votre nom</span><input type="text" name="nom" autocomplete="name" required></label>
+            <label class="champ"><span>Votre e-mail</span><input type="email" name="email" autocomplete="email" required></label>
+          </div>
+          <label class="champ"><span>Quel atelier</span>
+            <select name="atelier" required>
+              <option value="">Choisir…</option>
+              <option>Atelier enfants, 8 à 11 ans</option>
+              <option>Atelier ados, 12 à 15 ans</option>
+              <option>Atelier collectif adultes</option>
+              <option>Cours particulier</option>
+            </select>
+          </label>
+          <button class="envoyer" type="submit">Réserver un atelier</button>
+          <p class="dit" id="dit" role="status" aria-live="polite"></p>
+        </form>
+        <div class="pratique">
+          <p>Atelier <span class="acompleter">adresse à compléter</span></p>
+          <p>Tarifs <span class="acompleter">à compléter</span></p>
+          <p><a href="https://www.instagram.com/murieloberle.studio/" rel="me noopener" target="_blank">@murieloberle.studio</a></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div data-sc-spacer aria-hidden="true"></div>
+</div>
+
+<!-- ------------------------------------------------------------- le trait --
+     Un seul chemin. Pendant le vol on n'en voit que la portion parcourue,
+     etalee sur tout l'ecran : illisible, comme une route. A l'atterrissage il
+     se referme, se reduit, se pose sur le carnet, et c'est un profil. -->
+<div class="trait" id="trait" aria-hidden="true">
+  <canvas class="trait__toile" id="traitToile"></canvas>
+</div>
+
+<nav class="carte" id="carte" aria-label="Les étapes du vol">
+  <svg class="carte__svg" id="carteSvg" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid meet">
+    <path class="carte__fond" id="carteFond"
+      d="M330 892 C328 826 338 786 368 754 C388 730 366 712 340 700 C322 690 336 678 352 670 C334 662 336 650 356 642 C338 632 326 618 322 604 C310 586 276 566 268 540 C282 512 328 506 344 494 C352 480 348 462 352 444 C358 408 378 356 410 322 C452 280 522 260 580 270 C662 284 718 350 720 434 C722 508 692 566 654 606 C622 640 600 668 594 706 C590 762 594 828 598 892"></path>
+    <path class="carte__fait" id="carteFait"
+      d="M330 892 C328 826 338 786 368 754 C388 730 366 712 340 700 C322 690 336 678 352 670 C334 662 336 650 356 642 C338 632 326 618 322 604 C310 586 276 566 268 540 C282 512 328 506 344 494 C352 480 348 462 352 444 C358 408 378 356 410 322 C452 280 522 260 580 270 C662 284 718 350 720 434 C722 508 692 566 654 606 C622 640 600 668 594 706 C590 762 594 828 598 892"></path>
+    <circle class="carte__curseur" id="carteCurseur" r="7" cx="300" cy="884"></circle>
+  </svg>
+  <ul class="carte__pts" id="cartePts"></ul>
+</nav>
+
+<script src="scrollcraft.js"></script>
+<script>
+(function () {
+  "use strict";
+
+  ScrollCraft.mount(document);
+
+  /* Le mode dimensionne l'espaceur une seule fois, au montage. Si innerHeight
+     vaut 0 a cet instant, la piste fait 0px et le vol n'avance jamais, sans la
+     moindre erreur en console (worldflight.md 7b). Un resize le fait
+     remesurer. */
+  function relayout() { dispatchEvent(new Event("resize")); }
+  addEventListener("load", relayout);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(relayout);
+
+  /* ---------------------------------------------------------- LE TRAIT ----
+     Le meme chemin a deux echelles. En vol : agrandi, tire par le scroll. A
+     l'arrivee : ramene a la taille du carnet, encre sur le papier. */
+  var wrap    = document.getElementById("trait");
+  var toile   = document.getElementById("traitToile");
+  var ctx     = toile.getContext("2d");
+  var fait    = document.getElementById("carteFait");
+  var curseur = document.getElementById("carteCurseur");
+  var carteP  = document.getElementById("cartePts");
+  var carteEl = document.getElementById("carte");
+  var voileHero = document.getElementById("voileHero");
+  var blocHero  = document.querySelector('[data-sc-copy][data-sc-window="hero"]');
+
+  /* La carte sert aussi de regle : c'est le meme chemin, donc sa longueur et
+     ses points valent pour la toile, qui travaille dans les memes unites. */
+  var CHEMIN = new Path2D(fait.getAttribute("d"));
+  var LC = fait.getTotalLength();
+  fait.style.strokeDasharray = LC;
+
+  var BOITE = 1000, HAUT = 260, BAS = 892;   /* le dessin dans sa boite */
+  var dpr = 1, W = 0, H = 0;
+
+  function taille() {
+    dpr = Math.min(2, devicePixelRatio || 1);
+    W = innerWidth; H = innerHeight;
+    toile.width  = Math.round(W * dpr);
+    toile.height = Math.round(H * dpr);
+  }
+
+  /* Les huit poids du vol, dans l'ordre. La carte pose un waypoint au DEBUT de
+     chaque jambe, a sa fraction reelle de la piste, queue comprise. */
+  var POIDS = [1.1, 1.1, 1.1, 2.2, 1.1, 1.1, 1.1, 1.1];
+  var NOMS  = ["L\u2019\u00e9tabli", "Le seuil", "L\u2019altitude", "La plan\u00e8te",
+               "L\u2019Afrique", "Les Cara\u00efbes", "Le retour", "L\u2019atelier"];
+  /* La piste des fenetres et des waypoints est la SOMME DES POIDS, pas la
+     somme + 1 : le +1 de l'espaceur est consomme par la hauteur du viewport et
+     n'est jamais parcouru. Compte a 10,9 au lieu de 9,9, chaque bloc de copie
+     tombait une jambe trop tot a partir de l'Afrique. */
+  var TOTAL = POIDS.reduce(function (a, b) { return a + b; }, 0);
+
+  var debuts = [], acc = 0, i;
+  for (i = 0; i < POIDS.length; i++) { debuts.push(acc / TOTAL); acc += POIDS[i]; }
+
+  var boutons = [];
+  for (i = 0; i < debuts.length; i++) {
+    var p  = fait.getPointAtLength(debuts[i] * LC);
+    var li = document.createElement("li");
+    li.className = "carte__pt";
+    li.style.left = (p.x / 10) + "%";
+    li.style.top  = (p.y / 10) + "%";
+    var b = document.createElement("button");
+    b.type = "button";
+    b.className = "carte__btn";
+    b.dataset.leg = i;
+    b.setAttribute("aria-current", i === 0 ? "true" : "false");
+    b.innerHTML = '<span class="carte__nom"></span>';
+    b.firstChild.textContent = NOMS[i];
+    b.setAttribute("aria-label", "Aller \u00e0 : " + NOMS[i]);
+    li.appendChild(b);
+    carteP.appendChild(li);
+    boutons.push(b);
+  }
+
+  carteP.addEventListener("click", function (e) {
+    var b = e.target.closest(".carte__btn");
+    if (!b) return;
+    var piste = document.documentElement.scrollHeight - innerHeight;
+    scrollTo({ top: debuts[+b.dataset.leg] * piste, behavior: "smooth" });
+  });
+
+  addEventListener("sc:waypoint", function (e) {
+    for (var k = 0; k < boutons.length; k++) {
+      boutons[k].setAttribute("aria-current", String(k === e.detail.index));
+    }
+  });
+
+  /* L'arrivee : le trait quitte le monde et se range sur le carnet. La bascule
+     se resout AVANT la fin de la piste, pour que le dessin tienne, pose,
+     pendant que le visiteur lit le formulaire. */
+  var POSE_DEB = 0.900, POSE_FIN = 0.995;
+
+  function dessine(t, e) {
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, W, H);
+
+    var hDessin = BAS - HAUT;
+
+    /* En vol : le trait fait deux hauteurs et demie d'ecran, et la toile se
+       recale en continu pour que la POINTE reste visible. Sans ce recalage la
+       portion deja tracee sort par le bas et le trait devient invisible, ce
+       qui est exactement ce que la premiere capture a montre. La cible derive
+       lentement en travers de l'ecran : on ne voit jamais le dessin, on voit
+       une route qui avance sous soi. */
+    var k1 = (H * 2.45) / hDessin;
+    var pt = fait.getPointAtLength(Math.max(0.0001, t) * LC);
+    var cibleX = W * (0.28 + 0.40 * t);
+    var cibleY = H * (0.68 - 0.30 * t);
+    var tx1 = cibleX - pt.x * k1;
+    var ty1 = cibleY - pt.y * k1;
+
+    /* Pose : le dessin entier, a la taille du carnet. L'echelle est bornee par
+       la LARGEUR autant que par la hauteur : calculee sur la seule hauteur,
+       elle donnait 587 px de dessin dans 390 px d'ecran sur un telephone. */
+    var etroit = W < 860;
+    var k2  = Math.min((H * 0.44) / hDessin, (W * (etroit ? 0.66 : 0.46)) / BOITE);
+    var tx2 = W * (etroit ? 0.50 : 0.66) - (BOITE / 2) * k2;
+    var ty2 = H * (etroit ? 0.26 : 0.45) - ((HAUT + BAS) / 2) * k2;
+
+    var k  = k1  + (k2  - k1)  * e;
+    var tx = tx1 + (tx2 - tx1) * e;
+    var ty = ty1 + (ty2 - ty1) * e;
+
+    /* La MATIERE change plus tard que la GEOMETRIE. Fondre les deux sur la
+       meme rampe peignait la page du carnet a l'echelle du vol : une dalle
+       laiteuse en travers de l'ecran, et un trait d'encre encore immense. Le
+       papier et l'encre n'arrivent qu'une fois le dessin reellement petit. */
+    var m = Math.min(1, Math.max(0, (e - 0.72) / 0.28));
+    m = m * m * (3 - 2 * m);
+
+    /* La page du carnet est dessinee en coordonnees ECRAN, a sa taille
+       d'arrivee. Dessinee dans l'espace du chemin elle grandissait avec le
+       trait, ce qui posait une dalle laiteuse en travers de tout l'ecran
+       pendant la descente. Ici elle ne peut jamais etre plus grande que la
+       page qu'elle represente. */
+    if (m > 0) {
+      ctx.save();
+      ctx.globalAlpha = m * 0.97;
+      ctx.fillStyle = "#F4EFE4";
+      ctx.shadowColor = "rgba(20,16,14,0.32)";
+      ctx.shadowBlur = 26;
+      ctx.shadowOffsetY = 9;
+      ctx.fillRect(tx2 + 150 * k2, ty2 + 205 * k2, 700 * k2, 748 * k2);
+      ctx.restore();
+    }
+
+    ctx.save();
+    ctx.translate(tx, ty);
+    ctx.scale(k, k);
+
+    ctx.lineCap = "round";
+    ctx.lineJoin = "round";
+    ctx.setLineDash([LC, LC]);
+    ctx.lineDashOffset = LC * (1 - t);
+
+    /* En vol : un halo sombre sous un trait clair, pour tenir sur un ciel
+       blanc comme sur du noir. Pose : de l'encre sur du papier. */
+    if (m < 1) {
+      ctx.globalAlpha = 1 - m;
+      ctx.strokeStyle = "rgba(8,12,18,0.42)";
+      ctx.lineWidth = 6.2 / k;
+      ctx.stroke(CHEMIN);
+      ctx.strokeStyle = "rgba(247,242,232,0.82)";
+      ctx.lineWidth = 2.4 / k;
+      ctx.stroke(CHEMIN);
+    }
+    if (m > 0) {
+      ctx.globalAlpha = m;
+      ctx.strokeStyle = "#14100E";
+      ctx.lineWidth = 3.1 / k;
+      ctx.stroke(CHEMIN);
+    }
+    ctx.globalAlpha = 1;
+    ctx.setLineDash([]);
+    ctx.restore();
+  }
+
+  function ecrit() {
+    var piste = Math.max(1, document.documentElement.scrollHeight - innerHeight);
+    var t = Math.min(1, Math.max(0, (scrollY || pageYOffset) / piste));
+
+    fait.style.strokeDashoffset = LC * (1 - t);
+    var pc = fait.getPointAtLength(Math.max(0.0001, t) * LC);
+    curseur.setAttribute("cx", pc.x);
+    curseur.setAttribute("cy", pc.y);
+
+    /* Le voile du hero suit la copie qu'il protege, image par image. */
+    if (voileHero && blocHero) {
+      voileHero.style.opacity = getComputedStyle(blocHero).opacity;
+    }
+
+    var pose = Math.min(1, Math.max(0, (t - POSE_DEB) / (POSE_FIN - POSE_DEB)));
+    var e = pose * pose * (3 - 2 * pose);          /* smoothstep */
+    /* La carte s'efface a l'arrivee sans devenir invisible : elle reste
+       cliquable et focusable, donc elle doit rester vue. */
+    carteEl.style.opacity = (1 - e * 0.55).toFixed(3);
+    dessine(t, e);
+  }
+
+  var reduit = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  taille();
+
+  if (reduit) {
+    /* Mouvement reduit : le dessin est entier et pose des le depart. Le sens
+       tient sans la choregraphie. */
+    fait.style.strokeDashoffset = 0;
+    if (voileHero && blocHero) voileHero.style.opacity = getComputedStyle(blocHero).opacity;
+    dessine(1, 1);
+    addEventListener("resize", function () { taille(); dessine(1, 1); });
+  } else {
+    var enVol = false;
+    addEventListener("scroll", function () {
+      if (enVol) return;
+      enVol = true;
+      requestAnimationFrame(function () { enVol = false; ecrit(); });
+    }, { passive: true });
+    addEventListener("resize", function () { taille(); ecrit(); });
+    ecrit();
+  }
+
+  /* -------------------------------------------------------- LE FORMULAIRE --
+     Tant que l'adresse est vide, le formulaire valide la saisie et le dit en
+     clair, au lieu de faire semblant d'envoyer. */
+  var CONTACT_EMAIL = "";
+  var form = document.getElementById("inscription");
+  var dit  = document.getElementById("dit");
+
+  form.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    var d = new FormData(form);
+    var nom = (d.get("nom") || "").trim();
+    var mail = (d.get("email") || "").trim();
+    var quoi = (d.get("atelier") || "").trim();
+
+    if (!nom || !mail || !quoi) {
+      dit.dataset.etat = "erreur";
+      dit.textContent = "Il manque votre nom, votre e-mail ou l'atelier choisi.";
+      return;
+    }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(mail)) {
+      dit.dataset.etat = "erreur";
+      dit.textContent = "Cet e-mail ne semble pas valide.";
+      return;
+    }
+    if (!CONTACT_EMAIL) {
+      dit.dataset.etat = "erreur";
+      dit.textContent = "L'adresse de réception n'est pas encore branchée. Écrivez directement à Muriel en attendant.";
+      return;
+    }
+    dit.dataset.etat = "";
+    location.href = "mailto:" + CONTACT_EMAIL +
+      "?subject=" + encodeURIComponent("Réserver un atelier : " + quoi) +
+      "&body=" + encodeURIComponent(nom + " (" + mail + ")");
+  });
+})();
+</script>
+</body>
+</html>

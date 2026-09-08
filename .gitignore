@@ -5,3 +5,13 @@ scrollcraft/builds/*/out/
 # harness frames. The contact sheets and the reports are kept as evidence.
 scrollcraft/builds/*/lab/*/[0-9][0-9].png
 scrollcraft/builds/*/lab/serve.log
+# intermediaires de verification : les planches de contact et les rapports
+# restent comme preuve, pas les captures brutes ni les images de raccord.
+scrollcraft/builds/*/lab/ap-*.png
+scrollcraft/builds/*/lab/seam/
+scrollcraft/builds/*/lab/legs/
+scrollcraft/builds/*/lab/q*.jpg
+scrollcraft/builds/*/lab/v*.jpg
+scrollcraft/builds/*/lab/pire-*.png
+scrollcraft/builds/*/lab/tel-*.png
+scrollcraft/builds/*/lab/[mw][0-9]*.jpg
