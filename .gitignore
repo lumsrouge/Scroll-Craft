@@ -1,0 +1,7 @@
+node_modules/
+# generation masters: ~85 MB of source PNGs and ungraded clips. The encoded
+# assets in assets/ are what the page serves.
+scrollcraft/builds/*/out/
+# harness frames. The contact sheets and the reports are kept as evidence.
+scrollcraft/builds/*/lab/*/[0-9][0-9].png
+scrollcraft/builds/*/lab/serve.log

@@ -1,0 +1,21 @@
+import { chromium } from 'playwright-core';
+const b = await chromium.launch({ executablePath:'/usr/bin/google-chrome', args:['--no-sandbox'] });
+const p = await b.newPage({ viewport:{width:1440,height:900} });
+await p.goto('http://localhost:4500',{waitUntil:'networkidle'}); await p.waitForTimeout(800);
+await p.evaluate(()=>document.getElementById('reserver').scrollIntoView()); await p.waitForTimeout(1200);
+await p.click('.f__send');
+console.log('empty submit  ->', await p.textContent('#fout'));
+await p.fill('input[name=nom]','Claire Mercier');
+await p.fill('input[name=email]','pas-un-email');
+await p.click('.f__send');
+console.log('bad email     ->', await p.textContent('#fout'));
+await p.fill('input[name=email]','claire@exemple.fr');
+// the palette chooser must drive the select
+const btns = await p.$$('#palpick button');
+console.log('pick buttons  ->', btns.length);
+await btns[2].click();
+console.log('select value  ->', await p.inputValue('#atelier'));
+console.log('aria-pressed  ->', await btns[2].getAttribute('aria-pressed'));
+await p.click('.f__send');
+console.log('valid submit  ->', await p.textContent('#fout'));
+await b.close();
