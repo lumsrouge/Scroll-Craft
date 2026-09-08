@@ -1,0 +1,908 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Muriel Oberlé · Ateliers de peinture</title>
+<meta name="description" content="Ateliers de peinture de Muriel Oberlé, des enfants dès 8 ans aux cours particuliers pour adultes. On n'apprend pas à copier, on apprend à partir.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230C1130'/><circle cx='16' cy='16' r='7' fill='%23FF6A2B'/></svg>">
+<link rel="stylesheet" href="scrollcraft.css">
+<style>
+/* ═══ faces ═══════════════════════════════════════════════════════════════ */
+@font-face{font-family:Archivo;font-style:normal;font-weight:100 900;font-stretch:62% 125%;font-display:swap;
+  src:url(fonts/archivo-latin.woff2) format("woff2");
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:Archivo;font-style:normal;font-weight:100 900;font-stretch:62% 125%;font-display:swap;
+  src:url(fonts/archivo-latinext.woff2) format("woff2");
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+@font-face{font-family:Geist;font-style:normal;font-weight:300 700;font-display:swap;
+  src:url(fonts/geist-latin.woff2) format("woff2");
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:Geist;font-style:normal;font-weight:300 700;font-display:swap;
+  src:url(fonts/geist-latinext.woff2) format("woff2");
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+
+/* ═══ the brand: six roles and two faces ══════════════════════════════════ */
+:root{
+  --sc-canvas:#0C1130; --sc-surface:#161C42;
+  --sc-ink:#FBF4E6;    --sc-ink-soft:#A9AFD2;
+  --sc-accent:#FF6A2B; --sc-accent-ink:#1A0A04;
+  --sc-font-display:Archivo,system-ui,sans-serif;
+  --sc-font-text:Geist,system-ui,sans-serif;
+  --sc-r-sm:2px; --sc-r-md:3px; --sc-r-lg:4px;   /* one square scale, held */
+  --sc-shadow-color:232 60% 4%;
+  --bar-h:74px;
+  /* the eight pigments the palette collects */
+  --p0:#E0891C; --p1:#17205A; --p2:#E63E22; --p3:#2E6B4F;
+  --p4:#93331A; --p5:#F4B024; --p6:#EAD6A4; --p7:#2952C4;
+}
+/* A page that hard-cuts between light and dark grounds cannot clear 4.5:1 on
+   both with one accent stop, so the accent carries one hue at two lightnesses,
+   redefined alongside the ink wherever the ground flips. */
+.on-light{--sc-canvas:#F6F0E4;--sc-surface:#EBE2D0;--sc-ink:#14110C;--sc-ink-soft:#5A5347;
+  --sc-accent:#B0290A;--sc-accent-ink:#FBF4E6;--sc-hairline:rgba(20,17,12,.16);color:var(--sc-ink);}
+.on-ochre{--sc-canvas:#E0891C;--sc-surface:#C97614;--sc-ink:#1A1206;--sc-ink-soft:#4A3312;
+  --sc-accent:#8E2205;--sc-accent-ink:#F6F0E4;--sc-hairline:rgba(26,18,6,.22);color:var(--sc-ink);}
+.on-saffron{--sc-canvas:#F0A72A;--sc-surface:#DB9520;--sc-ink:#1A1206;--sc-ink-soft:#4E3813;
+  --sc-accent:#8E2205;--sc-accent-ink:#F6F0E4;--sc-hairline:rgba(26,18,6,.22);color:var(--sc-ink);}
+.on-vermillon{--sc-canvas:#C0300F;--sc-surface:#A72809;--sc-ink:#FFF3E4;--sc-ink-soft:#F3C9B4;
+  --sc-accent:#FFF3E4;--sc-accent-ink:#8E2205;--sc-hairline:rgba(255,243,228,.28);color:var(--sc-ink);}
+.on-indigo{--sc-canvas:#26307A;--sc-surface:#1C2560;--sc-ink:#F3F1FF;--sc-ink-soft:#B6BBE8;
+  --sc-accent:#FFA23D;--sc-accent-ink:#1A1206;--sc-hairline:rgba(243,241,255,.2);color:var(--sc-ink);}
+.on-terre{--sc-canvas:#8C2F1B;--sc-surface:#6F2413;--sc-ink:#FFF0E2;--sc-ink-soft:#EDC0A6;
+  --sc-accent:#FFC24D;--sc-accent-ink:#3A1206;--sc-hairline:rgba(255,240,226,.24);color:var(--sc-ink);}
+.on-encre{--sc-canvas:#0C1130;--sc-surface:#161C42;--sc-ink:#FBF4E6;--sc-ink-soft:#A9AFD2;
+  --sc-accent:#FF6A2B;--sc-accent-ink:#1A0A04;color:var(--sc-ink);}
+.on-nuit{--sc-canvas:#070A1C;--sc-surface:#0F1430;--sc-ink:#FBF4E6;--sc-ink-soft:#8990BA;
+  --sc-accent:#FF6A2B;--sc-accent-ink:#1A0A04;color:var(--sc-ink);}
+
+body{background:#0C1130;letter-spacing:-0.004em;}
+.sc-display{font-weight:760;font-stretch:104%;}
+.sc-grain{opacity:.05;z-index:4;}
+[data-sc-progress]{background:var(--p2);height:3px;z-index:70;}
+::selection{background:#FF6A2B;color:#1A0A04;}
+
+/* ═══ chrome: one loud bar, and it is the palette ═════════════════════════ */
+.bar{
+  position:fixed;left:0;right:0;bottom:0;z-index:60;
+  min-height:var(--bar-h);
+  display:grid;grid-template-columns:auto 1fr auto;align-items:center;
+  gap:var(--sc-5);padding:var(--sc-3) clamp(.75rem,2.4vw,1.6rem);
+  background:#080C24;border-top:2px solid #FF6A2B;
+  box-shadow:0 -14px 40px -18px hsl(var(--sc-shadow-color)/.9);
+  --sc-ink:#FBF4E6;color:#FBF4E6;
+}
+.bar__mark{
+  font-family:var(--sc-font-display);font-weight:840;font-stretch:78%;
+  font-size:clamp(.92rem,1.5vw,1.18rem);line-height:1;letter-spacing:.01em;
+  text-transform:uppercase;color:#FBF4E6;text-decoration:none;white-space:nowrap;
+}
+.bar__mark span{display:block;font-weight:420;font-stretch:100%;text-transform:none;
+  letter-spacing:.02em;font-size:.62em;color:#A9AFD2;margin-top:2px;}
+.bar__cta{
+  font-family:var(--sc-font-display);font-weight:800;font-stretch:88%;
+  font-size:clamp(.86rem,1.35vw,1.05rem);line-height:1;letter-spacing:-.01em;
+  background:#FF6A2B;color:#1A0A04;text-decoration:none;white-space:nowrap;
+  padding:.82em 1.15em;border-radius:var(--sc-r-md);
+  transition:background var(--sc-d-fast) var(--sc-ease-out),transform 120ms var(--sc-ease-out);
+}
+.bar__cta:hover{background:#FF8A54;}
+.bar__cta:active{transform:translateY(1px);}
+
+/* the palette itself */
+.pal{min-width:0;}
+.pal__row{display:flex;align-items:center;gap:clamp(4px,.7vw,11px);
+  list-style:none;margin:0;padding:0;justify-content:center;flex-wrap:nowrap;}
+.pig{
+  display:grid;place-items:center;gap:5px;text-decoration:none;
+  padding:5px 3px;border-radius:var(--sc-r-sm);position:relative;
+}
+.pig__dot{
+  width:clamp(15px,2.1vw,24px);aspect-ratio:1;border-radius:50%;
+  background:var(--c);display:block;
+  transform:scale(.24);opacity:.16;
+  filter:saturate(.2);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.35), 0 2px 5px hsl(var(--sc-shadow-color)/.6);
+  transition:transform 620ms var(--sc-ease-out),opacity 480ms var(--sc-ease-out),filter 620ms var(--sc-ease-out);
+}
+.pig.is-on .pig__dot{transform:scale(1);opacity:1;filter:none;}
+.pig__name{
+  font-family:var(--sc-font-text);font-size:9px;line-height:1;letter-spacing:.07em;
+  text-transform:uppercase;color:#7C84B4;white-space:nowrap;
+  opacity:0;transition:opacity 420ms var(--sc-ease-out);
+}
+.pig.is-on .pig__name{opacity:1;}
+.pig:hover .pig__name,.pig:focus-visible .pig__name{color:#FBF4E6;}
+.pig:hover .pig__dot{transform:scale(1.16);}
+.pal__hint{
+  font-family:var(--sc-font-text);font-size:10px;letter-spacing:.08em;text-transform:uppercase;
+  color:#666E9C;text-align:center;margin:0 0 2px;
+}
+/* the close: the palette becomes the chooser */
+.pal__row[hidden],.pick[hidden]{display:none!important;}
+.pick{display:flex;gap:6px;justify-content:center;list-style:none;margin:0;padding:0;flex-wrap:wrap;}
+.pick button{
+  font-family:var(--sc-font-display);font-weight:700;font-stretch:88%;font-size:.78rem;
+  background:transparent;color:#FBF4E6;border:1px solid rgba(251,244,230,.32);
+  border-radius:var(--sc-r-md);padding:.5em .8em;cursor:pointer;line-height:1.1;
+  display:flex;align-items:center;gap:.5em;
+  transition:border-color var(--sc-d-fast) var(--sc-ease-out),background var(--sc-d-fast) var(--sc-ease-out);
+}
+.pick button::before{content:"";width:11px;height:11px;border-radius:50%;background:var(--c);}
+.pick button:hover{border-color:var(--c);background:rgba(251,244,230,.07);}
+.pick button[aria-pressed=true]{border-color:var(--c);background:rgba(251,244,230,.13);}
+
+/* ═══ the signature move, second half: the palette paints the world ═══════ */
+.paint{position:fixed;inset:0;z-index:5;pointer-events:none;}
+.paint__band{position:absolute;left:-6%;right:-6%;top:44%;height:26vh;transform:translateY(-50%) rotate(-6.5deg);}
+/* Wide enough to overlap its neighbour by half, so eight blobs read as one
+   loaded stroke rather than as a row of dots. */
+.paint__pig{
+  position:absolute;top:50%;height:100%;
+  left:calc(var(--i) * 12.5%);width:27%;
+  background:radial-gradient(58% 50% at 50% 50%,var(--c) 0%,var(--c) 52%,transparent 82%);
+  transform:translateY(-50%) scaleX(var(--sx,0)) scaleY(var(--sy,.3));
+  transform-origin:left center;
+  opacity:calc(var(--o,0) * var(--pv,0) * .82);
+  filter:blur(5px) saturate(1.2);
+}
+.paint__ridges{
+  position:absolute;left:-6%;right:-6%;top:44%;height:30vh;
+  transform:translateY(-50%) rotate(-6.5deg);
+  object-fit:fill;width:112%;
+  opacity:calc(var(--pr,0) * var(--pv,0));
+  -webkit-mask-image:linear-gradient(90deg,#000 0,#000 calc(var(--pw,0%) - 9%),transparent var(--pw,0%));
+  mask-image:linear-gradient(90deg,#000 0,#000 calc(var(--pw,0%) - 9%),transparent var(--pw,0%));
+}
+
+/* ═══ the cut: every section paints its own ground, no drift ══════════════ */
+.cut{
+  position:relative;background:var(--sc-canvas);
+  min-height:88vh;display:grid;align-content:center;
+  padding-block:clamp(3rem,7vh,5.5rem);padding-bottom:calc(clamp(3rem,7vh,5.5rem) + var(--bar-h));
+  overflow:clip;
+}
+.wrap{width:min(var(--sc-maxw),100% - 2*var(--sc-gutter));margin-inline:auto;}
+.eyebrow{
+  font-family:var(--sc-font-text);font-size:var(--sc-t-xs);letter-spacing:.14em;
+  text-transform:uppercase;color:var(--sc-ink-soft);margin:0 0 var(--sc-4);
+}
+.lead-in{max-width:26ch;}
+.rule-accent{height:6px;width:clamp(58px,9vw,120px);background:var(--sc-accent);margin-bottom:var(--sc-5);}
+
+/* ═══ 1 · hero: four planes, composed by hand ═════════════════════════════ */
+.hero{--sc-canvas:#0C1130;}
+.hero .sc-stage{background:#05070F;}
+/* Each plate is a black-backed photograph composited with screen, so there is
+   no alpha to halo and no cutout to hole. The soft mask keeps the plate's own
+   rectangle from showing as an edge: its black is near-black, not pure. */
+.plane{position:absolute;pointer-events:none;max-width:none;will-change:transform;}
+.plane img{width:100%;height:100%;object-fit:cover;display:block;}
+.plane--cloud{inset:-6% -6% auto -6%;height:74%;z-index:2;opacity:.85;
+  transform:translate3d(calc(var(--mx,0) * 7px),calc((var(--sc-p,0) - .5) * -66px + var(--my,0) * 5px),0);}
+/* the subject: one loaded stroke laid across the horizon, anchored to it */
+.plane--stroke{left:31%;right:-16%;top:34%;height:42%;z-index:3;opacity:1;
+  transform:translate3d(calc(var(--sc-p,0) * 30px + var(--mx,0) * 14px),calc((var(--sc-p,0) - .5) * -24px + var(--my,0) * 9px),0);}
+.plane--stroke img{object-fit:contain;object-position:50% 50%;}
+/* the foreground overtakes the headline as the reader scrolls */
+.plane--splash{inset:auto -8% -6% -8%;height:48%;z-index:6;opacity:.72;
+  -webkit-mask-image:linear-gradient(to top,#000 14%,rgba(0,0,0,.55) 46%,transparent 88%);
+  mask-image:linear-gradient(to top,#000 14%,rgba(0,0,0,.55) 46%,transparent 88%);
+  transform:translate3d(calc(var(--mx,0) * -20px),calc((var(--sc-p,0) - .5) * 84px + var(--my,0) * -10px),0);}
+.plane--splash img{object-position:50% 100%;}
+.hero__floor{position:absolute;left:0;right:0;bottom:0;height:24vh;z-index:7;pointer-events:none;
+  background:linear-gradient(to top,#0C1130 0%,rgba(12,17,48,.7) 44%,transparent 100%);}
+/* density under the copy only, sized to the copy block, above every plane and
+   below the type. A sibling, never a child: the harness hides the copy and its
+   children to photograph the frame beneath it. */
+.hero__ink{position:absolute;inset:0 auto 0 0;width:min(76%,74rem);z-index:4;pointer-events:none;
+  background:linear-gradient(90deg,rgba(7,10,28,.99) 0%,rgba(7,10,28,.97) 34%,rgba(7,10,28,.88) 56%,rgba(7,10,28,.5) 76%,transparent 95%);}
+.hero .sc-copy{z-index:5;bottom:clamp(6rem,23vh,15rem);}
+.hero h1{font-weight:830;font-stretch:96%;}
+.hero__sub{color:#F5EDDC;max-width:32ch;margin-top:var(--sc-5);font-size:var(--sc-t-lg);line-height:1.4;}
+
+/* ═══ 2 · manifeste ═══════════════════════════════════════════════════════ */
+.manifeste h2{max-width:15ch;font-stretch:112%;}
+.manifeste p{margin-top:var(--sc-6);font-size:var(--sc-t-lg);max-width:38ch;line-height:1.42;color:var(--sc-ink);}
+
+/* ═══ 3 · la page blanche ═════════════════════════════════════════════════ */
+.blanche__grid{display:grid;gap:clamp(1.5rem,4vw,4rem);align-items:center;
+  grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);}
+.blanche figure{margin:0;height:clamp(300px,56vh,560px);overflow:clip;
+  border-radius:var(--sc-r-md);box-shadow:var(--sc-e3);}
+.blanche figure img{width:100%;height:100%;object-fit:cover;}
+.blanche h2 em{font-style:italic;font-weight:640;}
+
+/* ═══ 4 · la bascule ══════════════════════════════════════════════════════ */
+.bascule{padding:0;min-height:96vh;align-content:stretch;}
+.bascule__frame{position:relative;height:96vh;overflow:clip;}
+.bascule__frame img{width:100%;height:100%;object-fit:cover;}
+.bascule__copy{position:absolute;inset:auto 0 0 0;z-index:2;padding:0 var(--sc-gutter)
+  calc(var(--sc-8) + var(--bar-h));}
+.bascule__copy h2{max-width:17ch;}
+.bascule__copy p{max-width:44ch;margin-top:var(--sc-4);color:#FFE7D6;font-size:var(--sc-t-lg);line-height:1.42;}
+
+/* ═══ 5 · les matières ════════════════════════════════════════════════════ */
+.mat__grid{display:grid;gap:clamp(1.5rem,4vw,3.4rem);grid-template-columns:minmax(0,1fr) minmax(0,.72fr);
+  align-items:center;}
+.mat__list{display:flex;flex-wrap:wrap;gap:clamp(.5rem,1.2vw,.9rem);margin:var(--sc-6) 0 0;padding:0;list-style:none;}
+.chip{
+  font-family:var(--sc-font-display);font-weight:740;font-stretch:96%;
+  font-size:clamp(1.05rem,2.6vw,1.9rem);line-height:1;letter-spacing:-.02em;
+  padding:.44em .68em;border:2px solid var(--sc-hairline);border-radius:var(--sc-r-md);
+  background:var(--sc-surface);box-shadow:var(--sc-e2),var(--sc-edge);
+  transition:border-color var(--sc-d-base) var(--sc-ease-out);
+}
+.chip:nth-child(2n){background:#1F2A6E;}
+.chip:hover{border-color:var(--sc-accent);}
+.mat figure{margin:0;height:clamp(280px,50vh,480px);overflow:clip;
+  border-radius:var(--sc-r-md);box-shadow:var(--sc-e3);}
+.mat figure img{width:100%;height:100%;object-fit:cover;}
+.mat__note{margin-top:var(--sc-6);font-size:var(--sc-t-sm);color:var(--sc-ink-soft);max-width:46ch;}
+
+/* ═══ 6 · le geste ════════════════════════════════════════════════════════ */
+.geste{padding:0;min-height:92vh;align-content:stretch;}
+.geste__frame{position:relative;height:92vh;overflow:clip;}
+.geste__frame img{width:100%;height:100%;object-fit:cover;object-position:60% 50%;}
+.geste__copy{position:absolute;inset:0;z-index:2;display:grid;align-content:center;
+  padding:0 var(--sc-gutter) var(--bar-h);}
+.geste__copy h2{max-width:13ch;}
+.geste__copy blockquote{margin:var(--sc-5) 0 0;max-width:40ch;font-size:var(--sc-t-lg);
+  line-height:1.42;color:#FFE7D6;border-left:2px solid var(--sc-accent);padding-left:var(--sc-4);}
+.geste__copy cite{display:block;margin-top:var(--sc-3);font-size:var(--sc-t-xs);font-style:normal;
+  letter-spacing:.09em;text-transform:uppercase;color:#EDC0A6;}
+
+/* ═══ 7 · le silence (voulu, pas du scroll mort) ══════════════════════════ */
+.silence{min-height:82vh;}
+.silence p{font-family:var(--sc-font-display);font-weight:560;font-stretch:88%;
+  font-size:var(--sc-t-xl);line-height:1.24;max-width:22ch;color:#9BA2CE;}
+
+/* ═══ 8 · le pic ══════════════════════════════════════════════════════════ */
+.pic{--sc-canvas:#070A1C;}
+.pic .sc-stage{background:#04060E;}
+.pic .sc-copy{z-index:6;}
+.pic h2{max-width:16ch;}
+
+/* ═══ 9 · l'atterrissage ══════════════════════════════════════════════════ */
+.atterrissage h2{max-width:16ch;font-stretch:112%;}
+.atterrissage p{margin-top:var(--sc-6);max-width:52ch;font-size:var(--sc-t-lg);line-height:1.44;color:var(--sc-ink);}
+
+/* ═══ 10 · les ateliers, bande irrégulière ═══════════════════════════════ */
+.ateliers{min-height:auto;}
+.at__strip{display:grid;grid-template-columns:1.14fr .9fr 1.3fr .96fr;
+  gap:clamp(.8rem,1.8vw,1.9rem);margin-top:var(--sc-6);align-items:start;}
+.at{margin:0;display:flex;flex-direction:column;gap:var(--sc-2);}
+.at:nth-child(2){margin-top:clamp(1rem,4.5vh,3.2rem);}
+.at:nth-child(3){margin-top:clamp(.3rem,1.4vh,1rem);}
+.at:nth-child(4){margin-top:clamp(1.6rem,7vh,4.6rem);}
+.at__shot{overflow:clip;border-radius:var(--sc-r-md);box-shadow:var(--sc-e3);}
+.at:nth-child(1) .at__shot{height:clamp(178px,30vh,290px);}
+.at:nth-child(2) .at__shot{height:clamp(146px,23vh,224px);}
+.at:nth-child(3) .at__shot{height:clamp(198px,34vh,326px);}
+.at:nth-child(4) .at__shot{height:clamp(160px,26vh,250px);}
+.at__shot img{width:100%;height:100%;object-fit:cover;}
+.at h3{font-family:var(--sc-font-display);font-weight:780;font-stretch:96%;
+  font-size:var(--sc-t-lg);line-height:1.04;letter-spacing:-.03em;margin:0;}
+.at__age{font-size:var(--sc-t-xs);letter-spacing:.11em;text-transform:uppercase;
+  color:var(--sc-accent);font-weight:600;margin:0;}
+.at p{margin:0;color:var(--sc-ink-soft);font-size:var(--sc-t-sm);}
+.todo{
+  display:inline-block;font-family:var(--sc-font-text);font-size:var(--sc-t-xs);
+  letter-spacing:.07em;text-transform:uppercase;color:var(--sc-ink-soft);
+  border:1px dashed var(--sc-hairline-strong);border-radius:var(--sc-r-sm);
+  padding:.3em .55em;line-height:1.3;
+}
+
+/* ═══ 11 · le parcours ════════════════════════════════════════════════════ */
+.parcours__band{position:absolute;left:0;right:0;top:0;height:34vh;overflow:clip;opacity:.5;}
+.parcours__band img{width:110%;height:100%;object-fit:cover;mix-blend-mode:screen;}
+.parcours ol{list-style:none;margin:var(--sc-6) 0 0;padding:0;
+  display:grid;gap:0;border-top:1px solid var(--sc-hairline);}
+.parcours li{display:grid;grid-template-columns:minmax(6.5rem,10rem) 1fr;gap:var(--sc-5);
+  padding:var(--sc-4) 0;border-bottom:1px solid var(--sc-hairline);align-items:baseline;}
+.parcours .yr{font-family:var(--sc-font-display);font-weight:800;font-stretch:78%;
+  font-size:var(--sc-t-lg);letter-spacing:-.02em;color:var(--sc-accent);font-variant-numeric:tabular-nums;}
+.parcours .ev{margin:0;color:var(--sc-ink);max-width:56ch;}
+.parcours .ev i{font-style:italic;}
+.src{margin-top:var(--sc-5);font-size:var(--sc-t-xs);color:var(--sc-ink-soft);max-width:60ch;}
+
+/* ═══ 12 · pratique ═══════════════════════════════════════════════════════ */
+.pratique{min-height:64vh;}
+.prat__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));
+  gap:var(--sc-6) var(--sc-7);margin-top:var(--sc-6);border-top:1px solid var(--sc-hairline);padding-top:var(--sc-6);}
+.prat__grid dt{font-family:var(--sc-font-display);font-weight:760;font-stretch:92%;
+  font-size:var(--sc-t-lg);letter-spacing:-.02em;margin-bottom:var(--sc-2);}
+.prat__grid dd{margin:0;color:var(--sc-ink-soft);}
+
+/* ═══ 13 · réserver: coupe sèche, plein cadre ═════════════════════════════ */
+.close{min-height:100vh;}
+.close h2{max-width:12ch;font-stretch:114%;font-weight:840;}
+.close__grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:clamp(2rem,5vw,5rem);align-items:start;margin-top:var(--sc-7);}
+.close p.close__say{font-size:var(--sc-t-lg);line-height:1.42;max-width:36ch;color:var(--sc-ink);}
+.f{display:grid;gap:var(--sc-4);}
+.f label{display:grid;gap:var(--sc-2);font-size:var(--sc-t-sm);letter-spacing:.05em;
+  text-transform:uppercase;font-weight:600;}
+.f input,.f select,.f textarea{
+  background:rgba(255,243,228,.1);border:1px solid rgba(255,243,228,.42);
+  border-radius:var(--sc-r-md);padding:.72em .8em;color:var(--sc-ink);
+  font-size:var(--sc-t-base);letter-spacing:normal;text-transform:none;font-weight:400;
+  transition:border-color var(--sc-d-fast) var(--sc-ease-out),background var(--sc-d-fast) var(--sc-ease-out);
+}
+.f input::placeholder,.f textarea::placeholder{color:#F0BFAA;}
+.f input:hover,.f select:hover,.f textarea:hover{border-color:rgba(255,243,228,.7);}
+.f select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,#FFF3E4 50%),linear-gradient(135deg,#FFF3E4 50%,transparent 50%);
+  background-position:calc(100% - 20px) 55%,calc(100% - 14px) 55%;background-size:6px 6px,6px 6px;background-repeat:no-repeat;}
+.f select option{background:#8E2205;color:#FFF3E4;}
+.f textarea{min-height:5.5em;resize:vertical;}
+.f__send{
+  font-family:var(--sc-font-display);font-weight:820;font-stretch:92%;font-size:var(--sc-t-lg);
+  background:#FFF3E4;color:#8E2205;border:none;border-radius:var(--sc-r-md);
+  padding:.7em 1.1em;cursor:pointer;justify-self:start;line-height:1.1;
+  transition:background var(--sc-d-fast) var(--sc-ease-out),transform 120ms var(--sc-ease-out);
+}
+.f__send:hover{background:#fff;}
+.f__send:active{transform:translateY(1px);}
+.f__out{margin:0;font-size:var(--sc-t-sm);color:#FFE7D6;min-height:1.4em;}
+.f__out[data-state=warn]{color:#FFD9A8;}
+.foot{margin-top:var(--sc-8);padding-top:var(--sc-5);border-top:1px solid var(--sc-hairline);
+  display:flex;flex-wrap:wrap;gap:var(--sc-3) var(--sc-6);align-items:baseline;
+  font-size:var(--sc-t-xs);color:#F3C9B4;}
+.foot a{color:inherit;}
+
+/* ═══ states ══════════════════════════════════════════════════════════════ */
+a{color:var(--sc-accent);text-underline-offset:3px;text-decoration-thickness:1px;}
+:focus-visible{outline:3px solid var(--sc-accent);outline-offset:3px;border-radius:2px;}
+.bar :focus-visible{outline-color:#FF6A2B;}
+
+/* ═══ phones: separate art direction, not a shrink ════════════════════════ */
+@media (max-width:900px){
+  .blanche__grid,.mat__grid,.close__grid{grid-template-columns:1fr;}
+  .at__strip{grid-template-columns:1fr 1fr;gap:clamp(1rem,3vw,1.8rem);}
+  .at:nth-child(n){margin-top:0;}
+  .at:nth-child(1) .at__shot,.at:nth-child(3) .at__shot{height:clamp(150px,22vh,220px);}
+  .at:nth-child(2) .at__shot,.at:nth-child(4) .at__shot{height:clamp(120px,18vh,180px);margin-top:var(--sc-5);}
+}
+@media (max-width:700px){
+  :root{--bar-h:118px;}
+  .bar{grid-template-columns:1fr auto;grid-template-areas:"pal pal" "mark cta";gap:var(--sc-3);}
+  .bar__mark{grid-area:mark;} .bar__cta{grid-area:cta;} .pal{grid-area:pal;overflow-x:auto;
+    scrollbar-width:none;-webkit-overflow-scrolling:touch;}
+  .pal::-webkit-scrollbar{display:none;}
+  .pal__row{justify-content:flex-start;padding-inline:2px;}
+  .pig__name{display:none;}
+  .pal__hint{display:none;}
+  /* the hero steps down a rung: --sc-t-4xl floors at 3.4rem, a desktop floor */
+  .hero h1{font-size:var(--sc-t-2xl);}
+  .hero__sub{font-size:var(--sc-t-base);max-width:30ch;margin-top:var(--sc-4);}
+  /* a corner anchor becomes a full-width band below 860px, so the density
+     under the copy has to become a band too, not stay a left column */
+  .hero__ink{inset:auto 0 0 0;width:100%;height:64%;
+    background:linear-gradient(to top,rgba(7,10,28,.97) 0%,rgba(7,10,28,.94) 34%,rgba(7,10,28,.74) 60%,rgba(7,10,28,.28) 82%,transparent 97%);}
+  /* typography sits ABOVE the subject on phones so the headline never hides */
+  .hero .sc-copy{z-index:8;bottom:clamp(4rem,15vh,9rem);}
+  .plane--stroke{left:4%;right:-12%;top:26%;height:26%;
+    transform:translate3d(0,calc((var(--sc-p,0) - .5) * -20px),0);}
+  .plane--cloud{opacity:.7;inset:-4% -8% auto -8%;height:64%;
+    transform:translate3d(0,calc((var(--sc-p,0) - .5) * -44px),0);}
+  .plane--splash{opacity:.6;height:34%;
+    transform:translate3d(0,calc((var(--sc-p,0) - .5) * 56px),0);}
+  .hero__floor{height:34vh;}
+  .paint__band{height:17vh;}
+  .paint__ridges{height:20vh;}
+  /* the phone must not inherit desktop air: every act stays under the 1.4 cap */
+  .cut{min-height:auto;padding-block:clamp(2.25rem,6vh,3.5rem);
+    padding-bottom:calc(clamp(2.25rem,6vh,3.5rem) + var(--bar-h));}
+  .blanche figure{height:clamp(200px,32vh,300px);}
+  .mat figure{height:clamp(190px,30vh,280px);}
+  .mat__list{margin-top:var(--sc-5);gap:.45rem;}
+  .bascule,.geste{min-height:auto;}
+  .bascule__frame,.geste__frame{height:74vh;}
+  .bascule__copy{padding-bottom:calc(var(--sc-5) + var(--bar-h));}
+  .geste__copy{align-content:end;padding-bottom:calc(var(--sc-5) + var(--bar-h));}
+  .geste__copy blockquote{margin-top:var(--sc-4);font-size:var(--sc-t-base);}
+  .parcours li{grid-template-columns:1fr;gap:var(--sc-1);padding:var(--sc-3) 0;}
+  .parcours ol{margin-top:var(--sc-5);}
+  .silence{min-height:62vh;}
+  .close{min-height:auto;padding-bottom:calc(var(--sc-8) + var(--bar-h));}
+  .close__grid{gap:var(--sc-5);margin-top:var(--sc-5);}
+  .f{gap:var(--sc-3);}
+  .prat__grid{gap:var(--sc-4) var(--sc-5);}
+  .foot{margin-top:var(--sc-6);}
+}
+
+/* ═══ reduced motion: fewer and gentler, and the meaning survives ═════════ */
+@media (prefers-reduced-motion:reduce){
+  .plane,.paint__pig,.paint__ridges{transition:none!important;}
+  /* planes hold a composed static offset: the hero stays layered, it just
+     stops moving. Depth from occlusion and scale, not from travel. */
+  .plane--cloud{transform:translate3d(0,-14px,0) scale(1.08);}
+  .plane--stroke{transform:translate3d(14px,-6px,0) scale(1.16) rotate(-3deg);}
+  .plane--splash{transform:translate3d(0,6vh,0) scale(1.12);}
+  .pig__dot{transition:none;}
+  /* the peak still happens: the stroke is painted, it just does not smear in */
+  .paint__pig{filter:blur(9px);}
+}
+</style>
+</head>
+<body>
+
+<span data-sc-progress></span>
+<div class="sc-grain" aria-hidden="true"></div>
+
+<!-- ═══ the palette paints the world. Driven by page scroll, not by an act's
+         progress, so it outlives the cuts it starts and ends between. ═══ -->
+<div class="paint" aria-hidden="true">
+  <div class="paint__band">
+    <span class="paint__pig" style="--c:var(--p0);--i:0"></span>
+    <span class="paint__pig" style="--c:var(--p1);--i:1"></span>
+    <span class="paint__pig" style="--c:var(--p2);--i:2"></span>
+    <span class="paint__pig" style="--c:var(--p3);--i:3"></span>
+    <span class="paint__pig" style="--c:var(--p4);--i:4"></span>
+    <span class="paint__pig" style="--c:var(--p5);--i:5"></span>
+    <span class="paint__pig" style="--c:var(--p6);--i:6"></span>
+    <span class="paint__pig" style="--c:var(--p7);--i:7"></span>
+  </div>
+  <img class="paint__ridges" src="assets/plane-stroke.webp" alt="">
+</div>
+
+<!-- ═══ the chrome: loud, full width, and it is the palette ═══════════════ -->
+<div class="bar" role="navigation" aria-label="Palette et réservation">
+  <a class="bar__mark" href="#top">Muriel Oberlé<span>Ateliers de peinture</span></a>
+
+  <div class="pal">
+    <p class="pal__hint" id="palhint">Les couleurs ramassées en chemin</p>
+    <ul class="pal__row" id="palrow" aria-labelledby="palhint">
+      <li><a class="pig" href="#a2"  style="--c:var(--p0)"><span class="pig__dot"></span><span class="pig__name">Ocre</span></a></li>
+      <li><a class="pig" href="#a3"  style="--c:var(--p1)"><span class="pig__dot"></span><span class="pig__name">Encre</span></a></li>
+      <li><a class="pig" href="#a4"  style="--c:var(--p2)"><span class="pig__dot"></span><span class="pig__name">Vermillon</span></a></li>
+      <li><a class="pig" href="#a5"  style="--c:var(--p3)"><span class="pig__dot"></span><span class="pig__name">Vert oxyde</span></a></li>
+      <li><a class="pig" href="#a6"  style="--c:var(--p4)"><span class="pig__dot"></span><span class="pig__name">Terre brûlée</span></a></li>
+      <li><a class="pig" href="#a8"  style="--c:var(--p5)"><span class="pig__dot"></span><span class="pig__name">Safran</span></a></li>
+      <li><a class="pig" href="#a10" style="--c:var(--p6)"><span class="pig__dot"></span><span class="pig__name">Cire</span></a></li>
+      <li><a class="pig" href="#a11" style="--c:var(--p7)"><span class="pig__dot"></span><span class="pig__name">Outremer</span></a></li>
+    </ul>
+    <ul class="pick" id="palpick" hidden aria-label="Choisir un atelier">
+      <li><button type="button" style="--c:var(--p0)" data-v="Les enfants, 8 à 11 ans">8 à 11 ans</button></li>
+      <li><button type="button" style="--c:var(--p2)" data-v="Les ados, 12 à 17 ans">12 à 17 ans</button></li>
+      <li><button type="button" style="--c:var(--p7)" data-v="L'atelier collectif adultes">Collectif</button></li>
+      <li><button type="button" style="--c:var(--p5)" data-v="Le cours particulier adultes">Particulier</button></li>
+    </ul>
+  </div>
+
+  <a class="bar__cta" href="#reserver">Réserver un atelier</a>
+</div>
+
+<main id="top">
+
+  <!-- ═══ 1 · ÉLAN · scrub, quatre plans indépendants ═══════════════════ -->
+  <section class="hero" id="a1" data-sc-act="scrub" data-sc-span="1.4">
+    <div data-sc-stage>
+      <picture>
+        <source media="(max-width:700px)" srcset="assets/hero-poster-p.webp">
+        <img class="sc-stage__poster" src="assets/hero-poster.webp" alt="">
+      </picture>
+      <video data-sc-scrub data-sc-src="assets/hero.mp4"
+             data-sc-src-mobile="assets/hero-p.mp4" muted playsinline></video>
+
+      <div class="plane plane--cloud"  aria-hidden="true"><img src="assets/plane-cloud.webp"  alt=""></div>
+      <div class="plane plane--stroke" aria-hidden="true"><img src="assets/plane-stroke.webp" alt=""></div>
+
+      <div class="hero__ink" aria-hidden="true"></div>
+
+      <div class="sc-copy sc-copy--lead" data-sc-cue="0 1 0 0.06">
+        <h1 class="sc-display sc-display--xl" data-sc-kinetic="lines">Voyager à travers l'art</h1>
+        <p class="hero__sub">Les ateliers de peinture de Muriel Oberlé. Des enfants dès 8 ans aux cours particuliers pour adultes.</p>
+      </div>
+
+      <div class="plane plane--splash" aria-hidden="true"><img src="assets/plane-splash.webp" alt=""></div>
+      <div class="hero__floor" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ═══ 2 · DÉSIR · kinetic ═══════════════════════════════════════════ -->
+  <section class="cut manifeste on-ochre" id="a2">
+    <div class="wrap" data-sc-in data-sc-stagger="60">
+      <div class="rule-accent" aria-hidden="true"></div>
+      <h2 class="sc-display sc-display--lg">La couleur est un moyen de transport.</h2>
+      <p>Un atelier n'est pas un cours de dessin. C'est un endroit d'où l'on part, et ça tient debout à 8 ans comme à 60.</p>
+    </div>
+  </section>
+
+  <!-- ═══ 3 · RECONNAISSANCE · in ═══════════════════════════════════════ -->
+  <section class="cut blanche on-light" id="a3">
+    <div class="wrap blanche__grid">
+      <div data-sc-in data-sc-stagger="70">
+        <h2 class="sc-display sc-display--lg"><em>« Je ne sais pas dessiner. »</em></h2>
+        <p class="sc-body" style="margin-top:var(--sc-5)">C'est la phrase que presque tout le monde dit en poussant la porte. Elle n'a jamais empêché personne de commencer.</p>
+        <p class="sc-body" style="margin-top:var(--sc-4)">On pose la main. On pose la couleur. Le reste s'apprend en le faisant, pas avant.</p>
+      </div>
+      <figure data-sc-in>
+        <img src="assets/mains.webp" width="1100" height="1467" style="width:100%;height:auto"
+             alt="Deux mains passent une éponge chargée de pigment ocre sur une grande feuille humide, en plein soleil.">
+      </figure>
+    </div>
+  </section>
+
+  <!-- ═══ 4 · SOULAGEMENT · reveal ══════════════════════════════════════ -->
+  <section class="cut bascule on-vermillon" id="a4">
+    <div class="bascule__frame">
+      <div data-sc-reveal="up" data-sc-reveal-at="0.06 0.5" style="height:100%">
+        <img src="assets/atelier.webp" width="1600" height="889"
+             alt="Un atelier traversé par une lumière dure, bocaux d'encre, palette de bois, châssis retournés contre le mur.">
+      </div>
+      <div class="sc-scrim sc-scrim--band" aria-hidden="true" style="--sc-canvas:#3A0C02"></div>
+      <div class="bascule__copy" data-sc-in data-sc-stagger="70">
+        <h2 class="sc-display sc-display--lg">Ici, personne ne copie un modèle.</h2>
+        <p>Il n'y a pas de bon geste à reproduire. Il y a le vôtre, et de quoi le trouver.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 5 · CURIOSITÉ · tilt ══════════════════════════════════════════ -->
+  <section class="cut mat on-indigo" id="a5">
+    <div class="wrap mat__grid">
+      <div data-sc-in data-sc-stagger="60">
+        <p class="eyebrow">Ce qu'on a sous la main</p>
+        <h2 class="sc-display sc-display--md">Cinq matières, et aucune n'exige de savoir dessiner.</h2>
+        <ul class="mat__list">
+          <li class="chip" data-sc-tilt="7">Encre</li>
+          <li class="chip" data-sc-tilt="7">Collage</li>
+          <li class="chip" data-sc-tilt="7">Cire</li>
+          <li class="chip" data-sc-tilt="7">Empreinte</li>
+          <li class="chip" data-sc-tilt="7">Écriture</li>
+        </ul>
+        <p class="mat__note">Ce sont les matières que Muriel Oberlé mêle dans son propre travail, après avoir exploré l'huile, l'acrylique et les techniques mixtes.</p>
+      </div>
+      <figure data-sc-in>
+        <img src="assets/matieres.webp" width="1100" height="1467" style="width:100%;height:auto"
+             alt="Sur une table : une flaque d'encre noire dans du papier humide, un disque de cire brisé, une bande de papier collé qui se soulève, l'empreinte d'une feuille en pigment ocre.">
+      </figure>
+    </div>
+  </section>
+
+  <!-- ═══ 6 · JOIE · reveal ═════════════════════════════════════════════ -->
+  <section class="cut geste on-terre" id="a6">
+    <div class="geste__frame">
+      <div data-sc-reveal="left" data-sc-reveal-at="0.05 0.48" style="height:100%">
+        <img src="assets/geste.webp" width="1600" height="889"
+             alt="Deux personnes bras ouverts au milieu d'un nuage de pigment ocre, dans un rai de soleil dur, les bras filés par la pose longue.">
+      </div>
+      <div class="sc-scrim sc-scrim--left" aria-hidden="true" style="--sc-canvas:#3A0F04;--sc-scrim-a:88%"></div>
+      <div class="geste__copy" data-sc-in data-sc-stagger="70">
+        <h2 class="sc-display sc-display--lg">Le mouvement d'abord.</h2>
+        <blockquote>« Le mouvement est souvent présent par l'entremise de ses personnages dansant et virevoltant. »
+          <cite>La Dépêche du Midi, 8 novembre 2005</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 7 · SILENCE VOULU · aucun device, le sol seul ═════════════════ -->
+  <section class="cut silence on-nuit" id="a7">
+    <div class="wrap">
+      <p data-sc-in>Et puis vient le moment où la couleur prend toute la place.</p>
+    </div>
+  </section>
+
+  <!-- ═══ 8 · LE PIC · scrub. La palette se déplie par dessus. ══════════ -->
+  <section class="pic" id="a8" data-sc-act="scrub" data-sc-span="1.4">
+    <div data-sc-stage>
+      <picture>
+        <source media="(max-width:700px)" srcset="assets/peak-poster-p.webp">
+        <img class="sc-stage__poster" src="assets/peak-poster.webp" alt="">
+      </picture>
+      <video data-sc-scrub data-sc-src="assets/peak.mp4"
+             data-sc-src-mobile="assets/peak-p.mp4" muted playsinline></video>
+      <div class="sc-scrim sc-scrim--trail" aria-hidden="true"></div>
+      <div class="sc-copy sc-copy--trail" data-sc-cue="0.16 1 0.2 0.06">
+        <h2 class="sc-display sc-display--md">Tout ce que vous avez ramassé en chemin.</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 9 · ÉVIDENCE · kinetic ════════════════════════════════════════ -->
+  <section class="cut atterrissage on-saffron" id="a9">
+    <div class="wrap" data-sc-in data-sc-stagger="60">
+      <div class="rule-accent" aria-hidden="true"></div>
+      <h2 class="sc-display sc-display--lg">Voilà ce que veut dire voyager à travers l'art.</h2>
+      <p>Muriel Oberlé puise dans ses voyages et dans son enfance en Afrique du Nord et en Afrique noire. Ses ateliers partent du même endroit : un souvenir, une matière, une couleur, et on avance.</p>
+    </div>
+  </section>
+
+  <!-- ═══ 10 · ENVIE · in + tilt ════════════════════════════════════════ -->
+  <section class="cut ateliers on-light" id="a10">
+    <div class="wrap">
+      <div data-sc-in data-sc-stagger="60">
+        <h2 class="sc-display sc-display--lg">Quatre façons d'entrer dans l'atelier</h2>
+      </div>
+      <div class="at__strip">
+        <article class="at" data-sc-in data-sc-stagger="60">
+          <div class="at__shot" data-sc-tilt="5">
+            <img src="assets/at-enfants.webp" width="980" height="1307"
+                 alt="Un enfant, vu de dos, étale de l'encre bleue à la brosse large sur une grande feuille, en pleine lumière.">
+          </div>
+          <p class="at__age">8 à 11 ans</p>
+          <h3>Les enfants</h3>
+          <p>On travaille grand, à plat, avec les mains autant qu'avec les outils.</p>
+          <p><span class="todo">Jour, horaire, tarif à compléter</span></p>
+        </article>
+
+        <article class="at" data-sc-in data-sc-stagger="60">
+          <div class="at__shot" data-sc-tilt="5">
+            <img src="assets/at-ados.webp" width="980" height="1307"
+                 alt="Un adolescent penché sur une grande feuille, tire une brosse plate chargée d'encre indigo dans la lumière d'une fenêtre.">
+          </div>
+          <p class="at__age">12 à 17 ans</p>
+          <h3>Les ados</h3>
+          <p>L'âge où l'on veut que ça ressemble. On prend le problème à l'envers : la matière d'abord.</p>
+          <p><span class="todo">Jour, horaire, tarif à compléter</span></p>
+        </article>
+
+        <article class="at" data-sc-in data-sc-stagger="60">
+          <div class="at__shot" data-sc-tilt="5">
+            <img src="assets/at-adultes.webp" width="980" height="1307"
+                 alt="Trois adultes debout devant leurs chevalets, vus de dos, longues ombres sur un parquet ensoleillé.">
+          </div>
+          <p class="at__age">Adultes</p>
+          <h3>L'atelier collectif</h3>
+          <p>Un groupe, un après-midi, et chacun sur son propre chantier. Seul, mais jamais tout seul.</p>
+          <p><span class="todo">Jour, horaire, tarif à compléter</span></p>
+        </article>
+
+        <article class="at" data-sc-in data-sc-stagger="60">
+          <div class="at__shot" data-sc-tilt="5">
+            <img src="assets/at-particulier.webp" width="980" height="1307"
+                 alt="Deux mains d'adulte au-dessus d'une feuille humide, l'une montre un geste au pinceau, l'autre tient le papier.">
+          </div>
+          <p class="at__age">Adultes</p>
+          <h3>Le cours particulier</h3>
+          <p>Pour reprendre après des années, ou pour aller au bout d'une seule idée.</p>
+          <p><span class="todo">Durée, tarif à compléter</span></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 11 · CONFIANCE · reveal ═══════════════════════════════════════ -->
+  <section class="cut parcours on-encre" id="a11">
+    <div class="parcours__band" aria-hidden="true" data-sc-reveal="up" data-sc-reveal-at="0.02 0.4">
+      <img src="assets/plane-stroke.webp" alt="">
+    </div>
+    <div class="wrap" data-sc-in data-sc-stagger="50">
+      <p class="eyebrow">Le parcours</p>
+      <h2 class="sc-display sc-display--md">Elle a commencé tard, et elle n'a pas commencé seule.</h2>
+      <ol>
+        <li><span class="yr">1992</span><p class="ev">Première peinture à l'huile. Avant cela, une orientation vers le commerce international.</p></li>
+        <li><span class="yr">1998</span><p class="ev">Installation à Balma, en Haute-Garonne.</p></li>
+        <li><span class="yr">2000</span><p class="ev">Premier atelier de peinture, animé par l'artiste peintre Eliane Fantini. Deux années d'huile, d'acrylique et de techniques mixtes.</p></li>
+        <li><span class="yr">déc. 2000</span><p class="ev">Premier prix du 8<sup>e</sup> Salon d'automne de la ville de Saint-Alban, pour <i>Les Enfants à la mer</i>.</p></li>
+        <li><span class="yr">juin 2003</span><p class="ev">Deuxième prix du jury du Salon des arts de la ville de Balma, pour <i>Promenade exotique</i>, une œuvre mêlant collage, encre et bougies.</p></li>
+      </ol>
+      <p class="src">Faits et citation : « Muriel Oberlé : les voyages forment la genèse », La Dépêche du Midi, 8 novembre 2005. Sa grand-mère et plusieurs de ses tantes étaient artistes ; c'est à leur contact qu'elle a développé son sens de la couleur et des nuances.</p>
+    </div>
+  </section>
+
+  <!-- ═══ 12 · CLARTÉ · in, compressé ═══════════════════════════════════ -->
+  <section class="cut pratique on-light" id="a12">
+    <div class="wrap" data-sc-in data-sc-stagger="50">
+      <h2 class="sc-display sc-display--md">Pratique</h2>
+      <dl class="prat__grid">
+        <div><dt>Où</dt><dd><span class="todo">À compléter : adresse de l'atelier</span></dd></div>
+        <div><dt>Quand</dt><dd><span class="todo">À compléter : jours et horaires</span></dd></div>
+        <div><dt>Combien</dt><dd><span class="todo">À compléter : tarifs, à la séance et au trimestre</span></dd></div>
+        <div><dt>Matériel</dt><dd><span class="todo">À compléter : fourni ou à apporter</span></dd></div>
+        <div><dt>Effectif</dt><dd><span class="todo">À compléter : nombre de places par atelier</span></dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ═══ 13 · DÉCISION · coupe sèche, plein cadre, la cue tient ════════ -->
+  <section class="cut close on-vermillon" id="reserver">
+    <div class="wrap">
+      <div data-sc-in data-sc-stagger="60">
+        <h2 class="sc-display sc-display--lg">Réservez un atelier.</h2>
+      </div>
+      <div class="close__grid">
+        <div data-sc-in>
+          <p class="close__say">Dites-moi l'âge et ce que vous avez envie d'essayer. Vous recevrez les créneaux disponibles en réponse.</p>
+        </div>
+        <form class="f" id="form" novalidate>
+          <label>Prénom et nom
+            <input type="text" name="nom" autocomplete="name" required placeholder="Votre nom">
+          </label>
+          <label>E-mail
+            <input type="email" name="email" autocomplete="email" required placeholder="vous@exemple.fr">
+          </label>
+          <label>Quel atelier
+            <select name="atelier" id="atelier">
+              <option value="Les enfants, 8 à 11 ans">Les enfants, 8 à 11 ans</option>
+              <option value="Les ados, 12 à 17 ans">Les ados, 12 à 17 ans</option>
+              <option value="L'atelier collectif adultes">L'atelier collectif adultes</option>
+              <option value="Le cours particulier adultes">Le cours particulier adultes</option>
+            </select>
+          </label>
+          <label>Ce que vous avez envie d'essayer
+            <textarea name="message" placeholder="Deux lignes suffisent."></textarea>
+          </label>
+          <button class="f__send" type="submit">Réserver un atelier</button>
+          <p class="f__out" id="fout" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+      <footer class="foot">
+        <span>Muriel Oberlé</span>
+        <span class="todo">À compléter : e-mail, téléphone, Instagram</span>
+        <span class="todo">À compléter : mentions légales</span>
+      </footer>
+    </div>
+  </section>
+
+</main>
+
+<script src="scrollcraft.js"></script>
+<script>
+ScrollCraft.mount(document.body);
+
+/* ══════════════════════════════════════════════════════════════════════════
+   The signature move. Nothing below touches the engine; it reads page scroll
+   and writes custom properties, which is the sanctioned way to get a bespoke
+   behaviour out of this runtime.
+   ══════════════════════════════════════════════════════════════════════════ */
+(function () {
+  "use strict";
+
+  /* ── FILL THIS IN. The reservation form composes a mail to this address.
+        While it is empty the form still works and says so in plain French,
+        rather than silently going nowhere. ──────────────────────────────── */
+  var CONTACT_EMAIL = "";
+
+  var reduced = matchMedia("(prefers-reduced-motion: reduce)");
+  var fine    = matchMedia("(hover: hover) and (pointer: fine)");
+  var root    = document.documentElement;
+
+  /* ── 1. the palette collects a pigment per section passed ─────────────── */
+  var pigs = [].slice.call(document.querySelectorAll("#palrow .pig"));
+  pigs.forEach(function (a) {
+    var target = document.querySelector(a.getAttribute("href"));
+    if (!target) return;
+    var name = a.querySelector(".pig__name").textContent;
+    a.setAttribute("aria-label", name + ", aller à cette section");
+    new IntersectionObserver(function (entries, obs) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        a.classList.add("is-on");          // collected, and it never uncollects
+        obs.disconnect();
+      });
+    }, { rootMargin: "0px 0px -42% 0px" }).observe(target);
+  });
+
+  /* ── 2. the peak: the palette unfurls and the scroll drags the pigments
+          into one stroke across the world. Page scroll, not act progress,
+          so the choreography survives the cuts at either end. ──────────── */
+  var from = document.getElementById("a7");
+  var to   = document.getElementById("a9");
+  var band = document.querySelector(".paint__band");
+  var pcs  = [].slice.call(document.querySelectorAll(".paint__pig"));
+
+  function seg(v, a, b) { return Math.max(0, Math.min(1, (v - a) / (b - a))); }
+  function ease(t) { return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; }
+
+  function paint() {
+    if (!from || !to) return;
+    var top = from.getBoundingClientRect().top + window.scrollY;
+    var end = to.getBoundingClientRect().top + window.scrollY;
+    var head = window.scrollY + innerHeight * 0.52;
+    var q = seg(head, top, end);
+
+    /* visible from the tail of the silence to the head of the landing */
+    root.style.setProperty("--pv", String(Math.min(seg(q, 0.10, 0.24), 1 - seg(q, 0.80, 0.98))));
+    root.style.setProperty("--pr", String(seg(q, 0.22, 0.42)));
+    root.style.setProperty("--pw", (ease(seg(q, 0.15, 0.68)) * 118) + "%");
+
+    /* each collected pigment is dragged out of the bar in turn and smeared
+       into the one beside it, left to right, under the reader's own hand */
+    var n = pcs.length;
+    for (var i = 0; i < n; i++) {
+      var s = 0.14 + (i / n) * 0.46;
+      var t = ease(seg(q, s, s + 0.18));
+      var live = pigs[i] && pigs[i].classList.contains("is-on") ? 1 : 0.28;
+      pcs[i].style.setProperty("--sx", String(t * 1.35));
+      pcs[i].style.setProperty("--sy", String(0.34 + t * 0.66));
+      pcs[i].style.setProperty("--o", String(t * (0.62 + live * 0.38)));
+    }
+    if (band && !reduced.matches) {
+      band.style.transform =
+        "translateY(-50%) rotate(" + (-6.5 + q * 3.2).toFixed(2) + "deg) scale(" + (0.94 + q * 0.12).toFixed(3) + ")";
+    }
+  }
+
+  /* ── 3. the hero leans when the pointer does. Seasoning, not the point. ─ */
+  var hero = document.getElementById("a1");
+  var mx = 0, my = 0;
+  function lean(e) {
+    if (!fine.matches || reduced.matches) return;
+    mx = (e.clientX / innerWidth - 0.5) * 2;
+    my = (e.clientY / innerHeight - 0.5) * 2;
+    queue();
+  }
+  if (hero) addEventListener("pointermove", lean, { passive: true });
+
+  /* ── 4. one rAF, shared ───────────────────────────────────────────────── */
+  var queued = false;
+  function frame() {
+    queued = false;
+    paint();
+    if (hero) {
+      hero.style.setProperty("--mx", mx.toFixed(3));
+      hero.style.setProperty("--my", my.toFixed(3));
+    }
+  }
+  function queue() { if (!queued) { queued = true; requestAnimationFrame(frame); } }
+  addEventListener("scroll", queue, { passive: true });
+  addEventListener("resize", queue, { passive: true });
+  queue();
+
+  /* ── 5. the close: the palette becomes the chooser ────────────────────── */
+  var row = document.getElementById("palrow");
+  var pick = document.getElementById("palpick");
+  var hint = document.getElementById("palhint");
+  var sel = document.getElementById("atelier");
+  var closeSec = document.getElementById("reserver");
+
+  if (closeSec && row && pick) {
+    new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        var on = e.isIntersecting;
+        row.hidden = on;
+        pick.hidden = !on;
+        if (hint) hint.textContent = on ? "Choisissez votre atelier" : "Les couleurs ramassées en chemin";
+      });
+    }, { threshold: 0.35 }).observe(closeSec);
+  }
+
+  [].slice.call(pick ? pick.querySelectorAll("button") : []).forEach(function (b) {
+    b.setAttribute("aria-pressed", "false");
+    b.addEventListener("click", function () {
+      if (sel) sel.value = b.dataset.v;
+      [].slice.call(pick.querySelectorAll("button")).forEach(function (o) {
+        o.setAttribute("aria-pressed", String(o === b));
+      });
+      var name = document.querySelector('#form input[name="nom"]');
+      if (name) name.focus({ preventScroll: true });
+    });
+  });
+
+  /* ── 6. the form actually resolves ────────────────────────────────────── */
+  var form = document.getElementById("form");
+  var out  = document.getElementById("fout");
+  if (form) form.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    var d = new FormData(form);
+    var nom = (d.get("nom") || "").toString().trim();
+    var mail = (d.get("email") || "").toString().trim();
+    if (!nom || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(mail)) {
+      out.dataset.state = "warn";
+      out.textContent = "Il manque votre nom ou une adresse e-mail valide.";
+      return;
+    }
+    var body =
+      "Nom : " + nom + "\n" +
+      "E-mail : " + mail + "\n" +
+      "Atelier : " + d.get("atelier") + "\n\n" +
+      (d.get("message") || "");
+    if (!CONTACT_EMAIL) {
+      out.dataset.state = "warn";
+      out.textContent = "Demande prête pour " + d.get("atelier") +
+        ". L'adresse de réception reste à renseigner dans le site avant la mise en ligne.";
+      return;
+    }
+    out.dataset.state = "ok";
+    out.textContent = "Votre messagerie s'ouvre avec la demande pré-remplie.";
+    location.href = "mailto:" + CONTACT_EMAIL +
+      "?subject=" + encodeURIComponent("Réservation atelier : " + d.get("atelier")) +
+      "&body=" + encodeURIComponent(body);
+  });
+})();
+</script>
+</body>
+</html>

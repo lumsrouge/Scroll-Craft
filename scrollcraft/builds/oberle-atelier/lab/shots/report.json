@@ -1,0 +1,1035 @@
+{
+  "doc": {
+    "height": 11563,
+    "vh": 900,
+    "acts": [
+      "scrub",
+      "scrub"
+    ],
+    "world": null
+  },
+  "report": [
+    {
+      "i": 0,
+      "y": 0,
+      "pct": 0,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Voyager à travers l'art Les ateliers de ",
+          "dir": "light-on-dark",
+          "worst": 6.05,
+          "mean": 14.9
+        }
+      ],
+      "cues": [
+        {
+          "t": "Voyager à travers l'art Les ateliers de peintu",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": true,
+          "t": 0,
+          "dur": 5.04,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 0
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        0,
+        6066
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#0C1130"
+    },
+    {
+      "i": 1,
+      "y": 7,
+      "pct": 0,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Voyager à travers l'art Les ateliers de ",
+          "dir": "light-on-dark",
+          "worst": 6.12,
+          "mean": 14.94
+        }
+      ],
+      "cues": [
+        {
+          "t": "Voyager à travers l'art Les ateliers de peintu",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": true,
+          "t": 0.02,
+          "dur": 5.04,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 0
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        0,
+        6059
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#0C1130"
+    },
+    {
+      "i": 2,
+      "y": 76,
+      "pct": 1,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Voyager à travers l'art Les ateliers de ",
+          "dir": "light-on-dark",
+          "worst": 6.64,
+          "mean": 15.23
+        }
+      ],
+      "cues": [
+        {
+          "t": "Voyager à travers l'art Les ateliers de peintu",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": true,
+          "t": 0.3,
+          "dur": 5.04,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 0
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        0,
+        5990
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#0C1130"
+    },
+    {
+      "i": 3,
+      "y": 145,
+      "pct": 1,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Voyager à travers l'art Les ateliers de ",
+          "dir": "light-on-dark",
+          "worst": 6.46,
+          "mean": 15.5
+        }
+      ],
+      "cues": [
+        {
+          "t": "Voyager à travers l'art Les ateliers de peintu",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": true,
+          "t": 0.57,
+          "dur": 5.04,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 0
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        0,
+        5921
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#0C1130"
+    },
+    {
+      "i": 4,
+      "y": 215,
+      "pct": 2,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Voyager à travers l'art Les ateliers de ",
+          "dir": "light-on-dark",
+          "worst": 6.08,
+          "mean": 15.75
+        }
+      ],
+      "cues": [
+        {
+          "t": "Voyager à travers l'art Les ateliers de peintu",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": true,
+          "t": 0.85,
+          "dur": 5.04,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 0
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        0,
+        5851
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#0C1130"
+    },
+    {
+      "i": 5,
+      "y": 284,
+      "pct": 3,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Voyager à travers l'art Les ateliers de ",
+          "dir": "light-on-dark",
+          "worst": 6.49,
+          "mean": 15.93
+        }
+      ],
+      "cues": [
+        {
+          "t": "Voyager à travers l'art Les ateliers de peintu",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": true,
+          "t": 1.13,
+          "dur": 5.04,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 0
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        0,
+        5782
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#0C1130"
+    },
+    {
+      "i": 6,
+      "y": 353,
+      "pct": 3,
+      "settled": true,
+      "contrast": [],
+      "cues": [
+        {
+          "t": "Voyager à travers l'art Les ateliers de peintu",
+          "o": 0.25
+        }
+      ],
+      "clips": [
+        {
+          "painted": true,
+          "t": 1.4,
+          "dur": 5.04,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 0
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        0,
+        5713
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#0C1130"
+    },
+    {
+      "i": 7,
+      "y": 450,
+      "pct": 4,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": true,
+          "t": 1.79,
+          "dur": 5.04,
+          "vis": 0.9
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 0
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        -90,
+        5616
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#0C1130"
+    },
+    {
+      "i": 8,
+      "y": 585,
+      "pct": 5,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": true,
+          "t": 2.33,
+          "dur": 5.04,
+          "vis": 0.75
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 0
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        -225,
+        5481
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#0C1130"
+    },
+    {
+      "i": 9,
+      "y": 720,
+      "pct": 7,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": true,
+          "t": 2.87,
+          "dur": 5.04,
+          "vis": 0.6
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 0
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        -360,
+        5346
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#0C1130"
+    },
+    {
+      "i": 10,
+      "y": 5706,
+      "pct": 54,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": true,
+          "t": 5.03,
+          "dur": 5.04,
+          "vis": 0
+        },
+        {
+          "painted": true,
+          "t": 1.25,
+          "dur": 5.04,
+          "vis": 0.6
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        -5346,
+        360
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#0C1130"
+    },
+    {
+      "i": 11,
+      "y": 5841,
+      "pct": 55,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": true,
+          "t": 5.03,
+          "dur": 5.04,
+          "vis": 0
+        },
+        {
+          "painted": true,
+          "t": 1.56,
+          "dur": 5.04,
+          "vis": 0.75
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        -5481,
+        225
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#0C1130"
+    },
+    {
+      "i": 12,
+      "y": 5976,
+      "pct": 56,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": true,
+          "t": 5.03,
+          "dur": 5.04,
+          "vis": 0
+        },
+        {
+          "painted": true,
+          "t": 1.88,
+          "dur": 5.04,
+          "vis": 0.9
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        -5616,
+        90
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#0C1130"
+    },
+    {
+      "i": 13,
+      "y": 6073,
+      "pct": 57,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": true,
+          "t": 5.03,
+          "dur": 5.04,
+          "vis": 0
+        },
+        {
+          "painted": true,
+          "t": 2.11,
+          "dur": 5.04,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        -5713,
+        0
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#0C1130"
+    },
+    {
+      "i": 14,
+      "y": 6142,
+      "pct": 58,
+      "settled": true,
+      "contrast": [],
+      "cues": [
+        {
+          "t": "Tout ce que vous avez ramassé en chemin.",
+          "o": 0.22
+        }
+      ],
+      "clips": [
+        {
+          "painted": true,
+          "t": 5.03,
+          "dur": 5.04,
+          "vis": 0
+        },
+        {
+          "painted": true,
+          "t": 2.27,
+          "dur": 5.04,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        -5782,
+        0
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#0C1130"
+    },
+    {
+      "i": 15,
+      "y": 6211,
+      "pct": 58,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Tout ce que vous avez ramassé en chemin.",
+          "dir": "light-on-dark",
+          "worst": 14.13,
+          "mean": 17.36
+        }
+      ],
+      "cues": [
+        {
+          "t": "Tout ce que vous avez ramassé en chemin.",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": true,
+          "t": 5.03,
+          "dur": 5.04,
+          "vis": 0
+        },
+        {
+          "painted": true,
+          "t": 2.43,
+          "dur": 5.04,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        -5851,
+        0
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#0C1130"
+    },
+    {
+      "i": 16,
+      "y": 6281,
+      "pct": 59,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Tout ce que vous avez ramassé en chemin.",
+          "dir": "light-on-dark",
+          "worst": 13.91,
+          "mean": 17.41
+        }
+      ],
+      "cues": [
+        {
+          "t": "Tout ce que vous avez ramassé en chemin.",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": true,
+          "t": 5.03,
+          "dur": 5.04,
+          "vis": 0
+        },
+        {
+          "painted": true,
+          "t": 2.59,
+          "dur": 5.04,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        -5921,
+        0
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#0C1130"
+    },
+    {
+      "i": 17,
+      "y": 6350,
+      "pct": 60,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Tout ce que vous avez ramassé en chemin.",
+          "dir": "light-on-dark",
+          "worst": 14.06,
+          "mean": 17.44
+        }
+      ],
+      "cues": [
+        {
+          "t": "Tout ce que vous avez ramassé en chemin.",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": true,
+          "t": 5.03,
+          "dur": 5.04,
+          "vis": 0
+        },
+        {
+          "painted": true,
+          "t": 2.75,
+          "dur": 5.04,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        -5990,
+        0
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#0C1130"
+    },
+    {
+      "i": 18,
+      "y": 6419,
+      "pct": 60,
+      "settled": true,
+      "contrast": [],
+      "cues": [
+        {
+          "t": "Tout ce que vous avez ramassé en chemin.",
+          "o": 0.33
+        }
+      ],
+      "clips": [
+        {
+          "painted": true,
+          "t": 5.03,
+          "dur": 5.04,
+          "vis": 0
+        },
+        {
+          "painted": true,
+          "t": 2.91,
+          "dur": 5.04,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        -6059,
+        0
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#0C1130"
+    },
+    {
+      "i": 19,
+      "y": 6516,
+      "pct": 61,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": true,
+          "t": 5.03,
+          "dur": 5.04,
+          "vis": 0
+        },
+        {
+          "painted": true,
+          "t": 3.13,
+          "dur": 5.04,
+          "vis": 0.9
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        -6156,
+        -90
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#0C1130"
+    },
+    {
+      "i": 20,
+      "y": 6651,
+      "pct": 62,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": true,
+          "t": 5.03,
+          "dur": 5.04,
+          "vis": 0
+        },
+        {
+          "painted": true,
+          "t": 3.46,
+          "dur": 5.04,
+          "vis": 0.75
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        -6291,
+        -225
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#0C1130"
+    },
+    {
+      "i": 21,
+      "y": 6786,
+      "pct": 64,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": true,
+          "t": 5.03,
+          "dur": 5.04,
+          "vis": 0
+        },
+        {
+          "painted": true,
+          "t": 3.77,
+          "dur": 5.04,
+          "vis": 0.6
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        -6426,
+        -360
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#0C1130"
+    },
+    {
+      "i": 22,
+      "y": 10663,
+      "pct": 100,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": true,
+          "t": 5.03,
+          "dur": 5.04,
+          "vis": 0
+        },
+        {
+          "painted": true,
+          "t": 5.03,
+          "dur": 5.04,
+          "vis": 0
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none",
+        "none"
+      ],
+      "act": "-",
+      "stages": [
+        -10303,
+        -4237
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#0C1130"
+    }
+  ],
+  "consoleErrors": [],
+  "failed": []
+}
