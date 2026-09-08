@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Scroll-Craft</title>
+<meta name="description" content="Les sites construits dans ce dépôt.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230C1130'/><circle cx='16' cy='16' r='7' fill='%23FF6A2B'/></svg>">
+<style>
+@font-face{font-family:Archivo;font-style:normal;font-weight:100 900;font-stretch:62% 125%;font-display:swap;
+  src:url(scrollcraft/builds/oberle-atelier/fonts/archivo-latin.woff2) format("woff2");
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:Archivo;font-style:normal;font-weight:100 900;font-stretch:62% 125%;font-display:swap;
+  src:url(scrollcraft/builds/oberle-atelier/fonts/archivo-latinext.woff2) format("woff2");
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+@font-face{font-family:Geist;font-style:normal;font-weight:300 700;font-display:swap;
+  src:url(scrollcraft/builds/oberle-atelier/fonts/geist-latin.woff2) format("woff2");
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+
+:root{
+  color-scheme:dark;
+  --bg:#0C1130; --raise:#141A3E; --ink:#FBF4E6; --soft:#A9AFD2; --ac:#FF6A2B;
+}
+*,*::before,*::after{box-sizing:border-box}
+body{
+  margin:0;min-height:100svh;
+  padding:clamp(2rem,7vw,6rem) clamp(1.25rem,6vw,5rem);
+  display:grid;align-content:center;
+  background:var(--bg);color:var(--ink);
+  font-family:Geist,ui-sans-serif,system-ui,-apple-system,sans-serif;
+  font-size:16px;line-height:1.62;letter-spacing:-.004em;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{width:min(52rem,100%);margin-inline:auto}
+.rule{height:6px;width:clamp(58px,9vw,110px);background:var(--ac);margin-bottom:clamp(1.5rem,4vh,2.5rem)}
+h1{
+  font-family:Archivo,ui-sans-serif,system-ui,sans-serif;
+  font-weight:820;font-stretch:104%;
+  font-size:clamp(2.1rem,6vw,3.6rem);line-height:.98;letter-spacing:-.035em;
+  margin:0 0 .45em;
+}
+.sub{color:var(--soft);max-width:52ch;margin:0 0 clamp(2rem,6vh,3.5rem)}
+
+.go{
+  display:grid;grid-template-columns:1fr auto;gap:.5rem clamp(1rem,3vw,2.5rem);
+  align-items:center;
+  padding:clamp(1.4rem,4vw,2.2rem) clamp(1.4rem,4vw,2.4rem);
+  background:var(--raise);border:1px solid rgba(251,244,230,.16);border-radius:4px;
+  text-decoration:none;color:inherit;
+  box-shadow:0 4px 8px rgba(4,6,18,.3),0 18px 40px -8px rgba(4,6,18,.5);
+  transition:border-color .22s cubic-bezier(.23,1,.32,1),
+             background .22s cubic-bezier(.23,1,.32,1),
+             transform .22s cubic-bezier(.23,1,.32,1);
+}
+.go:hover,.go:focus-visible{border-color:var(--ac);background:#18204C;transform:translateY(-2px)}
+.go__t{
+  grid-column:1;
+  font-family:Archivo,ui-sans-serif,system-ui,sans-serif;
+  font-weight:760;font-stretch:98%;
+  font-size:clamp(1.25rem,3.4vw,1.9rem);line-height:1.04;letter-spacing:-.03em;
+}
+.go__d{grid-column:1;color:var(--soft);font-size:.94rem;margin:0}
+.go__arrow{
+  grid-column:2;grid-row:1 / span 2;align-self:center;
+  width:clamp(2.6rem,6vw,3.4rem);aspect-ratio:1;border-radius:50%;
+  background:var(--ac);color:#1A0A04;
+  display:grid;place-items:center;font-size:1.35rem;line-height:1;
+  transition:transform .22s cubic-bezier(.23,1,.32,1);
+}
+.go:hover .go__arrow{transform:translateX(4px)}
+
+.note{
+  margin:clamp(2.5rem,7vh,4rem) 0 0;padding-top:clamp(1.25rem,3vh,2rem);
+  border-top:1px solid rgba(251,244,230,.14);
+  color:var(--soft);font-size:.9rem;max-width:60ch;
+}
+.note p{margin:0 0 .7em}
+.note p:last-child{margin-bottom:0}
+.note a{color:var(--ac);text-underline-offset:3px}
+:focus-visible{outline:3px solid var(--ac);outline-offset:4px;border-radius:4px}
+
+@media (max-width:520px){
+  .go{grid-template-columns:1fr}
+  .go__arrow{grid-column:1;grid-row:auto;justify-self:start;margin-top:.6rem}
+}
+</style>
+</head>
+<body>
+
+<main class="wrap">
+  <div class="rule" aria-hidden="true"></div>
+  <h1>Scroll-Craft</h1>
+  <p class="sub">Les sites construits dans ce dépôt. Chacun est servi tel quel, avec ses vidéos, ses polices et son moteur de scroll.</p>
+
+  <a class="go" href="scrollcraft/builds/oberle-atelier/">
+    <span class="go__t">Muriel Oberlé, ateliers de peinture</span>
+    <p class="go__d">Une page unique en français. Des enfants dès 8 ans aux cours particuliers pour adultes.</p>
+    <span class="go__arrow" aria-hidden="true">&rarr;</span>
+  </a>
+
+  <div class="note">
+    <p>Le site est encore en préparation : l'adresse, les horaires, les tarifs et
+      les coordonnées y sont marqués « à compléter » plutôt que remplis au
+      hasard, et les visuels sont générés en attendant les vraies photographies.</p>
+    <p>Le brief, la partition acte par acte et le compte rendu de vérification de
+      cette page vivent dans
+      <a href="https://github.com/lumsrouge/Scroll-Craft/blob/main/scrollcraft/builds/oberle-atelier/BRIEF.md">son dossier de travail</a>.</p>
+  </div>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+import { chromium } from 'playwright-core';
+const b = await chromium.launch({ executablePath:'/usr/bin/google-chrome', args:['--no-sandbox'] });
+const p = await b.newPage({ viewport:{width:1440,height:900} });
+const bad=[];
+p.on('console', m=>{ if(m.type()==='error') bad.push('console: '+m.text()); });
+p.on('requestfailed', r=>bad.push('failed: '+r.url()));
+p.on('response', r=>{ if(r.status()>=400) bad.push(r.status()+' '+r.url()); });
+await p.goto('http://localhost:4800/',{waitUntil:'networkidle'});
+await p.waitForTimeout(2500);
+await p.evaluate(()=>window.scrollTo(0, document.body.scrollHeight*0.45));
+await p.waitForTimeout(2500);
+await p.evaluate(()=>window.scrollTo(0, document.body.scrollHeight));
+await p.waitForTimeout(2000);
+const clip = await p.evaluate(()=>{const v=document.querySelector('video[data-sc-scrub]');
+  return v? {src:(v.src||'').slice(0,12), t:+v.currentTime.toFixed(2), ready:v.readyState}:null;});
+console.log('hero clip:', JSON.stringify(clip));
+console.log(bad.length? 'PROBLEMS:\n'+bad.join('\n') : 'no console errors, no failed requests');
+await b.close();
