@@ -30,7 +30,8 @@ changes only grammar and world will fail it.
 |---|---|---|---|---|---|---|---|---|
 | oberle-atelier | Rhythmic cutlist | Barre basse pleine largeur qui EST la palette : marque, pigments cliquables qui s'allument, action, à poids égal | `scrub` 1,4 vh à quatre plans composés main (clip aérien, atmosphère, coulée de pigment, éclaboussure de premier plan), typo entre le sujet et le premier plan | 13 actes, aucun au-dessus de 1,4 vh, 12,8 vh au total ; scrub, kinetic, in, reveal, tilt, reveal, silence, scrub, kinetic, in, reveal, in, close | Coupe sèche plein cadre vermillon : la palette se réorganise en quatre choix d'atelier qui pilotent le formulaire, cue qui tient, pied de page dans le cadre | La palette qui se charge d'un pigment par section franchie, se déplie au pic pour que le scroll traîne les pigments ramassés en une coulée sur la planète, puis devient le sélecteur d'atelier | Argentique couleur poussée, plein soleil dur, ocre / vermillon / safran / indigo | HTML statique, moteur scrollcraft non modifié |
 
-*(First row appended. From here on, this table is the constraint.)*
+| oberle-traversee | Monde continu (worldflight) | La carte : le trait de vol lui-même dessiné petit en marge, huit waypoints posés dessus par sa propre géométrie, cliquables, curseur qui glisse ; rangée de huit points à 44 px sur téléphone | Position établie dans le monde, jambe 1 du vol, aucun titre séparé ni plan composé | Aucun acte. 8 jambes, une seule allure à 0,22 vh/s, 9,9 vh de jambes + 1 vh de queue = 10,9 vh, le pic seul au double des autres | Atterrissage sur la table de l'atelier, dans le même cadre : le trait se pose sur le carnet, l'action est une feuille d'inscription posée dessus | Le trait unique : une seule ligne tirée par le scroll au-dessus du monde, illisible parce qu'on est dedans, qui se replie à l'arrivée et se révèle être un profil de visage | Photographique, lumière réelle de chaque latitude, turquoise / vert acide / ocre / vermillon pris sur ses toiles, pigment aux bords | HTML statique, moteur scrollcraft non modifié |
+*(Deux lignes. La table est la contrainte du prochain build.)*
 
 ---
 
@@ -55,6 +56,24 @@ as a constraint, so writing them down is the whole point.
   is now taken.
 - Ground painted per section rather than drifted, with a two-stop accent
   (one hue) keyed to light and dark grounds.
+
+De `oberle-traversee` :
+
+- **Monde continu (worldflight)** comme grammaire, et avec elle la carte de
+  waypoints comme unique navigation.
+- **Le trait unique** : un tracé que le scroll tire au-dessus du monde, illisible
+  parce que le visiteur est dedans, qui se replie à l'arrivée et se révèle être
+  autre chose. La révélation-par-changement-d'échelle appartient à ce build.
+- **La carte est le même tracé dessiné petit**, waypoints posés par la géométrie
+  du chemin lui-même (`getPointAtLength`) plutôt qu'à la main.
+- **8 jambes, une seule allure à 0,22 vh/s, 10,9 vh de piste.** Cette bande de
+  longueur et ce nombre de jambes sont pris.
+- **Fermeture par atterrissage dans le même cadre**, l'action étant un objet posé
+  dans le lieu d'arrivée plutôt qu'un plan de fermeture.
+- **Un voile dédié au hero, asservi à l'opacité du bloc qu'il protège**, plutôt
+  qu'une densité globale montée pour le pire cas. Technique réutilisable, mais un
+  prochain build ne doit pas reprendre la densité d'angle en deux radiales comme
+  s'il s'agissait d'une signature.
 
 ---
 

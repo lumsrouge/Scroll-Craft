@@ -15,3 +15,5 @@ scrollcraft/builds/*/lab/v*.jpg
 scrollcraft/builds/*/lab/pire-*.png
 scrollcraft/builds/*/lab/tel-*.png
 scrollcraft/builds/*/lab/[mw][0-9]*.jpg
+# les planches de contact sont gardees en jpeg ; le png source fait 20 Mo
+scrollcraft/builds/*/lab/*/sheet.png

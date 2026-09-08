@@ -512,3 +512,84 @@ la face nuit de la Terre, il n'y a pas de photographie à y perdre.
     allégée et voile du hero réduit de moitié ; le carnet, l'aquarelle et la
     bâche redeviennent visibles, et le contraste reste au-dessus de 5,5:1
     partout.
+
+### Les trois passages du harnais
+
+| Profil | Jambes à l'opacité pleine | Clips | Scroll mort | Erreurs console |
+|---|---|---|---|---|
+| Bureau 1440×900 | 8 / 8, chacune peint une vraie image | les 8 avancent, dont les 10 s du pic | aucun | aucune |
+| Téléphone 390×844 | 8 / 8, chacune peint une vraie image | les 8 avancent | aucun | aucune |
+| Mouvement réduit | 8 / 8, **posters seuls** | **aucun clip n'est jamais chargé** | sans objet | aucune |
+
+Sous mouvement réduit les fenêtres de copie s'ouvrent et se ferment aux mêmes
+positions, les posters se fondent aux mêmes coutures, et le trait est entier et
+posé dès le départ : l'histoire tient sans la chorégraphie.
+
+### Une alerte du harnais qui n'a pas été suivie
+
+Il signale des clips « tenus » plus d'un viewport et propose
+`data-sc-clip-map="travel"`. C'est une heuristique du **mode actes** qui se
+déclenche à tort ici : dans un monde continu toutes les jambes restent montées
+en permanence, et la jambe sortante tient volontairement sa dernière image sous
+la jambe entrante — c'est le fondu à un seul côté que `worldflight.md` impose
+pour supprimer les coutures. Le contrôle de scroll mort, lui, est conscient du
+mode et ne signale rien. L'attribut proposé appartient au mode actes et n'aurait
+rien à piloter ici.
+
+De même, le harnais rapporte 3,69:1 sur le bloc du formulaire : il cache
+`[data-sc-copy] *`, donc la plaque crème **avec** le texte, et mesure le monde
+derrière. La plaque est opaque ; le rapport réel est de l'encre `#14100E` sur
+`#F4EFE4`, soit environ **16:1**, et le blanc sur le bouton vermillon est à
+6,08:1. C'est exactement le piège que `taste.md` décrit quand un fond est
+l'enfant du texte qu'il protège, et c'est la raison pour laquelle la mesure
+sous les glyphes de ce build neutralise le texte par la couleur plutôt qu'en
+cachant l'élément.
+
+## La passe de sensation
+
+Un mot par jambe, écrit sur la planche de contact avant de rouvrir ce fichier.
+
+| Jambe | Voulu | Ressenti | Verdict |
+|---|---|---|---|
+| 1 L'établi | Intimité | intimité | ✓ |
+| 2 Le seuil | Élan | **ouverture** | écart doux |
+| 3 L'altitude | Silence | suspension | ✓ |
+| 4 La planète | Émerveillement | émerveillement | ✓ |
+| 5 L'Afrique | Chaleur | chaleur | ✓ |
+| 6 Les Caraïbes | Liberté | **clarté** | écart doux |
+| 7 Le retour | Retour | descente | ✓ |
+| 8 L'atelier | Évidence | évidence | ✓ |
+
+Aucune jambe n'est restée sans mot, ce qui aurait signalé du remplissage.
+
+**Les deux écarts.** Les jambes 2 et 6 se lisent une nuance en dessous de ce que
+le brief demandait : c'est la copie qui y porte l'intention plus que l'image.
+Ils sont consignés plutôt que corrigés, et le brief n'a pas été réécrit pour
+coller au résultat. La correction juste serait un mouvement de caméra plus
+franc sur ces deux jambes, ce qui coûte deux clips à regénérer.
+
+Les trois contrôles de fin :
+
+- **Le pic se lit-il comme le pic ?** Oui. Sur la planche c'est le plus grand
+  changement visuel de la page — le nuage clair, puis le noir de l'espace, puis
+  la Terre qui s'allume — et il tient 2,2 vh contre 1,1 pour toutes les autres.
+- **Y a-t-il du silence devant ?** Oui, la jambe 3 entière, sans un mot à
+  l'écran, et le harnais le confirme : `copy=0` sur toute sa longueur.
+- **La fin résout-elle ?** Oui. Le vol atterrit sur la table, le trait se pose
+  sur le carnet et devient un visage, et l'action est une feuille posée dessus.
+  Le dernier écran tient, plein, sans rien qui s'efface.
+
+## Ce qui n'a pas pu être vérifié
+
+- **Un vrai téléphone.** Chrome headless ne reproduit ni le décodeur vidéo d'un
+  iPhone, ni sa politique de lecture automatique, ni le mode économie d'énergie,
+  ni le scroll tactile. Un monde continu monte **huit clips simultanément** :
+  c'est le profil de charge le plus exigeant que ce skill produise, et c'est le
+  premier endroit où ça peut céder. Trois passages verts ne le prouvent pas.
+- **Les clips mobiles sont les mêmes plans 16:9**, réencodés en 720 avec un GOP
+  de 4. Sur un écran portrait ils sont recadrés au tiers central. Les vues
+  aériennes le supportent, l'intérieur d'atelier moins. Des plans natifs en 9:16
+  doubleraient la dépense de génération ; c'est la première amélioration si le
+  rendu mobile déçoit.
+- **Un seul moteur de rendu.** Ni Safari ni Firefox.
+- **L'Instagram `@murieloberle.studio`** n'a pas pu être lu depuis cette session.

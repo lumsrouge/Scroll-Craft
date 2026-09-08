@@ -1,0 +1,37 @@
+  clip 6: 1318px (1.46 viewports) held mid-clip at 0.05s, longer than a dwell settle
+  clip 6: 970px (1.08 viewports) held on its LAST frame while the stage slides out
+  clip 7: 1318px (1.46 viewports) held mid-clip at 0.05s, longer than a dwell settle
+  Fix: let the clip map across the stage's whole visible life. That is the
+  engine default; data-sc-clip-map="travel" turns it off. See devices.md.
+all 8 legs reach full opacity and paint a real frame
+
+CONTRAST THIN (3:1 to 4.5:1, ok for large display type only):
+  3.92:1 "On ne commence pas par apprendre à dessi"
+contact sheet: /home/user/Scroll-Craft/scrollcraft/builds/oberle-traversee/lab/desk/sheet.png
+
+shots + report.json in /home/user/Scroll-Craft/scrollcraft/builds/oberle-traversee/lab/desk
+  clip 6: 910px (1.08 viewports) held on its LAST frame while the stage slides out
+  clip 7: 1103px (1.31 viewports) held mid-clip at 0.05s, longer than a dwell settle
+  Fix: let the clip map across the stage's whole visible life. That is the
+  engine default; data-sc-clip-map="travel" turns it off. See devices.md.
+all 8 legs reach full opacity and paint a real frame
+
+CONTRAST THIN (3:1 to 4.5:1, ok for large display type only):
+  4.25:1 "Et on rentre avec quelque chose. 8 à 11 "
+  3.69:1 "Réserver un atelier Dites-moi qui vient "
+contact sheet: /home/user/Scroll-Craft/scrollcraft/builds/oberle-traversee/lab/tel/sheet.png
+
+shots + report.json in /home/user/Scroll-Craft/scrollcraft/builds/oberle-traversee/lab/tel
+  59.png  settled=true  copy=1  leg=7@0.6596  legs=-,-,-,-,-,-,-,poster
+  60.png  settled=true  copy=1  leg=7@0.9798  legs=-,-,-,-,-,-,-,poster
+  61.png  settled=true  copy=1  leg=7@1  legs=-,-,-,-,-,-,-,poster
+
+dead-scroll check skipped: reduced motion holds each leg on one still frame by design
+all 8 legs reach full opacity (posters only, as reduced motion requires)
+
+CONTRAST THIN (3:1 to 4.5:1, ok for large display type only):
+  3.72:1 "On ne commence pas par apprendre à dessi"
+contact sheet: /home/user/Scroll-Craft/scrollcraft/builds/oberle-traversee/lab/reduit/sheet.png
+
+shots + report.json in /home/user/Scroll-Craft/scrollcraft/builds/oberle-traversee/lab/reduit
+FINI

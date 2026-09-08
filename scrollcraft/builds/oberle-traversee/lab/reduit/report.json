@@ -1,0 +1,8011 @@
+{
+  "doc": {
+    "height": 9810,
+    "vh": 900,
+    "acts": [],
+    "world": {
+      "seam": 0.16,
+      "segs": [
+        {
+          "w": 1.1,
+          "linger": 0,
+          "label": "L'établi"
+        },
+        {
+          "w": 1.1,
+          "linger": 0,
+          "label": "Le seuil"
+        },
+        {
+          "w": 1.1,
+          "linger": 0,
+          "label": "L'altitude"
+        },
+        {
+          "w": 2.2,
+          "linger": 0,
+          "label": "La planète"
+        },
+        {
+          "w": 1.1,
+          "linger": 0,
+          "label": "L'Afrique"
+        },
+        {
+          "w": 1.1,
+          "linger": 0,
+          "label": "Les Caraïbes"
+        },
+        {
+          "w": 1.1,
+          "linger": 0,
+          "label": "Le retour"
+        },
+        {
+          "w": 1.1,
+          "linger": 0,
+          "label": "L'atelier"
+        }
+      ]
+    }
+  },
+  "report": [
+    {
+      "i": 0,
+      "y": 0,
+      "pct": 0,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Peindre pour se découvrir Ateliers de pe",
+          "dir": "light-on-dark",
+          "worst": 4.97,
+          "mean": 13.76
+        }
+      ],
+      "cues": [
+        {
+          "t": "Peindre pour se découvrir Ateliers de peinture",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 0,
+      "segp": 0,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 1,
+      "y": 20,
+      "pct": 0,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Peindre pour se découvrir Ateliers de pe",
+          "dir": "light-on-dark",
+          "worst": 4.97,
+          "mean": 13.76
+        }
+      ],
+      "cues": [
+        {
+          "t": "Peindre pour se découvrir Ateliers de peinture",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 0,
+      "segp": 0.0202,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 2,
+      "y": 337,
+      "pct": 4,
+      "settled": true,
+      "contrast": [],
+      "cues": [
+        {
+          "t": "Peindre pour se découvrir Ateliers de peinture",
+          "o": 0.78
+        }
+      ],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 0,
+      "segp": 0.3404,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 3,
+      "y": 653,
+      "pct": 7,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 0,
+      "segp": 0.6596,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 4,
+      "y": 918,
+      "pct": 10,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 1,
+      "segp": 0,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 5,
+      "y": 961,
+      "pct": 11,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0.214,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 1,
+      "segp": 0,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 6,
+      "y": 970,
+      "pct": 11,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0.297,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 1,
+      "segp": 0,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 7,
+      "y": 1010,
+      "pct": 11,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0.703,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 1,
+      "segp": 0.0202,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 8,
+      "y": 1019,
+      "pct": 11,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0.786,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 1,
+      "segp": 0.0293,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 9,
+      "y": 1062,
+      "pct": 12,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 1,
+      "segp": 0.0727,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 10,
+      "y": 1327,
+      "pct": 15,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "On ne commence pas par apprendre à dessi",
+          "dir": "light-on-dark",
+          "worst": 3.72,
+          "mean": 13.2
+        }
+      ],
+      "cues": [
+        {
+          "t": "On ne commence pas par apprendre à dessiner. O",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 1,
+      "segp": 0.3404,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 11,
+      "y": 1643,
+      "pct": 18,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "On ne commence pas par apprendre à dessi",
+          "dir": "light-on-dark",
+          "worst": 3.72,
+          "mean": 13.2
+        }
+      ],
+      "cues": [
+        {
+          "t": "On ne commence pas par apprendre à dessiner. O",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 1,
+      "segp": 0.6596,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 12,
+      "y": 1908,
+      "pct": 21,
+      "settled": true,
+      "contrast": [],
+      "cues": [
+        {
+          "t": "On ne commence pas par apprendre à dessiner. O",
+          "o": 0.07
+        }
+      ],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 2,
+      "segp": 0,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 13,
+      "y": 1951,
+      "pct": 22,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0.214,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 2,
+      "segp": 0,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 14,
+      "y": 1960,
+      "pct": 22,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0.297,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 2,
+      "segp": 0,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 15,
+      "y": 2000,
+      "pct": 22,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0.703,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 2,
+      "segp": 0.0202,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 16,
+      "y": 2009,
+      "pct": 23,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0.786,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 2,
+      "segp": 0.0293,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 17,
+      "y": 2052,
+      "pct": 23,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 2,
+      "segp": 0.0727,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 18,
+      "y": 2317,
+      "pct": 26,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 2,
+      "segp": 0.3404,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 19,
+      "y": 2633,
+      "pct": 30,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 2,
+      "segp": 0.6596,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 20,
+      "y": 2898,
+      "pct": 33,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 3,
+      "segp": 0,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 21,
+      "y": 2941,
+      "pct": 33,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0.214,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 3,
+      "segp": 0,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 22,
+      "y": 2950,
+      "pct": 33,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0.297,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 3,
+      "segp": 0,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 23,
+      "y": 2999,
+      "pct": 34,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0.786,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 3,
+      "segp": 0.0146,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 24,
+      "y": 3010,
+      "pct": 34,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0.874,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 3,
+      "segp": 0.0202,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 25,
+      "y": 3042,
+      "pct": 34,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 3,
+      "segp": 0.0364,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 26,
+      "y": 3643,
+      "pct": 41,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "La couleur est un moyen de transport. Mu",
+          "dir": "light-on-dark",
+          "worst": 5.46,
+          "mean": 14.11
+        }
+      ],
+      "cues": [
+        {
+          "t": "La couleur est un moyen de transport. Muriel O",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 3,
+      "segp": 0.3399,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 27,
+      "y": 4277,
+      "pct": 48,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "La couleur est un moyen de transport. Mu",
+          "dir": "light-on-dark",
+          "worst": 5.46,
+          "mean": 14.11
+        }
+      ],
+      "cues": [
+        {
+          "t": "La couleur est un moyen de transport. Muriel O",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 3,
+      "segp": 0.6601,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 28,
+      "y": 4878,
+      "pct": 55,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 4,
+      "segp": 0,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 29,
+      "y": 4910,
+      "pct": 55,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0.126,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 4,
+      "segp": 0,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 30,
+      "y": 4921,
+      "pct": 55,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0.214,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 4,
+      "segp": 0,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 31,
+      "y": 4970,
+      "pct": 56,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0.703,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 4,
+      "segp": 0.0202,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 32,
+      "y": 4979,
+      "pct": 56,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0.786,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 4,
+      "segp": 0.0293,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 33,
+      "y": 5022,
+      "pct": 56,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 4,
+      "segp": 0.0727,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 34,
+      "y": 5287,
+      "pct": 59,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Une couleur se choisit comme on choisit ",
+          "dir": "light-on-dark",
+          "worst": 10.35,
+          "mean": 14.66
+        }
+      ],
+      "cues": [
+        {
+          "t": "Une couleur se choisit comme on choisit une di",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 4,
+      "segp": 0.3404,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 35,
+      "y": 5603,
+      "pct": 63,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Une couleur se choisit comme on choisit ",
+          "dir": "light-on-dark",
+          "worst": 10.35,
+          "mean": 14.66
+        }
+      ],
+      "cues": [
+        {
+          "t": "Une couleur se choisit comme on choisit une di",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 4,
+      "segp": 0.6596,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 36,
+      "y": 5868,
+      "pct": 66,
+      "settled": true,
+      "contrast": [],
+      "cues": [
+        {
+          "t": "Une couleur se choisit comme on choisit une di",
+          "o": 0.06
+        }
+      ],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 5,
+      "segp": 0,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 37,
+      "y": 5911,
+      "pct": 66,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0.214,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 5,
+      "segp": 0,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 38,
+      "y": 5920,
+      "pct": 66,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0.297,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 5,
+      "segp": 0,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 39,
+      "y": 5960,
+      "pct": 67,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0.703,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 5,
+      "segp": 0.0202,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 40,
+      "y": 5969,
+      "pct": 67,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0.786,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 5,
+      "segp": 0.0293,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 41,
+      "y": 6012,
+      "pct": 67,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 5,
+      "segp": 0.0727,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 42,
+      "y": 6277,
+      "pct": 70,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Personne ne copie un modèle, ici. Encre,",
+          "dir": "light-on-dark",
+          "worst": 13.89,
+          "mean": 16.85
+        }
+      ],
+      "cues": [
+        {
+          "t": "Personne ne copie un modèle, ici. Encre, colla",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 5,
+      "segp": 0.3404,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 43,
+      "y": 6593,
+      "pct": 74,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Personne ne copie un modèle, ici. Encre,",
+          "dir": "light-on-dark",
+          "worst": 13.89,
+          "mean": 16.85
+        }
+      ],
+      "cues": [
+        {
+          "t": "Personne ne copie un modèle, ici. Encre, colla",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 5,
+      "segp": 0.6596,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 44,
+      "y": 6858,
+      "pct": 77,
+      "settled": true,
+      "contrast": [],
+      "cues": [
+        {
+          "t": "Personne ne copie un modèle, ici. Encre, colla",
+          "o": 0.05
+        }
+      ],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 6,
+      "segp": 0,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 45,
+      "y": 6901,
+      "pct": 77,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0.214,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 6,
+      "segp": 0,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 46,
+      "y": 6910,
+      "pct": 78,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0.297,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 6,
+      "segp": 0,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 47,
+      "y": 6950,
+      "pct": 78,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0.703,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 6,
+      "segp": 0.0202,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 48,
+      "y": 6959,
+      "pct": 78,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0.786,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 6,
+      "segp": 0.0293,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 49,
+      "y": 7002,
+      "pct": 79,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 6,
+      "segp": 0.0727,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 50,
+      "y": 7267,
+      "pct": 82,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Et on rentre avec quelque chose. 8 à 11 ",
+          "dir": "light-on-dark",
+          "worst": 11.91,
+          "mean": 15.86
+        }
+      ],
+      "cues": [
+        {
+          "t": "Et on rentre avec quelque chose. 8 à 11 ans At",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 6,
+      "segp": 0.3404,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 51,
+      "y": 7583,
+      "pct": 85,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Et on rentre avec quelque chose. 8 à 11 ",
+          "dir": "light-on-dark",
+          "worst": 11.91,
+          "mean": 15.86
+        }
+      ],
+      "cues": [
+        {
+          "t": "Et on rentre avec quelque chose. 8 à 11 ans At",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 6,
+      "segp": 0.6596,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 52,
+      "y": 7848,
+      "pct": 88,
+      "settled": true,
+      "contrast": [],
+      "cues": [
+        {
+          "t": "Et on rentre avec quelque chose. 8 à 11 ans At",
+          "o": 0.09
+        }
+      ],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 7,
+      "segp": 0,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 53,
+      "y": 7891,
+      "pct": 89,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0.214,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 7,
+      "segp": 0,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 54,
+      "y": 7900,
+      "pct": 89,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0.297,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 7,
+      "segp": 0,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 55,
+      "y": 7940,
+      "pct": 89,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0.703,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 7,
+      "segp": 0.0202,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 56,
+      "y": 7949,
+      "pct": 89,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 0.786,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 7,
+      "segp": 0.0293,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 57,
+      "y": 7992,
+      "pct": 90,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 7,
+      "segp": 0.0727,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 58,
+      "y": 8257,
+      "pct": 93,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 7,
+      "segp": 0.3404,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 59,
+      "y": 8573,
+      "pct": 96,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Réserver un atelier Dites-moi qui vient ",
+          "dir": "light-on-dark",
+          "worst": 7.65,
+          "mean": 14.94
+        }
+      ],
+      "cues": [
+        {
+          "t": "Réserver un atelier Dites-moi qui vient et ce ",
+          "o": 0.88
+        }
+      ],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 7,
+      "segp": 0.6596,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 60,
+      "y": 8890,
+      "pct": 100,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Réserver un atelier Dites-moi qui vient ",
+          "dir": "light-on-dark",
+          "worst": 7.65,
+          "mean": 14.94
+        }
+      ],
+      "cues": [
+        {
+          "t": "Réserver un atelier Dites-moi qui vient et ce ",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 7,
+      "segp": 0.9798,
+      "bg": "#0B0F14"
+    },
+    {
+      "i": 61,
+      "y": 8910,
+      "pct": 100,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Réserver un atelier Dites-moi qui vient ",
+          "dir": "light-on-dark",
+          "worst": 7.65,
+          "mean": 14.94
+        }
+      ],
+      "cues": [
+        {
+          "t": "Réserver un atelier Dites-moi qui vient et ce ",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        },
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [],
+      "act": "-",
+      "stages": [],
+      "segs": [
+        {
+          "i": 0,
+          "label": "L'établi",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 1,
+          "label": "Le seuil",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 2,
+          "label": "L'altitude",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 3,
+          "label": "La planète",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 4,
+          "label": "L'Afrique",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 5,
+          "label": "Les Caraïbes",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 6,
+          "label": "Le retour",
+          "op": 0,
+          "painted": false,
+          "t": 0
+        },
+        {
+          "i": 7,
+          "label": "L'atelier",
+          "op": 1,
+          "painted": false,
+          "t": 0
+        }
+      ],
+      "custom": [],
+      "customHold": false,
+      "seg": 7,
+      "segp": 1,
+      "bg": "#0B0F14"
+    }
+  ],
+  "consoleErrors": [],
+  "failed": []
+}
