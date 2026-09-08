@@ -1,0 +1,10 @@
+<!doctype html><meta charset=utf-8><style>
+body{margin:0;background:#888;font-size:0}
+.row{display:flex}
+.box{width:120px;height:60px;position:relative;background:#fff;isolation:isolate}
+.p{position:absolute;inset:0;mix-blend-mode:multiply;isolation:isolate}
+.p i{position:absolute;inset:0;display:block}
+.p::after{content:"";position:absolute;inset:0;mix-blend-mode:screen}
+.p--c::after{background:#f00}.p--m::after{background:#0f0}.p--y::after{background:#00f}
+.ref{width:120px;height:60px}
+.row:nth-child(1) i{background:rgb(181,128,221)}.row:nth-child(2) i{background:rgb(226,175,101)}.row:nth-child(3) i{background:rgb(87,151,196)}.row:nth-child(4) i{background:rgb(247,242,231)}.row:nth-child(5) i{background:rgb(124,124,124)}</style><div class="row"><div class="box"><div class="p p--c"><i></i></div><div class="p p--m"><i></i></div><div class="p p--y"><i></i></div></div><div class="ref" style="background:rgb(128,64,192)"></div></div><div class="row"><div class="box"><div class="p p--c"><i></i></div><div class="p p--m"><i></i></div><div class="p p--y"><i></i></div></div><div class="ref" style="background:rgb(200,120,40)"></div></div><div class="row"><div class="box"><div class="p p--c"><i></i></div><div class="p p--m"><i></i></div><div class="p p--y"><i></i></div></div><div class="ref" style="background:rgb(30,90,150)"></div></div><div class="row"><div class="box"><div class="p p--c"><i></i></div><div class="p p--m"><i></i></div><div class="p p--y"><i></i></div></div><div class="ref" style="background:rgb(240,230,210)"></div></div><div class="row"><div class="box"><div class="p p--c"><i></i></div><div class="p p--m"><i></i></div><div class="p p--y"><i></i></div></div><div class="ref" style="background:rgb(60,60,60)"></div></div>

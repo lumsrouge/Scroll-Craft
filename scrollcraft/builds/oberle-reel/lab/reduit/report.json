@@ -1,0 +1,981 @@
+{
+  "doc": {
+    "height": 11138,
+    "vh": 900,
+    "acts": [
+      "flow",
+      "flow",
+      "scrub",
+      "flow"
+    ],
+    "world": null
+  },
+  "report": [
+    {
+      "i": 0,
+      "y": 1779,
+      "pct": 17,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 0
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none"
+      ],
+      "act": "-",
+      "stages": [
+        4260
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#F2EAD9"
+    },
+    {
+      "i": 1,
+      "y": 2234,
+      "pct": 22,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 0
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none"
+      ],
+      "act": "flow",
+      "stages": [
+        3805
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#F2EAD9"
+    },
+    {
+      "i": 2,
+      "y": 2689,
+      "pct": 26,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 0
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none"
+      ],
+      "act": "flow",
+      "stages": [
+        3350
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#F2EAD9"
+    },
+    {
+      "i": 3,
+      "y": 3145,
+      "pct": 31,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 0
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none"
+      ],
+      "act": "flow",
+      "stages": [
+        2894
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#F2EAD9"
+    },
+    {
+      "i": 4,
+      "y": 3600,
+      "pct": 35,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 0
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none"
+      ],
+      "act": "flow",
+      "stages": [
+        2439
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#F2EAD9"
+    },
+    {
+      "i": 5,
+      "y": 4055,
+      "pct": 40,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 0
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none"
+      ],
+      "act": "-",
+      "stages": [
+        1984
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#F2EAD9"
+    },
+    {
+      "i": 6,
+      "y": 4385,
+      "pct": 43,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 0
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none"
+      ],
+      "act": "-",
+      "stages": [
+        1654
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#F2EAD9"
+    },
+    {
+      "i": 7,
+      "y": 4709,
+      "pct": 46,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 0
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none"
+      ],
+      "act": "-",
+      "stages": [
+        1330
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#F2EAD9"
+    },
+    {
+      "i": 8,
+      "y": 5033,
+      "pct": 49,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 0
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none"
+      ],
+      "act": "flow",
+      "stages": [
+        1006
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#F2EAD9"
+    },
+    {
+      "i": 9,
+      "y": 5357,
+      "pct": 52,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 0.243
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none"
+      ],
+      "act": "flow",
+      "stages": [
+        682
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#F2EAD9"
+    },
+    {
+      "i": 10,
+      "y": 5679,
+      "pct": 55,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 0.6
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        360
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#F2EAD9"
+    },
+    {
+      "i": 11,
+      "y": 5681,
+      "pct": 55,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 0.603
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        358
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#F2EAD9"
+    },
+    {
+      "i": 12,
+      "y": 5814,
+      "pct": 57,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 0.75
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        225
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#F2EAD9"
+    },
+    {
+      "i": 13,
+      "y": 5949,
+      "pct": 58,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 0.9
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        90
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#F2EAD9"
+    },
+    {
+      "i": 14,
+      "y": 6005,
+      "pct": 59,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 0.963
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        34
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#F2EAD9"
+    },
+    {
+      "i": 15,
+      "y": 6049,
+      "pct": 59,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        0
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#F2EAD9"
+    },
+    {
+      "i": 16,
+      "y": 6144,
+      "pct": 60,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        0
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#F2EAD9"
+    },
+    {
+      "i": 17,
+      "y": 6239,
+      "pct": 61,
+      "settled": true,
+      "contrast": [],
+      "cues": [
+        {
+          "t": "Chapitre cinq Les toiles passent devant Le der",
+          "o": 0.14
+        }
+      ],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        0
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#F2EAD9"
+    },
+    {
+      "i": 18,
+      "y": 6334,
+      "pct": 62,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Chapitre cinq Les toiles passent devant ",
+          "dir": "dark-on-light",
+          "worst": 15.2,
+          "mean": 15.2
+        }
+      ],
+      "cues": [
+        {
+          "t": "Chapitre cinq Les toiles passent devant Le der",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        0
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#F2EAD9"
+    },
+    {
+      "i": 19,
+      "y": 6429,
+      "pct": 63,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Chapitre cinq Les toiles passent devant ",
+          "dir": "dark-on-light",
+          "worst": 15.2,
+          "mean": 15.2
+        }
+      ],
+      "cues": [
+        {
+          "t": "Chapitre cinq Les toiles passent devant Le der",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        0
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#F2EAD9"
+    },
+    {
+      "i": 20,
+      "y": 6524,
+      "pct": 64,
+      "settled": true,
+      "contrast": [],
+      "cues": [
+        {
+          "t": "Chapitre cinq Les toiles passent devant Le der",
+          "o": 0.04
+        }
+      ],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 1
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        0
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#F2EAD9"
+    },
+    {
+      "i": 21,
+      "y": 6624,
+      "pct": 65,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 0.9
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        -90
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#F2EAD9"
+    },
+    {
+      "i": 22,
+      "y": 6759,
+      "pct": 66,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 0.75
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        -225
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#F2EAD9"
+    },
+    {
+      "i": 23,
+      "y": 6894,
+      "pct": 67,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 0.6
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none"
+      ],
+      "act": "scrub",
+      "stages": [
+        -360
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#F2EAD9"
+    },
+    {
+      "i": 24,
+      "y": 7983,
+      "pct": 78,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 0
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none"
+      ],
+      "act": "-",
+      "stages": [
+        -1449
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#F2EAD9"
+    },
+    {
+      "i": 25,
+      "y": 8440,
+      "pct": 82,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 0
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none"
+      ],
+      "act": "flow",
+      "stages": [
+        -1906
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#F2EAD9"
+    },
+    {
+      "i": 26,
+      "y": 8898,
+      "pct": 87,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 0
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none"
+      ],
+      "act": "flow",
+      "stages": [
+        -2364
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#F2EAD9"
+    },
+    {
+      "i": 27,
+      "y": 9355,
+      "pct": 91,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 0
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none"
+      ],
+      "act": "flow",
+      "stages": [
+        -2821
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#F2EAD9"
+    },
+    {
+      "i": 28,
+      "y": 9812,
+      "pct": 96,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 0
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none"
+      ],
+      "act": "flow",
+      "stages": [
+        -3278
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#F2EAD9"
+    },
+    {
+      "i": 29,
+      "y": 10238,
+      "pct": 100,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": false,
+          "t": 0,
+          "dur": 0,
+          "vis": 0
+        }
+      ],
+      "rails": [],
+      "wipes": [
+        "none",
+        "none"
+      ],
+      "act": "-",
+      "stages": [
+        -3704
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#F2EAD9"
+    }
+  ],
+  "consoleErrors": [],
+  "failed": []
+}

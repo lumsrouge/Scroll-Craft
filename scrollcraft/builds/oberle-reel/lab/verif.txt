@@ -1,0 +1,30 @@
+=== lab/desk ===
+page: 13.1 viewport-heights, acts: flow > flow > scrub > flow
+
+no dead scroll detected
+all 1 scrub clip(s) keep moving whenever they are on screen
+
+contrast over media: all cues clear 4.5:1 at their worst frame
+contact sheet: /home/user/Scroll-Craft/scrollcraft/builds/oberle-reel/lab/desk/sheet.png
+
+shots + report.json in /home/user/Scroll-Craft/scrollcraft/builds/oberle-reel/lab/desk
+=== lab/tel ===
+page: 13.9 viewport-heights, acts: flow > flow > scrub > flow
+
+no dead scroll detected
+all 1 scrub clip(s) keep moving whenever they are on screen
+
+contrast over media: all cues clear 4.5:1 at their worst frame
+contact sheet: /home/user/Scroll-Craft/scrollcraft/builds/oberle-reel/lab/tel/sheet.png
+
+shots + report.json in /home/user/Scroll-Craft/scrollcraft/builds/oberle-reel/lab/tel
+=== lab/reduit ===
+page: 12.4 viewport-heights, acts: flow > flow > scrub > flow
+
+no dead scroll detected
+
+contrast over media: all cues clear 4.5:1 at their worst frame
+contact sheet: /home/user/Scroll-Craft/scrollcraft/builds/oberle-reel/lab/reduit/sheet.png
+
+shots + report.json in /home/user/Scroll-Craft/scrollcraft/builds/oberle-reel/lab/reduit
+FINI

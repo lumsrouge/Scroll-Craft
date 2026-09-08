@@ -1,0 +1,16 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+body{margin:0;background:#808080;display:flex}
+.box{width:600px;height:688px;position:relative;background:#FBF7F0;isolation:isolate}
+.p{position:absolute;inset:0;mix-blend-mode:multiply;isolation:isolate}
+.p img{width:100%;height:100%;display:block}
+.p::after{content:"";position:absolute;inset:0;mix-blend-mode:screen}
+.p--c::after{background:#f00}.p--m::after{background:#0f0}.p--y::after{background:#00f}
+.ref{width:600px;height:688px;font-size:0}.ref img{width:600px;height:688px;display:block}
+</style></head><body>
+<div class="box" id="a">
+  <div class="p p--c"><img src="../assets/ch3-cactus-p.webp"></div>
+  <div class="p p--m"><img src="../assets/ch3-cactus-p.webp"></div>
+  <div class="p p--y"><img src="../assets/ch3-cactus-p.webp"></div>
+</div>
+<div class="ref" id="b"><img src="ref-cactus.webp"></div>
+</body></html>

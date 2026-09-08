@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Muriel Oberlé · Les toiles passent devant</title>
+<meta name="description" content="Ateliers de peinture pour enfants et adolescents, cours pour adultes. Toutes les images de cette page sont des photographies de l'atelier.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230B2B47'/><circle cx='13' cy='14' r='7' fill='%23E8402A' opacity='.85'/><circle cx='19' cy='18' r='7' fill='%23EDB53A' opacity='.85'/></svg>">
+<link rel="stylesheet" href="scrollcraft.css">
+<style>
+/* ------------------------------------------------------------------ fontes */
+@font-face{font-family:Fraunces;src:url(fonts/fraunces-latin.woff2)format("woff2");font-weight:100 900;font-display:swap;
+ unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:Fraunces;src:url(fonts/fraunces-latinext.woff2)format("woff2");font-weight:100 900;font-display:swap;
+ unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Instrument Sans";src:url(fonts/instrument-latin.woff2)format("woff2");font-weight:400 700;font-display:swap;
+ unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Instrument Sans";src:url(fonts/instrument-latinext.woff2)format("woff2");font-weight:400 700;font-display:swap;
+ unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+
+/* ------------------------------------------------------- les six rôles ----
+   Relevés au pixel sur ses propres toiles. Voir BRIEF.md, « La palette ».
+   La page coupe franc entre fonds clairs et fonds sombres, donc l'accent
+   porte deux valeurs d'une seule teinte : l'ambre de la porte de l'atelier. */
+:root{
+  --sc-canvas:#F2EAD9; --sc-surface:#E7DCC6;
+  --sc-ink:#1A1410;    --sc-ink-soft:#5B5145;
+  --sc-accent:#8A5A04; --sc-accent-ink:#FFF8EA;
+  --sc-font-display:Fraunces,Georgia,"Times New Roman",serif;
+  --sc-font-text:"Instrument Sans",system-ui,sans-serif;
+  --papier:#F2EAD9; --nuit:#0B2B47; --vert:#1E5528; --vermillon:#9E3D12;
+  --folio-w:clamp(0px,13vw,180px);
+}
+html{background:var(--nuit)}
+body{font-family:var(--sc-font-text);-webkit-font-smoothing:antialiased}
+
+/* --------------------------------------------------------------- chapitres
+   Fonds peints par chapitre, coupe franche. Pas de drift : une revue ne
+   fond pas une page dans la suivante. `color` est redéclaré à chaque fois,
+   parce que redéfinir --sc-ink seul ne ré-encre pas ce qui a déjà hérité. */
+.ch{position:relative;background:var(--sc-canvas);color:var(--sc-ink)}
+.ch--papier{--sc-canvas:var(--papier);--sc-surface:#E7DCC6;--sc-ink:#1A1410;--sc-ink-soft:#5B5145;--sc-accent:#8A5A04;--sc-accent-ink:#FFF8EA;background:var(--papier);color:#1A1410}
+.ch--nuit   {--sc-canvas:var(--nuit);--sc-surface:#123B5C;--sc-ink:#F6EFE2;--sc-ink-soft:#A9BCCB;--sc-accent:#EDB53A;--sc-accent-ink:#0B2B47;background:var(--nuit);color:#F6EFE2}
+.ch--vert   {--sc-canvas:var(--vert);--sc-ink:#F7F2E5;--sc-ink-soft:#BCD0B2;--sc-accent:#F2C94C;--sc-accent-ink:#14351B;background:var(--vert);color:#F7F2E5}
+.ch--verm   {--sc-canvas:var(--vermillon);--sc-ink:#FFF4E6;--sc-ink-soft:#F7DAC6;--sc-accent:#FFD98A;--sc-accent-ink:#5E2109;background:var(--vermillon);color:#FFF4E6}
+
+.wrap{max-width:min(1180px,100% - 2*var(--sc-gutter));margin-inline:auto;
+  padding-inline:0;padding-left:var(--folio-w)}
+.ch__body{padding-block:clamp(3.4rem,7.2vw,6.2rem) clamp(2.2rem,5vw,4.2rem)}
+
+/* -------------------------------------------------------------- typographie */
+.dsp{font-family:var(--sc-font-display);font-weight:600;letter-spacing:var(--sc-track-tight);
+  line-height:1.02;text-wrap:balance;font-variation-settings:"SOFT" 20,"WONK" 1}
+h1.dsp,h2.dsp{margin:0}
+.ch__t{font-size:clamp(2.1rem,5.4vw,3.9rem);max-width:19ch}
+.lede{font-size:clamp(1.06rem,1.9vw,1.32rem);line-height:1.55;max-width:44ch;
+  color:var(--sc-ink);text-wrap:pretty}
+.txt{font-size:1.0125rem;line-height:1.62;max-width:62ch;text-wrap:pretty;color:var(--sc-ink)}
+.txt+.txt{margin-top:1.1em}
+.mark{font-size:var(--sc-t-xs);letter-spacing:.16em;text-transform:uppercase;
+  color:var(--sc-ink-soft);font-weight:600}
+.legende{font-size:.8125rem;line-height:1.5;color:var(--sc-ink-soft);max-width:46ch;
+  margin:.85rem 0 0;text-wrap:pretty}
+.acompleter{color:var(--sc-ink-soft);border-bottom:1px dashed currentColor;padding-bottom:1px}
+
+/* -------------------------------------------------- LE REPÉRAGE (signature)
+   Une seule image servie, encodée à gamma 0,5. Trois copies : chacune force
+   un canal à 1 par un `screen` avec une primaire pure, puis les trois se
+   multiplient et reconstituent l'image exactement. Le scroll ramène les
+   plaques l'une sur l'autre. --reg va de 1 (hors repérage) à 0 (calé). */
+.reg{position:relative;isolation:isolate;background:#FBF7F0;overflow:hidden;
+  --reg:1;--amp:1;line-height:0}
+.reg__p{position:absolute;inset:0;mix-blend-mode:multiply;isolation:isolate;
+  will-change:transform;
+  transform:translate(calc(var(--reg)*var(--amp)*var(--dx)),calc(var(--reg)*var(--amp)*var(--dy)))
+            rotate(calc(var(--reg)*var(--rz,0deg)))
+            scale(calc(1 + var(--reg)*var(--amp)*.042))}
+.reg__p img{width:100%;height:100%;display:block;object-fit:cover}
+.reg__p::after{content:"";position:absolute;inset:0;mix-blend-mode:screen;pointer-events:none}
+.reg__p--c{--dx:-1.5%;--dy:-1.05%}       .reg__p--c::after{background:#f00}
+.reg__p--m{--dx:1.55%;--dy:.95%;--rz:.24deg} .reg__p--m::after{background:#0f0}
+.reg__p--y{--dx:-.55%;--dy:1.45%}        .reg__p--y::after{background:#00f}
+/* Le premier plan porte le texte alternatif ; les deux autres sont muets. */
+@supports not (mix-blend-mode:multiply){
+  .reg__p{display:none}
+  .reg__p--m{display:block;mix-blend-mode:normal;transform:none}
+  .reg__p--m::after{display:none}
+  .reg__p--m img{filter:contrast(1.42)saturate(1.12)brightness(.87)}
+}
+
+/* --------------------------------------------------- le folio, la navigation
+   Pas de barre. En marge : les neuf chapitres, tous imprimés hors repérage
+   sauf celui où l'on est. Savoir où on est, c'est voir ce qui est calé. */
+.folio{position:fixed;left:0;top:0;bottom:0;width:var(--folio-w);z-index:40;
+  display:flex;flex-direction:column;justify-content:center;gap:.15rem;
+  padding:1rem .6rem 1rem clamp(.6rem,2.2vw,1.4rem);pointer-events:none;
+  --fo-ink:#F6EFE2;--fo-c:rgba(0,168,214,.92);--fo-m:rgba(226,0,116,.88)}
+.folio[data-fond=clair]{--fo-ink:#3A322A;--fo-c:rgba(0,124,170,.8);--fo-m:rgba(196,0,100,.75)}
+.folio__it{pointer-events:auto;display:flex;gap:.5rem;align-items:baseline;
+  text-decoration:none;padding:.32rem .3rem;border-radius:3px;--fx:1;
+  color:var(--fo-ink);
+  text-shadow:calc(var(--fx)*.055em) calc(var(--fx)*-.02em) 0 var(--fo-c),
+              calc(var(--fx)*-.05em) calc(var(--fx)*.03em) 0 var(--fo-m);
+  transition:text-shadow 240ms var(--sc-ease-out),opacity 240ms var(--sc-ease-out),
+             color 240ms var(--sc-ease-out);
+  opacity:calc(.52 + .48*(1 - var(--fx)))}
+.folio__it[aria-current=true]{--fx:0;opacity:1}
+.folio__n{font-family:var(--sc-font-display);font-size:.74rem;font-weight:700;
+  font-variant-numeric:tabular-nums;min-width:1.1em}
+.folio__t{font-size:.76rem;letter-spacing:.01em;line-height:1.15}
+.folio__it:hover{--fx:.35}
+.folio__it:focus-visible{outline:2px solid currentColor;outline-offset:2px;--fx:0}
+@media (prefers-reduced-motion:reduce){.folio__it{--fx:0}
+  /* Rien ne bouge dans le pic sous mouvement reduit : le clip n'est jamais
+     charge et les plaques sont calees d'entree. Un acte de 2,3 vh y serait
+     du scroll mort. Il se replie sur la course qu'il lui faut. */
+  #ch5{height:155vh!important}}
+
+/* --------------------------------------------------------------- planches */
+.planche{margin:0}
+.planche--large{max-width:min(640px,100%)}
+.planche--moyenne{max-width:min(430px,100%)}
+.duo{display:grid;gap:clamp(1.4rem,3vw,2.6rem);grid-template-columns:1fr}
+@media (min-width:900px){.duo{grid-template-columns:1fr 1fr;align-items:start}}
+.colonne{display:grid;gap:clamp(2rem,4vw,3.4rem);grid-template-columns:1fr}
+@media (min-width:980px){
+  .colonne{grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);
+    gap:clamp(2.4rem,5vw,4.5rem);align-items:start}
+  .colonne--inv>*:first-child{order:2}
+}
+.rule{height:1px;background:currentColor;opacity:.22;border:0;margin:0}
+
+/* ------------------------------------------------------------------ le pic */
+.pic{display:grid;place-items:center;padding:clamp(1rem,3vh,2.4rem) var(--sc-gutter);
+  padding-left:calc(var(--folio-w) + var(--sc-gutter))}
+/* Double page : la colonne de texte et la vignette à gauche, la planche à
+   droite. Rien ne se chevauche, donc rien ne se lit sur la photographie. */
+.pic__in{position:relative;width:100%;max-width:1120px;height:100%;
+  display:grid;grid-template-columns:minmax(15rem,1fr) auto;
+  gap:clamp(1.6rem,3.4vw,3.4rem);align-items:end;justify-content:center;
+  align-content:center}
+.pic__planche{height:min(76vh,104vw);width:auto;aspect-ratio:3/4;
+  box-shadow:0 22px 60px -28px rgba(40,22,8,.55);grid-column:2;grid-row:1;align-self:center}
+.pic__cote{grid-column:1;grid-row:1;align-self:end;display:grid;gap:clamp(1rem,2.4vw,1.8rem);
+  padding-bottom:clamp(.5rem,4vh,3rem);max-width:34ch}
+.pic__vig{width:min(24vh,100%);aspect-ratio:9/7;background:#0B2B47;position:relative;
+  overflow:hidden;box-shadow:0 16px 40px -20px rgba(40,22,8,.6)}
+.pic__leg{margin:0}
+@media (max-width:900px){
+  .pic{padding-left:var(--sc-gutter);padding-bottom:4.5rem;align-content:center}
+  .pic__in{grid-template-columns:1fr;align-items:start;gap:1.1rem;justify-items:start}
+  .pic__planche{grid-column:1;grid-row:1;height:min(52svh,116vw);justify-self:center}
+  .pic__cote{grid-column:1;grid-row:2;padding-bottom:0;max-width:100%;
+    grid-template-columns:1fr auto;align-items:end;gap:1rem}
+  .pic__vig{width:34vw}
+}
+
+/* -------------------------------------------------------------- les formats */
+.formats{display:grid;gap:0;margin-top:2.6rem;border-top:1px solid;border-color:color-mix(in oklab,currentColor 22%,transparent)}
+.format{display:grid;gap:.35rem 1.6rem;padding:1.1rem 0;
+  border-bottom:1px solid;border-color:color-mix(in oklab,currentColor 22%,transparent)}
+@media (min-width:760px){.format{grid-template-columns:13rem 1fr;align-items:baseline}}
+.format__n{font-family:var(--sc-font-display);font-size:1.28rem;font-weight:600;margin:0}
+.format__d{font-size:.95rem;line-height:1.55;color:var(--sc-ink-soft);margin:0;max-width:56ch}
+
+/* ---------------------------------------------------------------- colophon */
+.colo{padding-block:clamp(4rem,9vw,7.5rem) clamp(2.6rem,5vw,4rem)}
+.colo__grid{display:grid;gap:clamp(2.2rem,5vw,4rem);grid-template-columns:1fr}
+@media (min-width:900px){.colo__grid{grid-template-columns:1.15fr .85fr}}
+.mast--fin{font-size:clamp(1.5rem,3vw,2.1rem);margin:0 0 .5rem}
+.champ{display:grid;gap:.3rem;margin-top:1.15rem}
+.champ>label{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--sc-ink-soft);font-weight:600}
+.champ>input,.champ>select{font:inherit;font-size:.98rem;color:var(--sc-ink);
+  background:transparent;border:0;border-bottom:1px solid color-mix(in oklab,currentColor 42%,transparent);
+  padding:.5rem 0;border-radius:0;appearance:none}
+.champ>select{background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%);
+  background-position:calc(100% - 12px) 1.15em,calc(100% - 7px) 1.15em;
+  background-size:5px 5px,5px 5px;background-repeat:no-repeat;padding-right:1.6rem}
+.champ>select option{color:#1A1410;background:#F2EAD9}
+.champ>input:focus-visible,.champ>select:focus-visible{outline:2px solid var(--sc-accent);outline-offset:3px}
+.champ>input::placeholder{color:color-mix(in oklab,currentColor 45%,transparent)}
+.duo-champs{display:grid;gap:0 1.4rem;grid-template-columns:1fr}
+@media (min-width:560px){.duo-champs{grid-template-columns:1fr 1fr}}
+.envoi{margin-top:1.9rem;display:inline-flex;align-items:center;gap:.6rem;
+  font:inherit;font-size:.95rem;font-weight:600;letter-spacing:.01em;
+  color:var(--sc-accent);background:transparent;border:0;padding:.35rem 0;
+  border-bottom:2px solid currentColor;cursor:pointer;border-radius:0;
+  transition:opacity 140ms var(--sc-ease-out),transform 140ms var(--sc-ease-out)}
+.envoi:hover{opacity:.78}
+.envoi:active{transform:translateY(1px)}
+.envoi:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+.reponse{margin-top:1rem;font-size:.9rem;line-height:1.5;max-width:48ch;min-height:1.2em}
+.reponse[data-ok=non]{color:var(--sc-accent)}
+.petit{font-size:.78rem;line-height:1.6;color:var(--sc-ink-soft);max-width:56ch}
+.petit a{color:inherit;text-underline-offset:3px}
+.credits{margin-top:clamp(2.4rem,5vw,3.6rem);padding-top:1.4rem;
+  border-top:1px solid color-mix(in oklab,currentColor 22%,transparent);
+  display:flex;flex-wrap:wrap;gap:.4rem 1.6rem;align-items:baseline}
+
+/* ------------------------------------------------------- la page de titre */
+.une{min-height:100svh;display:grid;align-content:center;
+  padding-block:clamp(4rem,10vh,7rem)}
+.mast{position:relative;font-family:var(--sc-font-display);font-weight:700;
+  font-size:clamp(2.6rem,9.2vw,7.4rem);line-height:.92;letter-spacing:-.022em;
+  margin:.5rem 0 0;isolation:isolate;font-variation-settings:"SOFT" 30,"WONK" 1}
+.mast__p{display:block;mix-blend-mode:screen;will-change:transform;
+  transform:translate(calc(var(--reg)*var(--dx)),calc(var(--reg)*var(--dy)))}
+.mast__p+.mast__p{position:absolute;inset:0}
+.mast__p--r{color:#F00;--dx:-.5%;--dy:-.36%}
+.mast__p--g{color:#0F0;--dx:.42%;--dy:.27%}
+.mast__p--b{color:#00F;--dx:.05%;--dy:.19%}
+@supports not (mix-blend-mode:screen){
+  .mast__p{mix-blend-mode:normal;transform:none;color:#F6EFE2}
+  .mast__p--r,.mast__p--b{display:none}
+}
+.une__titre{font-size:clamp(1.5rem,4.2vw,2.9rem);line-height:1.06;margin:clamp(1.6rem,4vw,2.6rem) 0 0;
+  max-width:16ch;font-family:var(--sc-font-display);font-weight:500;font-style:italic;
+  letter-spacing:-.012em;text-wrap:balance}
+.une__deck{margin-top:clamp(1.3rem,3vw,2rem);max-width:50ch;font-size:clamp(.98rem,1.5vw,1.1rem);
+  line-height:1.58;color:var(--sc-ink-soft);text-wrap:pretty}
+.une__pied{margin-top:clamp(2.6rem,6vw,4.2rem);display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;align-items:baseline}
+
+/* --------------------------------------------------------------- silence */
+.silence{min-height:84svh;display:grid;align-content:center;
+  padding-block:clamp(4rem,9vw,7rem)}
+.silence .reg{max-width:min(430px,78vw)}
+
+@media (max-width:760px){
+  .ch__body{padding-block:clamp(2.2rem,6vw,3rem) clamp(1.5rem,4vw,2.2rem)}
+  .colonne{gap:1.25rem}.duo{gap:1rem}
+  .planche--large,.planche--moyenne{max-width:100%}
+  .planche .reg{max-height:37svh}
+  .planche>img{max-height:37svh;object-fit:cover}
+  /* la paire aquarelle + cours reste cote a cote : deux petites images
+     valent mieux qu'un empilement d'un ecran et demi */
+  .duo--serre{grid-template-columns:1fr 1fr;gap:.8rem}
+  .duo--serre .legende{font-size:.72rem}
+  .ch__t{font-size:clamp(1.85rem,7.4vw,2.4rem)}
+  .silence{min-height:74svh}
+  .une{padding-block:clamp(3rem,8vh,5rem)}
+}
+@media (max-width:900px){
+  :root{--folio-w:0px}
+  .wrap{padding-left:0}
+  .folio{flex-direction:row;top:auto;bottom:0;right:0;width:auto;height:auto;
+    justify-content:stretch;gap:0;padding:0;
+    background:color-mix(in oklab,var(--nuit) 94%,transparent);
+    backdrop-filter:blur(8px);border-top:1px solid rgba(246,239,226,.18);
+    --fo-ink:#F6EFE2!important;--fo-c:rgba(0,168,214,.92)!important;--fo-m:rgba(226,0,116,.88)!important}
+  .folio__it{flex:1;min-height:46px;flex-direction:column;gap:0;justify-content:center;
+    align-items:center;padding:.3rem .1rem;border-radius:0}
+  .folio__t{display:none}
+  .folio__n{font-size:.86rem;min-width:0}
+  body{padding-bottom:46px}
+}
+</style>
+</head>
+<body>
+
+<span data-sc-progress></span>
+<div class="sc-grain" aria-hidden="true"></div>
+
+<nav class="folio" id="folio" aria-label="Chapitres">
+  <a class="folio__it" href="#ch0"><span class="folio__n">0</span><span class="folio__t">Une</span></a>
+  <a class="folio__it" href="#ch1"><span class="folio__n">1</span><span class="folio__t">Le mercredi</span></a>
+  <a class="folio__it" href="#ch2"><span class="folio__n">2</span><span class="folio__t">Commencer</span></a>
+  <a class="folio__it" href="#ch3"><span class="folio__n">3</span><span class="folio__t">Le carnet</span></a>
+  <a class="folio__it" href="#ch4"><span class="folio__n">4</span><span class="folio__t">La salle</span></a>
+  <a class="folio__it" href="#ch5"><span class="folio__n">5</span><span class="folio__t">Le jardin</span></a>
+  <a class="folio__it" href="#ch6"><span class="folio__n">6</span><span class="folio__t">Les grands</span></a>
+  <a class="folio__it" href="#ch7"><span class="folio__n">7</span><span class="folio__t">Les ateliers</span></a>
+  <a class="folio__it" href="#ch8"><span class="folio__n">8</span><span class="folio__t">Colophon</span></a>
+</nav>
+
+<main>
+
+<!-- 0 ····························································· LA UNE -->
+<section class="ch ch--nuit" id="ch0" data-fo="sombre">
+  <div class="wrap une">
+    <p class="mark">Atelier de peinture</p>
+    <h1 class="mast" data-reg-mast>
+      <span class="mast__p mast__p--r">Muriel Oberlé</span>
+      <span class="mast__p mast__p--g" aria-hidden="true">Muriel Oberlé</span>
+      <span class="mast__p mast__p--b" aria-hidden="true">Muriel Oberlé</span>
+    </h1>
+    <p class="une__titre">Les toiles passent devant</p>
+    <p class="une__deck">Ateliers pour enfants et adolescents, cours pour adultes,
+      en groupe ou en particulier. Toutes les images de cette page sont des
+      photographies de l’atelier. Aucune n’a été fabriquée.</p>
+    <p class="une__pied">
+      <a class="envoi" href="#ch8">Demander une place</a>
+      <span class="petit">Neuf chapitres. Le folio, à gauche, dit où vous en êtes.</span>
+    </p>
+  </div>
+</section>
+
+<!-- 1 ······················································· LE MERCREDI -->
+<section class="ch ch--papier" id="ch1" data-fo="clair">
+  <div class="wrap ch__body">
+    <div data-sc-in data-sc-stagger="70">
+      <p class="mark">Chapitre un</p>
+      <h2 class="dsp ch__t">Le mercredi, la table est déjà couverte</h2>
+      <p class="lede" style="margin-top:1.6rem">Pas de feuille distribuée, pas de
+        modèle au tableau. Une nappe de papier court d’un bout à l’autre, et on
+        peut commencer n’importe où dessus.</p>
+    </div>
+
+    <div class="colonne" style="margin-top:clamp(2rem,4.4vw,3.2rem)">
+      <div data-sc-in data-sc-stagger="70">
+        <p class="txt">Ils arrivent après l’école et posent leur cartable. Ce qui
+          est déjà sur la nappe a été commencé par quelqu’un d’autre, la semaine
+          d’avant ou dix minutes plus tôt. On s’installe dans un espace libre, on
+          regarde ce qu’il y a autour, et on continue.</p>
+        <p class="txt">C’est un dessin collectif que personne ne dirige. Il n’a pas
+          de sujet, pas de sens de lecture, et il n’est jamais fini.</p>
+      </div>
+      <figure class="planche planche--large">
+        <div class="reg" data-reg style="aspect-ratio:1/1">
+          <div class="reg__p reg__p--c"><img src="assets/ch1-nappe-p.webp" width="1000" height="1334" alt="Trois enfants penchés sur une longue nappe de papier couverte de dessins au feutre, dans l'atelier."></div>
+          <div class="reg__p reg__p--m"><img src="assets/ch1-nappe-p.webp" width="1000" height="1334" alt="" aria-hidden="true"></div>
+          <div class="reg__p reg__p--y"><img src="assets/ch1-nappe-p.webp" width="1000" height="1334" alt="" aria-hidden="true"></div>
+        </div>
+        <figcaption class="legende">La nappe, en cours. Un cadran, des crustacés,
+          une écriture qui contourne un dessin déjà là. Personne n’a la même case.</figcaption>
+      </figure>
+    </div>
+
+    <div class="colonne colonne--inv" style="margin-top:clamp(1.8rem,3.6vw,2.6rem)">
+      <div data-sc-in data-sc-stagger="70">
+        <p class="txt">Les feutres restent au milieu. Personne n’a sa trousse, et
+          c’est volontaire : le matériel appartient à la table, pas à celui qui
+          s’assied devant.</p>
+      </div>
+      <figure class="planche planche--moyenne">
+        <img src="assets/ch1-duo.webp" width="760" height="1013" style="width:100%;height:auto;display:block"
+             alt="Vue de dessus : une adolescente et une adulte dessinent côte à côte sur la nappe, un globe terrestre au trait entre elles.">
+        <figcaption class="legende">Deux places côte à côte. À gauche un globe
+          terrestre au trait, à droite un cactus. Le dessin de l’un déborde sur
+          celui de l’autre, et c’est prévu.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 2 ······················································· COMMENCER -->
+<section class="ch ch--vert" id="ch2" data-fo="sombre" data-sc-act="flow">
+  <div class="wrap ch__body">
+    <div class="colonne">
+      <div>
+        <p class="mark">Chapitre deux</p>
+        <h2 class="dsp ch__t" style="margin-top:.8rem">On ne commence pas par apprendre à dessiner</h2>
+        <p class="txt" style="margin-top:1.7rem">C’est la première inquiétude des
+          parents, et elle est légitime : mon enfant ne sait pas dessiner. La
+          réponse tient en une phrase. On ne commence pas par là.</p>
+        <p class="txt">On commence par regarder. Par poser une couleur à côté
+          d’une autre pour voir ce que ça fait. Par se tromper sur un papier qui
+          ne coûte rien, et recommencer à côté. Le trait juste arrive après, et
+          il arrive à tout le monde.</p>
+        <p class="txt">Ce qui s’apprend d’abord, c’est de rester devant quelque
+          chose plus de trois minutes.</p>
+      </div>
+      <div data-sc-parallax="0.5">
+        <figure class="planche planche--large" data-sc-reveal="up" data-sc-reveal-at="0.12 0.5">
+          <div class="reg" data-reg style="aspect-ratio:4/5">
+            <div class="reg__p reg__p--c"><img src="assets/ch2-table-p.webp" width="1000" height="1251" alt="Plongée sur la table de l'atelier : cinq places, deux boîtes de pastels ouvertes, un pot de pinceaux, des godets jaunes."></div>
+            <div class="reg__p reg__p--m"><img src="assets/ch2-table-p.webp" width="1000" height="1251" alt="" aria-hidden="true"></div>
+            <div class="reg__p reg__p--y"><img src="assets/ch2-table-p.webp" width="1000" height="1251" alt="" aria-hidden="true"></div>
+          </div>
+          <figcaption class="legende">Une séance ordinaire, vue du dessus. Les
+            boîtes de pastels restent ouvertes au milieu. Chacun travaille sur son
+            carnet, personne ne travaille sur le même sujet.</figcaption>
+        </figure>
+        <figure class="planche planche--moyenne" style="margin-top:2rem">
+          <img src="assets/ch2-carnets.webp" width="760" height="1013" style="width:100%;height:auto;display:block"
+               alt="Le même plan, plus près : carnets ouverts, écriture manuscrite, pastels alignés, un verre d'eau.">
+          <figcaption class="legende">Plus près. Ce qui est écrit à la main sur les
+            pages fait partie du travail.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 ······················································· LE CARNET -->
+<section class="ch ch--papier" id="ch3" data-fo="clair">
+  <div class="wrap ch__body">
+    <div data-sc-in data-sc-stagger="70">
+      <p class="mark">Chapitre trois</p>
+      <h2 class="dsp ch__t" style="margin-top:.8rem">Le vrai objet, c’est le carnet</h2>
+      <p class="lede" style="margin-top:1.6rem">Il se remplit semaine après
+        semaine, il part à la maison, il revient. Deux pages du même carnet.</p>
+    </div>
+    <div class="duo" style="margin-top:clamp(2.4rem,5vw,3.8rem)">
+      <figure class="planche">
+        <div class="reg" data-reg style="aspect-ratio:1075/800">
+          <div class="reg__p reg__p--c"><img src="assets/ch3-arbre-p.webp" width="900" height="670" alt="Page de carnet : un arbre peint à la gouache sur un fond de nuit bleue, avec des baies rouges."></div>
+          <div class="reg__p reg__p--m"><img src="assets/ch3-arbre-p.webp" width="900" height="670" alt="" aria-hidden="true"></div>
+          <div class="reg__p reg__p--y"><img src="assets/ch3-arbre-p.webp" width="900" height="670" alt="" aria-hidden="true"></div>
+        </div>
+        <figcaption class="legende">Gouache sur fond de nuit. Les baies rouges sont
+          posées en dernier, à la pointe du pinceau.</figcaption>
+      </figure>
+      <figure class="planche">
+        <div class="reg" data-reg style="aspect-ratio:688/789">
+          <div class="reg__p reg__p--c"><img src="assets/ch3-cactus-p.webp" width="860" height="986" alt="Page de carnet : un cactus vert sur un ciel bleu profond et un sol ocre, contours réservés à la cire."></div>
+          <div class="reg__p reg__p--m"><img src="assets/ch3-cactus-p.webp" width="860" height="986" alt="" aria-hidden="true"></div>
+          <div class="reg__p reg__p--y"><img src="assets/ch3-cactus-p.webp" width="860" height="986" alt="" aria-hidden="true"></div>
+        </div>
+        <figcaption class="legende">Cire et aquarelle. Le blanc n’est pas peint :
+          c’est la cire qui a réservé le papier, et la couleur a glissé dessus.</figcaption>
+      </figure>
+    </div>
+    <p class="txt" style="margin-top:clamp(2rem,4vw,3rem)" data-sc-in>Un carnet
+      ne se corrige pas. On tourne la page et on refait à côté, et c’est en
+      tournant les pages, six mois plus tard, qu’on voit ce qui a changé.</p>
+  </div>
+</section>
+
+<!-- 4 ······················· LA SALLE, AVANT · silence écrit, voir BRIEF -->
+<section class="ch ch--nuit" id="ch4" data-fo="sombre" data-sc-act="flow">
+  <div class="wrap silence">
+    <figure class="planche" data-sc-parallax="0.7">
+      <div class="reg" data-reg style="aspect-ratio:36/37">
+        <div class="reg__p reg__p--c"><img src="assets/ch4-salle-p.webp" width="360" height="370" alt="La salle d'atelier, dressée et vide : chevalets de bois alignés sur une table blanche, palettes posées sur des tabourets, porte jaune."></div>
+        <div class="reg__p reg__p--m"><img src="assets/ch4-salle-p.webp" width="360" height="370" alt="" aria-hidden="true"></div>
+        <div class="reg__p reg__p--y"><img src="assets/ch4-salle-p.webp" width="360" height="370" alt="" aria-hidden="true"></div>
+      </div>
+    </figure>
+    <p class="lede" style="margin-top:2.2rem">La salle est dressée avant.
+      Les chevalets sont sortis, les palettes posées, l’eau est propre.
+      Il ne manque que ceux qui vont s’asseoir.</p>
+  </div>
+</section>
+
+<!-- 5 ····························································· LE PIC -->
+<section class="ch ch--papier" id="ch5" data-fo="clair" data-sc-act="scrub" data-sc-span="2.3"
+         data-sc-dwell="0.4" data-reg-from-act>
+  <div data-sc-stage class="pic">
+    <div class="pic__in">
+      <figure class="planche pic__planche reg" data-reg style="--amp:2.4">
+        <div class="reg__p reg__p--c"><img src="assets/ch5-jardin-p.webp" width="1200" height="1600" alt="Cinq enfants dans un jardin en plein soleil, chacun tenant sa toile peinte devant son visage."></div>
+        <div class="reg__p reg__p--m"><img src="assets/ch5-jardin-p.webp" width="1200" height="1600" alt="" aria-hidden="true"></div>
+        <div class="reg__p reg__p--y"><img src="assets/ch5-jardin-p.webp" width="1200" height="1600" alt="" aria-hidden="true"></div>
+      </figure>
+
+      <div class="pic__cote">
+      <figcaption class="pic__leg" data-sc-cue="0.42 1 0.16 0.46">
+        <p class="mark">Chapitre cinq</p>
+        <h2 class="dsp" style="font-size:clamp(1.5rem,3.2vw,2.4rem);margin:.6rem 0 0">Les toiles passent devant</h2>
+        <p class="legende" style="max-width:30ch">Le dernier jour, les toiles
+          sortent dans le jardin. Chacun tient la sienne devant soi. Le tableau
+          passe devant l’enfant, et c’est à peu près tout ce qu’il y a à
+          comprendre de cet atelier.</p>
+      </figcaption>
+      <div class="pic__vig">
+        <img class="sc-stage__poster" src="assets/jardin-poster.webp" width="360" height="280" alt="" decoding="async">
+        <video data-sc-scrub data-sc-src="assets/jardin.mp4"
+               data-sc-src-mobile="assets/jardin-m.mp4" muted playsinline
+               aria-label="Quatre enfants alignés dans un jardin, chacun tenant son carnet ouvert devant son visage."></video>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6 ······················································· LES GRANDS -->
+<section class="ch ch--verm" id="ch6" data-fo="sombre">
+  <div class="wrap ch__body">
+    <div data-sc-in data-sc-stagger="70">
+      <p class="mark">Chapitre six</p>
+      <h2 class="dsp ch__t" style="margin-top:.8rem">Et les grands</h2>
+      <p class="lede" style="margin-top:1.6rem">L’atelier ne s’arrête pas à
+        l’adolescence. Les cours pour adultes ne fonctionnent pas autrement :
+        on regarde, on essaie, on recommence.</p>
+    </div>
+
+    <div class="colonne" style="margin-top:clamp(2rem,4.4vw,3.2rem)">
+      <div data-sc-in data-sc-stagger="70">
+        <p class="txt">En groupe ou en particulier, selon ce qu’on cherche. En
+          groupe, on avance à côté d’autres gens et on voit passer leurs
+          solutions. En particulier, on travaille sur ce qui bloque, et
+          uniquement sur ça.</p>
+        <p class="txt">Muriel Oberlé peint et expose. Sa grand-mère et plusieurs
+          de ses tantes étaient artistes, et c’est à leur contact qu’elle a
+          développé son sens de la couleur et des nuances.</p>
+        <p class="petit" style="margin-top:1.2rem">Source : « Muriel Oberlé : les
+          voyages forment la genèse », <em>La Dépêche du Midi</em>, 8 novembre 2005.</p>
+        <figure class="planche" style="max-width:220px;margin-top:2rem">
+          <img src="assets/ch6-muriel.webp" width="480" height="480" style="width:100%;height:auto;display:block"
+               alt="Portrait de Muriel Oberlé, lunettes relevées dans les cheveux.">
+          <figcaption class="legende">Muriel Oberlé.</figcaption>
+        </figure>
+      </div>
+      <div>
+        <figure class="planche">
+          <div class="reg" data-reg style="aspect-ratio:1/1">
+            <div class="reg__p reg__p--c"><img src="assets/ch6-farandole-p.webp" width="1000" height="1000" alt="Farandole : huile sur toile, des silhouettes en ronde sur un champ orange et vermillon."></div>
+            <div class="reg__p reg__p--m"><img src="assets/ch6-farandole-p.webp" width="1000" height="1000" alt="" aria-hidden="true"></div>
+            <div class="reg__p reg__p--y"><img src="assets/ch6-farandole-p.webp" width="1000" height="1000" alt="" aria-hidden="true"></div>
+          </div>
+          <figcaption class="legende"><em>Farandole</em>, huile sur toile.</figcaption>
+        </figure>
+        <div class="duo duo--serre" style="margin-top:1.4rem">
+          <figure class="planche">
+            <img src="assets/ch6-aquarelle.webp" width="800" height="1001" style="width:100%;height:auto;display:block"
+                 alt="Grande aquarelle : une figure allongée, un collage de portée musicale, un texte manuscrit à l'encre brune, un palmier.">
+            <figcaption class="legende">Aquarelle et collage, avec une portée
+              musicale rapportée.</figcaption>
+          </figure>
+          <figure class="planche">
+            <img src="assets/ch6-cours.webp" width="700" height="1244" style="width:100%;height:auto;display:block"
+                 alt="Muriel Oberlé debout devant un groupe d'adultes assis, dans une salle en béton.">
+            <figcaption class="legende">Un cours d’adultes, hors de l’atelier.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7 ····················································· LES ATELIERS -->
+<section class="ch ch--papier" id="ch7" data-fo="clair" data-sc-act="flow">
+  <div class="wrap ch__body">
+    <div class="colonne colonne--inv">
+      <figure class="planche" data-sc-reveal="left" data-sc-reveal-at="0.1 0.48">
+        <img src="assets/ch7-chevalets.webp" width="860" height="1147" style="width:100%;height:auto;display:block"
+             alt="L'atelier en travail : chevalets de bois, une enfant brandit sa toile bleue, un mur de toiles et de cadres.">
+        <figcaption class="legende">L’atelier en travail. Les chevalets sont à
+          hauteur d’enfant.</figcaption>
+      </figure>
+      <div>
+        <p class="mark">Chapitre sept</p>
+        <h2 class="dsp ch__t" style="margin-top:.8rem">Les ateliers</h2>
+        <div class="formats">
+          <div class="format">
+            <h3 class="format__n">Enfants, dès 8 ans</h3>
+            <p class="format__d">En petit groupe, après l’école. Dessin, gouache,
+              aquarelle, et le carnet qui suit toute l’année.
+              <span class="acompleter">Jour et horaire à compléter.</span></p>
+          </div>
+          <div class="format">
+            <h3 class="format__n">Adolescents</h3>
+            <p class="format__d">Même atelier, autres exigences. On travaille la
+              matière et le format, et on garde le carnet.
+              <span class="acompleter">Jour et horaire à compléter.</span></p>
+          </div>
+          <div class="format">
+            <h3 class="format__n">Adultes, en groupe</h3>
+            <p class="format__d">Débutants compris, sans condition d’entrée.
+              <span class="acompleter">Jour, horaire et tarif à compléter.</span></p>
+          </div>
+          <div class="format">
+            <h3 class="format__n">Cours particulier</h3>
+            <p class="format__d">Adultes et adolescents, sur un projet précis ou
+              sur une difficulté précise.
+              <span class="acompleter">Durée et tarif à compléter.</span></p>
+          </div>
+        </div>
+        <figure class="planche planche--moyenne" style="margin-top:1.8rem">
+          <img src="assets/ch7-etagere.webp" width="760" height="1013" style="width:100%;height:auto;display:block"
+               alt="Une étagère de l'atelier : aquarelles de cactus, gouaches d'enfants, boîtes de crayons, un portrait au crayon suspendu.">
+          <figcaption class="legende">L’étagère. Ce qui est fini reste dans la
+            salle jusqu’à la fin de l’année.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8 ······················································· LE COLOPHON -->
+<section class="ch ch--nuit" id="ch8" data-fo="sombre">
+  <div class="wrap colo">
+    <div class="colo__grid">
+      <div data-sc-in data-sc-stagger="70">
+        <p class="mark">Colophon</p>
+        <p class="mast--fin dsp">Muriel Oberlé</p>
+        <p class="txt" style="max-width:46ch">Pour une place, écrivez à Muriel.
+          Dites qui vient, quel âge, et quand vous êtes disponibles. Elle répond
+          en vous disant s’il reste de la place, et sur quel créneau.</p>
+        <p class="petit" style="margin-top:1.6rem">
+          Atelier : <span class="acompleter">adresse à compléter</span>.
+          Téléphone : <span class="acompleter">à compléter</span>.
+          Sur Instagram : <a href="https://www.instagram.com/murieloberle.studio/" rel="me noopener">murieloberle.studio</a>.
+        </p>
+      </div>
+
+      <form id="form" novalidate>
+        <p class="mark">Demander une place</p>
+        <div class="duo-champs">
+          <p class="champ"><label for="f-nom">Votre nom</label>
+            <input id="f-nom" name="nom" type="text" autocomplete="name" required></p>
+          <p class="champ"><label for="f-mail">Votre courriel</label>
+            <input id="f-mail" name="courriel" type="email" autocomplete="email" required></p>
+        </div>
+        <p class="champ"><label for="f-atelier">L’atelier</label>
+          <select id="f-atelier" name="atelier">
+            <option>Enfants, dès 8 ans</option>
+            <option>Adolescents</option>
+            <option>Adultes, en groupe</option>
+            <option>Cours particulier</option>
+          </select></p>
+        <p class="champ"><label for="f-qui">Qui vient, et quel âge</label>
+          <input id="f-qui" name="qui" type="text" placeholder="Par exemple : Léa, 9 ans"></p>
+        <button class="envoi" type="submit">Demander une place</button>
+        <p class="reponse" id="reponse" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+
+    <div class="credits">
+      <p class="petit" style="flex:1 1 22rem">Les treize photographies et les deux
+        vidéos de cette page ont été prises à l’atelier et fournies par Muriel
+        Oberlé. Aucune image n’a été générée. Les visages des enfants sont
+        masqués par elle, ou cachés par les toiles elles-mêmes : aucun n’a été
+        reconstruit.</p>
+      <p class="petit"><span class="acompleter">Mentions légales à compléter.</span></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<script src="scrollcraft.js"></script>
+<script>
+ScrollCraft.mount(document.body);
+
+/* ------------------------------------------------------------ LE REPERAGE
+   Le mouvement signature. Une boucle rAF ecrit --reg (1 = hors reperage,
+   0 = cale) sur les planches actuellement a l'ecran. Rien d'autre ne bouge.
+
+   Deux regles de progression :
+     . une planche ordinaire se cale quand son centre atteint la ligne de
+       lecture, a mi-hauteur de fenetre ;
+     . une planche dans un acte marque data-reg-from-act suit la progression
+       de l'acte, ce qui etire le calage sur tout le span. C'est le pic. */
+(function () {
+  var reduit = matchMedia('(prefers-reduced-motion: reduce)');
+  var planches = [].slice.call(document.querySelectorAll('[data-reg],[data-reg-mast]'));
+
+  function caleTout() { planches.forEach(function (el) { el.style.setProperty('--reg', '0'); }); }
+  if (reduit.matches) { caleTout(); return; }
+
+  var vives = [];
+  var io = new IntersectionObserver(function (entrees) {
+    entrees.forEach(function (e) {
+      var i = vives.indexOf(e.target);
+      if (e.isIntersecting) { if (i < 0) vives.push(e.target); }
+      else if (i >= 0) { vives.splice(i, 1); }
+    });
+  }, { rootMargin: '25% 0px 25% 0px' });
+  planches.forEach(function (el) { io.observe(el); });
+
+  function doux(t) { return t * t * (3 - 2 * t); }
+
+  function image() {
+    var vh = innerHeight || 1;
+    for (var i = 0; i < vives.length; i++) {
+      var el = vives[i], t;
+      if (el.hasAttribute('data-reg-mast')) {
+        /* la une : le titre arrive hors reperage et se cale des le premier
+           geste de scroll, pour enseigner le mouvement avant qu'il ne serve */
+        t = (scrollY || pageYOffset || 0) / (vh * 0.5);
+        t = t < 0 ? 0 : t > 1 ? 1 : t;
+        el.style.setProperty('--reg', (1 - doux(t)).toFixed(4));
+        continue;
+      }
+      var acte = el.closest('[data-reg-from-act]');
+      if (acte) {
+        /* le pic : cale a 52 % de l'acte. Au-dela, la moitie du pic se passe
+           sur la photographie resolue, qui est la recompense. */
+        t = (parseFloat(acte.style.getPropertyValue('--sc-p')) || 0) / 0.52;
+      } else {
+        var r = el.getBoundingClientRect();
+        t = (vh * 1.04 - (r.top + r.height / 2)) / (vh * 0.54);
+      }
+      t = t < 0 ? 0 : t > 1 ? 1 : t;
+      el.style.setProperty('--reg', (1 - doux(t)).toFixed(4));
+    }
+    requestAnimationFrame(image);
+  }
+  requestAnimationFrame(image);
+  reduit.addEventListener('change', function (e) { if (e.matches) caleTout(); });
+})();
+
+/* ------------------------------------------------------------- LE FOLIO
+   La navigation. Le chapitre courant est le seul imprime au reperage ;
+   les huit autres gardent leurs franges de couleur. */
+(function () {
+  var folio = document.getElementById('folio');
+  var liens = [].slice.call(document.querySelectorAll('.folio__it'));
+  var chaps = liens.map(function (a) { return document.querySelector(a.getAttribute('href')); });
+  var courant = -1;
+
+  function pose(i) {
+    if (i === courant) return;
+    courant = i;
+    liens.forEach(function (a, j) {
+      if (j === i) a.setAttribute('aria-current', 'true');
+      else a.removeAttribute('aria-current');
+    });
+    /* l'encre du folio suit le fond du chapitre qu'il traverse : sur les
+       chapitres papier, une nav en blanc serait invisible */
+    if (chaps[i]) folio.setAttribute('data-fond', chaps[i].getAttribute('data-fo') === 'clair' ? 'clair' : 'sombre');
+  }
+  function suit() {
+    var ligne = innerHeight * 0.42, best = 0;
+    for (var i = 0; i < chaps.length; i++) {
+      if (chaps[i] && chaps[i].getBoundingClientRect().top <= ligne) best = i;
+    }
+    pose(best);
+  }
+  addEventListener('scroll', suit, { passive: true });
+  addEventListener('resize', suit);
+  suit();
+})();
+
+/* ------------------------------------------------------------ LE FORMULAIRE
+   Tant que CONTACT_EMAIL est vide, la page valide la saisie et le dit en
+   clair au lieu de faire semblant d'envoyer. */
+(function () {
+  var CONTACT_EMAIL = "";
+  var f = document.getElementById('form'), out = document.getElementById('reponse');
+  if (!f) return;
+  f.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var nom = f.nom.value.trim(), mail = f.courriel.value.trim();
+    var mailOk = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(mail);
+    if (!nom) { dit("Il manque votre nom.", "non"); f.nom.focus(); return; }
+    if (!mailOk) { dit("Ce courriel ne semble pas valide.", "non"); f.courriel.focus(); return; }
+    if (!CONTACT_EMAIL) {
+      dit("Votre demande est complète, mais l’adresse de réception n’est pas encore branchée sur ce site. En attendant, passez par Instagram : murieloberle.studio.", "non");
+      return;
+    }
+    var corps = "Nom : " + nom + "\nCourriel : " + mail
+      + "\nAtelier : " + f.atelier.value + "\nQui vient : " + f.qui.value;
+    location.href = "mailto:" + CONTACT_EMAIL
+      + "?subject=" + encodeURIComponent("Demande de place, atelier de peinture")
+      + "&body=" + encodeURIComponent(corps);
+    dit("Votre logiciel de courrier s’ouvre avec le message prérempli.", "oui");
+  });
+  function dit(t, ok) { out.textContent = t; out.setAttribute("data-ok", ok); }
+})();
+</script>
+</body>
+</html>
