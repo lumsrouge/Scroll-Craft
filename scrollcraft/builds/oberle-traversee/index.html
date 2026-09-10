@@ -256,7 +256,7 @@ p{text-wrap:pretty;margin:0}
 
   <div data-sc-world>
 
-    <div data-sc-segment data-sc-w="1.1" data-sc-waypoint="L'établi">
+    <div data-sc-segment data-sc-w="2.2" data-sc-waypoint="L'établi">
       <img class="sc-world__poster" src="assets/p1.webp" alt="" width="1600" height="900" decoding="async">
       <video data-sc-src="assets/leg1.mp4" data-sc-src-mobile="assets/leg1-m.mp4" muted playsinline></video>
     </div>
@@ -276,12 +276,12 @@ p{text-wrap:pretty;margin:0}
       <video data-sc-src="assets/leg4.mp4" data-sc-src-mobile="assets/leg4-m.mp4" muted playsinline></video>
     </div>
 
-    <div data-sc-segment data-sc-w="1.1" data-sc-waypoint="L'Afrique">
+    <div data-sc-segment data-sc-w="2.2" data-sc-waypoint="L'Afrique">
       <img class="sc-world__poster" src="assets/p5.webp" alt="" width="1600" height="900" decoding="async">
       <video data-sc-src="assets/leg5.mp4" data-sc-src-mobile="assets/leg5-m.mp4" muted playsinline></video>
     </div>
 
-    <div data-sc-segment data-sc-w="1.1" data-sc-waypoint="Les Caraïbes">
+    <div data-sc-segment data-sc-w="2.2" data-sc-waypoint="Les Caraïbes">
       <img class="sc-world__poster" src="assets/p6.webp" alt="" width="1600" height="900" decoding="async">
       <video data-sc-src="assets/leg6.mp4" data-sc-src-mobile="assets/leg6-m.mp4" muted playsinline></video>
     </div>
@@ -311,7 +311,7 @@ p{text-wrap:pretty;margin:0}
     </div>
 
     <!-- 2 · LE SEUIL — élan -->
-    <div class="sc-copy sc-copy--trail" data-sc-copy data-sc-window="0.120 0.218 0.22 0.24">
+    <div class="sc-copy sc-copy--trail" data-sc-copy data-sc-window="0.173 0.247 0.22 0.24">
       <div class="bloc">
         <h2 class="titre">On ne commence pas par apprendre à dessiner.</h2>
         <p class="texte">On commence par partir.</p>
@@ -323,7 +323,7 @@ p{text-wrap:pretty;margin:0}
          scroll mort. Le pic a besoin de quelque chose d'où surgir. -->
 
     <!-- 4 · LA PLANÈTE — le pic -->
-    <div class="sc-copy sc-copy--lead" data-sc-copy data-sc-window="0.345 0.548 0.24 0.28">
+    <div class="sc-copy sc-copy--lead" data-sc-copy data-sc-window="0.342 0.494 0.24 0.28">
       <div class="bloc bloc--large">
         <h2 class="titre">La couleur est un moyen de transport.</h2>
         <p class="texte">Muriel Oberlé a passé son enfance en Afrique du Nord et en Afrique noire. Ses toiles s'en souviennent : des figures qui dansent, des jarres, des cactus, du turquoise et de l'ocre.</p>
@@ -331,14 +331,14 @@ p{text-wrap:pretty;margin:0}
     </div>
 
     <!-- 5 · L'AFRIQUE — chaleur -->
-    <div class="sc-copy sc-copy--trail" data-sc-copy data-sc-window="0.563 0.662 0.22 0.24">
+    <div class="sc-copy sc-copy--trail" data-sc-copy data-sc-window="0.511 0.660 0.22 0.24">
       <div class="bloc">
         <h2 class="titre titre--md">Une couleur se choisit comme on choisit une direction.</h2>
       </div>
     </div>
 
     <!-- 6 · LES CARAÏBES — liberté -->
-    <div class="sc-copy sc-copy--lead" data-sc-copy data-sc-window="0.674 0.773 0.22 0.24">
+    <div class="sc-copy sc-copy--lead" data-sc-copy data-sc-window="0.678 0.826 0.22 0.24">
       <div class="bloc">
         <h2 class="titre titre--md">Personne ne copie un modèle, ici.</h2>
         <p class="texte">Encre, collage, cire, empreinte, écriture. On essaie, on rate, on recommence, et c'est le sujet.</p>
@@ -346,7 +346,7 @@ p{text-wrap:pretty;margin:0}
     </div>
 
     <!-- 7 · LE RETOUR — retour, et ce qui attend en bas -->
-    <div class="sc-copy sc-copy--lead" data-sc-copy data-sc-window="0.786 0.884 0.20 0.18">
+    <div class="sc-copy sc-copy--lead" data-sc-copy data-sc-window="0.840 0.913 0.20 0.18">
       <div class="bloc bloc--plein">
         <h2 class="titre titre--md">Et on rentre avec quelque chose.</h2>
         <div class="ateliers">
@@ -474,7 +474,7 @@ p{text-wrap:pretty;margin:0}
 
   /* Les huit poids du vol, dans l'ordre. La carte pose un waypoint au DEBUT de
      chaque jambe, a sa fraction reelle de la piste, queue comprise. */
-  var POIDS = [1.1, 1.1, 1.1, 2.2, 1.1, 1.1, 1.1, 1.1];
+  var POIDS = [2.2, 1.1, 1.1, 2.2, 2.2, 2.2, 1.1, 1.1];
   var NOMS  = ["L\u2019\u00e9tabli", "Le seuil", "L\u2019altitude", "La plan\u00e8te",
                "L\u2019Afrique", "Les Cara\u00efbes", "Le retour", "L\u2019atelier"];
   /* La piste des fenetres et des waypoints est la SOMME DES POIDS, pas la
@@ -522,7 +522,7 @@ p{text-wrap:pretty;margin:0}
   /* L'arrivee : le trait quitte le monde et se range sur le carnet. La bascule
      se resout AVANT la fin de la piste, pour que le dessin tienne, pose,
      pendant que le visiteur lit le formulaire. */
-  var POSE_DEB = 0.900, POSE_FIN = 0.995;
+  var POSE_DEB = 0.925, POSE_FIN = 0.996;
 
   function dessine(t, e) {
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
